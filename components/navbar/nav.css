@@ -189,13 +189,6 @@
   display: none;
 }
 
-details > summary::-webkit-details-marker {
-  display: none;
-}
-details,summary{
-  outline: none;
-  color: #fff;
-}
 
 
 /* ===========================Medium screens======================================= */
