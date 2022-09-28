@@ -1,0 +1,396 @@
+@import url(“https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,300&display=swap”);
+
+* {
+    font-family: ‘Poppins’, sans-serif;
+    cursor: pointer;
+
+}
+
+#heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* text-align: center; */
+    width: 780px;
+    text-align: center;
+    margin-left: 300px;
+    color: rgb(3, 150, 149);
+    
+}
+#bold{
+    font-weight:bolder;
+    font-size: 200%;
+}
+
+#section {
+    display: flex;
+}
+
+* {
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 650px;
+    height: 450px;
+    position: relative;
+    /* margin: auto; */
+    margin-left: 100px;
+   
+}
+ 
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 155px;
+    font-weight: bold;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+/* .dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    margin-top: 0px;
+    margin-bottom: 55px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+} */
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#section {
+    display: flex;
+}
+
+#rating {
+    
+    display: flex;
+    gap: 35px;
+    margin-left: 100px;
+    margin-top: -70px;
+    box-shadow: 0 0 40px -10px rgb(150, 145, 145);
+    height: 120px;
+    width: 550px;
+    padding-left: 15px;
+    padding-top: 22px;
+}
+ #rating>div>h3{
+    color: rgb(3,150,149);
+    font-weight: bolder;
+    text-align: center;
+}
+/* form */
+.bird{
+    justify-content: center;
+    padding-left: 160px;
+    padding-bottom: 10px;
+}
+h5{
+    text-align: center;
+    font-weight: bold;
+}
+#line{
+    font-size: 90%;
+    text-align: center;
+    margin-bottom: -20px;
+    margin-top: -20px
+}
+#peoples{
+    text-align: center;
+    font-size: 80%;
+    font-weight: bold;
+    color: rgb(3,150,163);
+    margin: 15px 00px 10px 00px;
+}
+.form {
+    width: 425px;
+    height: 550px;
+
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px rgb(150, 145, 145);
+    /* margin: calc(50vh - 220px) auto; */
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    margin-left: 80px;
+}
+   .fa-whatsapp{
+    color: white;
+    background-color: rgb(37,211,102);
+}
+  #whats{
+    background-color: rgb(37,211,102);
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: none;
+    margin-left: 50px;
+  }
+/* h2 {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    color: #78788c;
+    border-bottom: 3px solid #78788c
+} */
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .3s;
+    border-bottom: 2px solid #bebed2
+}
+
+
+input:focus {
+    border-bottom: 2px solid #78788c
+}
+
+p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: #5a5a5a
+}
+
+
+button {
+    float: center;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all .3s
+}
+
+
+/* button:hover {
+    background: #78788c;
+    color: #fff
+} */
+
+
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 350px;
+}
+
+.butText {
+    padding: 7px 100px 7px 65px;
+    border-color: rgb(1,191,189);
+    color: rgb(1,191,189);
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-left: 50px;
+    /* background-color: red; */
+   }
+   .butText a{
+
+    color: rgb(1,191,189);
+    background-color: #fff;
+
+   }
+ 
+
+.fa-solid {
+    margin-left: -25px;
+    color: rgb(204, 204, 204);
+
+}
+
+.chating{
+border-radius: 35px;
+color: white;
+font-weight: bold;
+background-color: rgb(53,79,132);
+border: none;
+padding-top: 10px;
+}
+.chatings{
+border-radius: 35px;
+color: white;
+font-weight: bold;
+background-color: rgb(19,203,106);
+border: none;
+padding-top: 10px;
+}
+.chatings:hover{
+background-color: rgb(13, 131, 68);
+}
+.fa-brands{
+height: 25px;
+width: 25px;
+}
+
+.col-5>p{
+    width: 360px;
+}
+.col-5>h4{
+    margin-top: 10px;
+color: rgb(1,191,189);
+}
+#parrentPage{
+    margin: 80px 00px 50px 400px ;
+}
+.pages{
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(1,191,189);
+}
+.pages:hover {
+   background-color: rgb(3,150,163);
+}
+.page{
+    padding: 7px 85px 7px 85px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgb(1,191,189);
+    border-color: rgb(1,191,189);
+}
+ .page:hover {
+  color: white;
+  font-weight: bold;
+  background-color: rgb(1,191,189);
+ }
+
+ .pagess{
+    color: white;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(1,191,189);
+}
+.pagess:hover {
+   background-color: rgb(3,150,163);
+}
+
+.pagesss{
+    padding: 7px 35px 7px 35px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgb(1,191,189);
+    border-color: rgb(1,191,189);
+}
+ .pagesss:hover {
+  color: white;
+  font-weight: bold;
+  background-color: rgb(1,191,189);
+ }
+ #parrentPages{
+    margin: 50px 00px 50px 400px ;
+}
+
+.col-4>h5{
+    color:rgb(53, 53, 53);
+    font-weight: lighter;
+    /* margin-left: -80px; */
+    
+}
+/* #icons{
+    margin-left: 110px;
+} */
+.col-4>p{
+ color: #5a5a5a;
+ width: 290px;
+ margin-left: 100px;
+ /* text-align: center; */
+}
+/* .col-4>h5>img{
+    color:rgb(0,191,189);
+    margin-left: -20px;
+     background-color: rgb(0,191,189);
+} */
+
+
