@@ -1,0 +1,397 @@
+/* background-color: rgb(1, 140, 139); */
+
+
+header{
+    height: 10vh;
+    width: 100%;
+    border: 2px solid black;
+}
+
+#title{
+    box-sizing: border-box;
+font-size: 56px;
+font-weight: 700;
+line-height: 70.39px;
+text-align: left;
+color: #fff;
+}
+#bg_upper{
+     height: 380px;
+     background: url(https://www.ketto.org/assets/images/Sip-banner-people/sip-banner-pc.png) no-repeat;
+       background-size: auto;
+     background-size: cover;
+     /* position: relative; */
+     /* margin-bottom: 20px; */
+     /* display: -ms-flexbox; */
+     /* display: flex; */
+     /* display: block; */
+     /* -ms-flex-align: center; */
+     /* align-items: center; */
+     /* display: flex; */
+     /* justify-content: center; */
+     /* display: grid; */
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+     border:5px solid black
+}
+
+#ch_bg{
+    border: 2px solid rgb(96, 210, 189);
+    width: 55%;
+    margin-left: 10%;
+}
+
+main{
+    display: block;
+
+}
+hr{
+    width: 20%;
+}
+#list_P{
+    text-decoration: none;
+}
+ul{
+    text-decoration: n;
+    display: grid;
+    row-gap: 5%;
+}
+#list_P>button{
+    width: 82%;
+}
+
+#startaFundr_btn{
+
+    background-color: rgb(1, 140, 139);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  padding: 1rem 1.75rem;
+  text-decoration: none;
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-43:hover {
+  background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+}
+
+@media (min-width: 768px) {
+  .button-43 {
+    padding: 1rem 2rem;
+  }
+}
+
+
+.line{
+    width: 82%;
+    height: 2px;
+    background-color: black;
+}
+
+
+#main{
+    border: 1px solid blue;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    height: 900px;
+    /* height: ; */
+}
+
+
+#main>div{
+    border: 1px solid gray;
+    display: flex;
+    width: 65%;
+}
+#leftMain{
+    margin-right: 15px;
+    width: 30%;
+    border: 1px solid rgb(255, 166, 0);
+    /* background-color: blue; */
+
+}
+#main_right{
+    margin-left: 15px;
+    background-color: aquamarine;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+#searchBar{
+    width: 100%;
+}
+
+#searchBar>input{
+    width: 100%;
+}
+
+.bg_btn {
+  background-color: #FFFFFF;
+  border: 1px solid rgb(209,213,219);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.bg_btn:hover {
+  background-color: rgb(249,250,251);
+}
+
+.bg_btn:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.bg_btn:focus-visible {
+  box-shadow: none;
+}
+
+#search__container{
+    /* padding-top: 64px;  */
+    width: 100%;
+    border: 2px solid black;
+}
+
+#search__input{
+    width: 100%;
+    height: 40px;
+    /* padding: 12px 24px; */
+
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    
+    color: #575756;
+    background-color: transparent;
+/*         background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg); */
+
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 8px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    
+}
+
+#main_right>div:nth-child(2){
+    margin-top: 8px;
+/* background-color: aqua; */
+text-align: left;
+font-size: 15px;
+font-family: "Source Sans Pro", sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px
+}
+
+#main_right>div:nth-child(3){
+    height:     10%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+
+#reset_filter {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  box-sizing: border-box;
+  color: red;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+#reset_filter:hover{
+    background-color: rgb(252, 247, 247);
+}
+
+#appendData, #appendBData{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10%;
+    column-gap: 10%;
+}
+
+
+.data{
+    /* background-color: rgb(211, 152, 152); */
+    width: 40px;
+    height: 40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.data:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.adver{
+display: flex;
+/* border:1px solid black; */
+margin-top: 5%;
+justify-content: space-between;
+}
+
+.left_adver{
+width: 55%;
+margin-right: 5px;
+/* background-color: mediumslateblue; */
+display: flex;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.L_ad{
+width: 30%;
+}
+.R_ad{
+    width: 60%;
+    margin-left: 5%;
+    text-align: center;
+
+
+}
+.right_adver{
+width: 36%;
+/* background-color: #575756; */
+display: grid;
+justify-content: center;
+align-items: center;
+margin-left: 5px;
+text-align: center;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.right_adver>h2{
+
+    font-size: 22px;
+}
+
+
+.sgm:hover{
+background-color: rgb(245, 239, 239);
+}
+
+
+
+
+
+
+
+
+
+#bottom_faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom_faq>p{
+    border: 1px solid green;
+    margin-right: 12px;
+}
+
+#bottom_faq>div{
+    margin-left: 12px;
+    border: 1px solid black;
+}
+
+
+
+
+select, .sgm {
+  align-items: center;
+  border: 1px solid  rgb(1, 191, 189);
+ color: rgb(1, 191, 189);
+  border-radius: 100px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 0.8vw;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+}
+
+#loadMore{
+    background-color: white;
+    color: rgb(1, 140, 139);
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+}
+
+#loadMore:hover{
+    background-color: rgb(238, 226, 226);
+}
+
+
+
+#ttu{
+    font-size: 12px;
+font-weight: 700;
+
+  border: 1px solid rgb(209,213,219);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  color: #fff;
+  background-color: #015c7e;
+}
+
