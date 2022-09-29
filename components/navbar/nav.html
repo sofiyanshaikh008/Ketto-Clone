@@ -17,6 +17,10 @@
 
 
         <div id="sidebar">
+            <div id="sidelogo"><img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=2.0" alt="">
+                <button id="menu"> <input type="checkbox" name="" id="sidecheck" style="display: none" />
+                    <label for="sidecheck" id="lab"><i class="fa-solid fa-bars"></i></label></button>
+            </div>
 
             <input type="text" name="" id="Search" placeholder="Search By fundraiser creator,benyficiary or NGOs">
             <span>To view fundraisers you have supported on Ketto <a href="#" id="click">Click here</a></span>
@@ -32,7 +36,7 @@
             </div>
             <a href="#">How its work</a>
             <a href="https://api.whatsapp.com/send?phone=919930088522">Get us On whatsapp</a>
-            <a href="#">Sign In</a>
+            <a href="#" onclick="signShow()">Sign In</a>
 
             <button id="sfund"> Start a Fundraiser</button>
 
@@ -75,7 +79,7 @@
             <div id="trd_nav">
                 <button id="whatsapp"> <i class="fa-brands fa-whatsapp"></i> Chat</button>
                 <button id="fund"> Start a Fundraiser</button>
-                <a href="#">Sign In</a>
+                <a href="#" onclick="signShow()">Sign In</a>
 
             </div>
             <button id="menu"> <input type="checkbox" name="" id="sidecheck" style="display: none" />
@@ -85,10 +89,40 @@
 
         <div id="container">
             <div style="height: 500px;background-color: aqua;">
-             
+
             </div>
             <div style="height: 500px;background-color: green; "></div>
             <div style="height: 500px;background-color: red; "></div>
+        </div>
+
+        <div id="signin">
+            <div id="s1">
+                <h2>Login</h2>
+                <button id="scross" onclick="signShow()"><i class="fa-sharp fa-solid fa-x"></i></button>
+            </div>
+            <div id="s2">
+                <div id="s21">
+                    <input type="text" name="" id="mobile" placeholder="Email/Mobile Number">
+                    <input type="text" name="" id="otpin" placeholder="Enter OTP">
+                    <button onclick="getOTP()" id="getotp">Get OTP</button>
+                    <button onclick="login()" id="login">Login</button>
+                    <a href="">Login Via Password</a>
+                    <p>By continuing you agree to our <a href="https://www.ketto.org/terms-of-use.php">Terms of
+                            Service</a> and <a href="https://www.ketto.org/privacy-policy.php">Privacy Policy</a></p>
+                    <h4>Want to start a fundraiser? <a href="#">Click here</a></h4>
+
+                    <span id="or">OR</span>
+                    <span id="nor"></span>
+
+                </div>
+                <div id="s22">
+                    <div>
+                        <img src="https://ketto.gumlet.io/assets/images/login/google.png?w=240&dpr=1.2" alt="">
+                        <p>Sign in With Google</p>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
 
