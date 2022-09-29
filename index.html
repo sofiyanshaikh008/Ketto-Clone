@@ -1,655 +1,785 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crowdfunding India - Best Crowdfunding Platform & Website - Ketto</title>
-    <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
-        #header{
-            background-image: url(https://kettocdn.gumlet.io/media/banner/0/71/image/626a109be777492340e46d013c3cad0857a5da3a.png?w=1300&dpr=1.5);
-            background-position: 50% 20%;
-            height: 95vh;
-            background-repeat: no-repeat;
-        }
-        #headings{
-            position: absolute;
-            left: 45%;
-            top: 15%;
-            width: 50%;
-        }
-        #headings>h1{
-            color: #444;
-            margin-bottom: 30px;
-            line-height: 45px;
-        }
-        #statsHolder{
-            display: flex;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        #statsHolder>div>h3{
-            font-size: 26px;
-            line-height: 33px;
-            color: #039695;
-            
-        }
-        #statsHolder>div>span{
-            /* font-size: 17px; */
-            font-weight: bold;
-            color: #555;
-            margin-top: 5px;
-        }
-        #highlight{
-            font-size: 20px;
-            line-height: 30px;
-            color: #039695;
-            margin: 10px auto;
-        }
-        #highlight>p>span{
-            font-size: 25px;
-            font-weight: bold;
-        
-        }
-        #engButton{
-            margin: 30px 0px 40px 0px;
-            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-        }
-        #engButton>a{
-            padding: 20px 25px;
-            background-color: #1ccaca;
-            border-radius: 5px;
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        #hindiButton>a{
-            text-decoration: none;
-            color: #039695;
-            font-weight: bold;
-            font-size: 18px;
-        }
 
-        /* ======= BANER ====== */
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crowdfunding India - Best Crowdfunding Platform & Website - Ketto</title>
+        <link rel="stylesheet" href="./components/navbar/nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
 
-        #banner {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            flex-direction: row;
-            position: absolute;
-            top: 82vh;
-            right: 0;
-            left: 0;
-            z-index: 10;
-            padding: 0 0 0 32px;
-            width: 720px;
-            height: 140px;
-            margin: 0 auto;
-            z-index: 9;
-            background: #FFFFFF;
-            border: 1px solid #D3D4F2;
-            box-sizing: border-box;
-            box-shadow: 0 30px 60px rgb(0 0 0 / 10%);
-            border-radius: 16px;
-            overflow: hidden;
-            cursor: pointer;
-        }
-        #banner>a{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 17px;
-            font-weight: bold;
-            line-height: 25px;
-            width: 172px;
-            height: 54px;
-            background: #204B6B;
-            border-radius: 8px;
-            color: #fff;
-            flex-shrink: 0;
-            text-decoration: none;
-            text-transform: capitalize;
-        }
-        #bannerText{
-            margin: auto 28px;
-        }
-        #banner>div>h3{
-            color: #034396;
-            line-height: 30px;
-        }
+            #header {
+                background-image: url(https://kettocdn.gumlet.io/media/banner/0/71/image/626a109be777492340e46d013c3cad0857a5da3a.png?w=1300&dpr=1.5);
+                background-position: 50% 20%;
+                height: 95vh;
+                background-repeat: no-repeat;
+            }
 
-        #banner>div>p{
-            font-size: 14px;
-            color: rgb(114, 114, 114);
-            line-height: 18px;
-        }
+            #headings {
+                position: absolute;
+                left: 45%;
+                top: 15%;
+                width: 50%;
+            }
 
-        #banner>img{
-            width: 112px;
-            height: 100%;
-            margin-left: auto;
-            object-fit: cover;
-        }
-        
-    </style>
-</head>
-<body>
-    <div id="header">
-        <div>
-            <div id="headings">
-                <h1>Need Funds to Pay For a Medical Emergency or Social Cause?</h1>
-                <div id="statsHolder">
-                    <div>
-                        <h3>0%</h3>
-                        <span>PLATFORM FEE</span>
+            #headings>h1 {
+                color: #444;
+                margin-bottom: 30px;
+                line-height: 45px;
+            }
+
+            #statsHolder {
+                display: flex;
+                gap: 40px;
+                margin-bottom: 40px;
+            }
+
+            #statsHolder>div>h3 {
+                font-size: 26px;
+                line-height: 33px;
+                color: #039695;
+
+            }
+
+            #statsHolder>div>span {
+                /* font-size: 17px; */
+                font-weight: bold;
+                color: #555;
+                margin-top: 5px;
+            }
+
+            #highlight {
+                font-size: 20px;
+                line-height: 30px;
+                color: #039695;
+                margin: 10px auto;
+            }
+
+            #highlight>p>span {
+                font-size: 25px;
+                font-weight: bold;
+
+            }
+
+            #engButton {
+                margin: 30px 0px 40px 0px;
+                box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            }
+
+            #engButton>a {
+                padding: 20px 25px;
+                background-color: #1ccaca;
+                border-radius: 5px;
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            #hindiButton>a {
+                text-decoration: none;
+                color: #039695;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            /* ======= BANER ====== */
+
+            #banner {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: row;
+                position: absolute;
+                top: 82vh;
+                right: 0;
+                left: 0;
+                z-index: 10;
+                padding: 0 0 0 32px;
+                width: 720px;
+                height: 140px;
+                margin: 0 auto;
+                z-index: 9;
+                background: #FFFFFF;
+                border: 1px solid #D3D4F2;
+                box-sizing: border-box;
+                box-shadow: 0 30px 60px rgb(0 0 0 / 10%);
+                border-radius: 16px;
+                overflow: hidden;
+                cursor: pointer;
+            }
+
+            #banner>a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 17px;
+                font-weight: bold;
+                line-height: 25px;
+                width: 172px;
+                height: 54px;
+                background: #204B6B;
+                border-radius: 8px;
+                color: #fff;
+                flex-shrink: 0;
+                text-decoration: none;
+                text-transform: capitalize;
+            }
+
+            #bannerText {
+                margin: auto 28px;
+            }
+
+            #banner>div>h3 {
+                color: #034396;
+                line-height: 30px;
+            }
+
+            #banner>div>p {
+                font-size: 14px;
+                color: rgb(114, 114, 114);
+                line-height: 18px;
+            }
+
+            #banner>img {
+                width: 112px;
+                height: 100%;
+                margin-left: auto;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- ========================   navbaar start=================================== -->
+        <!-- ========================   navbaar start=================================== -->
+
+
+        <!-- ==========================sidebar============================ -->
+
+        <div id="sidebar">
+            <div id="sidelogo"><img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=2.0" alt="">
+                <button id="menu"> <input type="checkbox" name="" id="sidecheck" style="display: none" />
+                    <label for="sidecheck" id="lab"><i class="fa-solid fa-bars"></i></label></button>
+            </div>
+
+            <input type="text" name="" id="Search" placeholder="Search By fundraiser creator,benyficiary or NGOs">
+            <span>To view fundraisers you have supported on Ketto <a href="#" id="click">Click here</a></span>
+            <a href="#">Browse Fundraisers</a>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Fondraiser for<i
+                        class="fa-sharp fa-solid fa-caret-down"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#" class="app">Medical treatment</a>
+                    <a href="#" class="app">Ngo/Charety</a>
+                    <a href="#" class="app">Other cases</a>
+                </div>
+            </div>
+            <a href="#">How its work</a>
+            <a href="https://api.whatsapp.com/send?phone=919930088522">Get us On whatsapp</a>
+            <a href="#" onclick="signShow()">Sign In</a>
+
+            <button id="sfund"> Start a Fundraiser</button>
+        </div>
+        <!-- ==================== navbar========================================== -->
+        <div id="nav">
+            <div id="logo"><img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=2.0" alt="">
+            </div>
+            <div id="sec_nav">
+                <a href="#">Browse Fundraisers</a>
+                <div class="tdropdown">
+                    <button onclick="mytFunction()" class="tdropbtn">Fondraiser for<i
+                            class="fa-sharp fa-solid fa-caret-down"></i></button>
+                    <div id="tmyDropdown" class="tdropdown-content">
+                        <a href="#" class="app">Medical treatment</a>
+                        <a href="#" class="app">Ngo/Charety</a>
+                        <a href="#" class="app">Other cases</a>
                     </div>
+                </div>
+                <a href="#">How its work</a>
+                <span><i class="fa-solid fa-magnifying-glass"></i>
+                    Search
+                </span>
+            </div>
+            <div id="trd_nav">
+                <button id="whatsapp"> <i class="fa-brands fa-whatsapp"></i> Chat</button>
+                <button id="fund"> Start a Fundraiser</button>
+                <a href="#" onclick="signShow()">Sign In</a>
+
+            </div>
+            <button id="menu"> <input type="checkbox" name="" id="sidecheck" style="display: none" />
+                <label for="sidecheck" id="lab"><i class="fa-solid fa-bars"></i></label></i></button>
+        </div>
+
+
+        <!-- =======================signin================================ -->
+
+        <div id="signin">
+            <div id="s1">
+                <h2>Login</h2>
+                <button id="scross" onclick="signShow()"><i class="fa-sharp fa-solid fa-x"></i></button>
+            </div>
+            <div id="s2">
+                <div id="s21">
+                    <input type="text" name="" id="mobile" placeholder="Email/Mobile Number">
+                    <input type="text" name="" id="otpin" placeholder="Enter OTP">
+                    <button onclick="getOTP()" id="getotp">Get OTP</button>
+                    <button onclick="login()" id="login">Login</button>
+                    <a href="">Login Via Password</a>
+                    <p>By continuing you agree to our <a href="https://www.ketto.org/terms-of-use.php">Terms of
+                            Service</a> and <a href="https://www.ketto.org/privacy-policy.php">Privacy Policy</a></p>
+                    <h4>Want to start a fundraiser? <a href="#">Click here</a></h4>
+
+                    <span id="or">OR</span>
+                    <span id="nor"></span>
+
+                </div>
+                <div id="s22">
                     <div>
-                        <h3>72 Lakh+</h3>
-                        <span>DONORS</span>
+                        <img src="https://ketto.gumlet.io/assets/images/login/google.png?w=240&dpr=1.2" alt="">
+                        <p>Sign in With Google</p>
                     </div>
-                    <div>
-                        <h3>3.2 Lakh+</h3>
-                        <span>FUNDRAISERS</span>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ========================   navbaar end=================================== -->
+        <div id="header">
+            <div>
+                <div id="headings">
+                    <h1>Need Funds to Pay For a Medical Emergency or Social Cause?</h1>
+                    <div id="statsHolder">
+                        <div>
+                            <h3>0%</h3>
+                            <span>PLATFORM FEE</span>
+                        </div>
+                        <div>
+                            <h3>72 Lakh+</h3>
+                            <span>DONORS</span>
+                        </div>
+                        <div>
+                            <h3>3.2 Lakh+</h3>
+                            <span>FUNDRAISERS</span>
+                        </div>
+                    </div>
+                    <div id="highlight">
+                        <p>Ketto’s <span>0% Platform fees</span> ensures maximum funds for you</p>
+                    </div>
+                    <div id="engButton">
+                        <a href="#">Start a Fundraiser for FREE</a>
+                    </div>
+                    <div id="hindiButton">
+                        <a href="#"> नि: शुल्क फंडरेजर शुरू करें > </a>
                     </div>
                 </div>
-                <div id="highlight">
-                    <p>Ketto’s <span>0% Platform fees</span> ensures maximum funds for you</p>
-                </div>
-                <div id="engButton">
-                    <a href="#">Start a Fundraiser for FREE</a>
-                </div>
-                <div id="hindiButton">
-                    <a href="#"> नि: शुल्क फंडरेजर शुरू करें > </a>
-                </div>
             </div>
         </div>
-    </div>
-    <div id="banner">
-        <a href="#">Donate Now ></a>
-        <div id="bannerText">
-            <h3>Start Monthly Donation to Save Lives</h3>
-            <p>With your support, countless children will receive health care and a happy life. Start your monthly donation today. </p>
+        <div id="banner">
+            <a href="#">Donate Now ></a>
+            <div id="bannerText">
+                <h3>Start Monthly Donation to Save Lives</h3>
+                <p>With your support, countless children will receive health care and a happy life. Start your monthly
+                    donation today. </p>
+            </div>
+            <img src="https://kettocdn.gumlet.io/media/banner/0/92/image/81d7a1a7626397c32f6c1fb83bfdf476ccd734af.png?w=720&dpr=1.5"
+                alt="">
         </div>
-            <img src="https://kettocdn.gumlet.io/media/banner/0/92/image/81d7a1a7626397c32f6c1fb83bfdf476ccd734af.png?w=720&dpr=1.5" alt="">
-    </div>
 
-    <div id="trendingSection">
-        <div class="trendCard">
-            <div class="trendImg"></div>
-            <div class="title"></div>
-            <div class="raisedBy">
-                <span></span>
-                <p class="name"></p>
-            </div>
-            <div class="raisedAmt">
-                <p><span></span></p>
-            </div>
-            <div class="target"></div>
-            <div class="bar">
-                <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-                <div class="timeLeft">
-                    <span class="clock">
-                        <img src=".Images/clock.png" alt="">
-                    </span>
-                    <span class="timeLeft">
-                        <span></span> days left
-                    </span>
+        <div id="trendingSection">
+            <div class="trendCard">
+                <div class="trendImg"></div>
+                <div class="title"></div>
+                <div class="raisedBy">
+                    <span></span>
+                    <p class="name"></p>
                 </div>
-                <div class="supports"></div>
-            </div>
-            <div class="cardBtns">
-                <button class="shareFB">
-                    <span class="FBimg">
-                        <img src="./Images/fbicon.png" alt="FB">
-                    </span>
-                    <span>Share</span>
-                </button>
-                <button class="donateBtn">Donate</button>
-            </div>
-
-        </div>
-        <div class="trendCard">
-            <div class="trendImg"></div>
-            <div class="title"></div>
-            <div class="raisedBy">
-                <span></span>
-                <p class="name"></p>
-            </div>
-            <div class="raisedAmt">
-                <p><span></span></p>
-            </div>
-            <div class="target"></div>
-            <div class="bar">
-                <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-                <div class="timeLeft">
-                    <span class="clock">
-                        <img src=".Images/clock.png" alt="">
-                    </span>
-                    <span class="timeLeft">
-                        <span></span> days left
-                    </span>
+                <div class="raisedAmt">
+                    <p><span></span></p>
                 </div>
-                <div class="supports"></div>
-            </div>
-            <div class="cardBtns">
-                <button class="shareFB">
-                    <span class="FBimg">
-                        <img src="./Images/fbicon.png" alt="FB">
-                    </span>
-                    <span>Share</span>
-                </button>
-                <button class="donateBtn">Donate</button>
-            </div>
-
-        </div>
-        <div class="trendCard">
-            <div class="trendImg"></div>
-            <div class="title"></div>
-            <div class="raisedBy">
-                <span></span>
-                <p class="name"></p>
-            </div>
-            <div class="raisedAmt">
-                <p><span></span></p>
-            </div>
-            <div class="target"></div>
-            <div class="bar">
-                <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-                <div class="timeLeft">
-                    <span class="clock">
-                        <img src=".Images/clock.png" alt="">
-                    </span>
-                    <span class="timeLeft">
-                        <span></span> days left
-                    </span>
+                <div class="target"></div>
+                <div class="bar">
+                    <div class="achieve"></div>
                 </div>
-                <div class="supports"></div>
-            </div>
-            <div class="cardBtns">
-                <button class="shareFB">
-                    <span class="FBimg">
-                        <img src="./Images/fbicon.png" alt="FB">
-                    </span>
-                    <span>Share</span>
-                </button>
-                <button class="donateBtn">Donate</button>
-            </div>
-
-        </div>
-        <div class="trendCard">
-            <div class="trendImg"></div>
-            <div class="title"></div>
-            <div class="raisedBy">
-                <span></span>
-                <p class="name"></p>
-            </div>
-            <div class="raisedAmt">
-                <p><span></span></p>
-            </div>
-            <div class="target"></div>
-            <div class="bar">
-                <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-                <div class="timeLeft">
-                    <span class="clock">
-                        <img src=".Images/clock.png" alt="">
-                    </span>
-                    <span class="timeLeft">
-                        <span></span> days left
-                    </span>
+                <div class="trendDetails">
+                    <div class="timeLeft">
+                        <span class="clock">
+                            <img src=".Images/clock.png" alt="">
+                        </span>
+                        <span class="timeLeft">
+                            <span></span> days left
+                        </span>
+                    </div>
+                    <div class="supports"></div>
                 </div>
-                <div class="supports"></div>
-            </div>
-            <div class="cardBtns">
-                <button class="shareFB">
-                    <span class="FBimg">
-                        <img src="./Images/fbicon.png" alt="FB">
-                    </span>
-                    <span>Share</span>
-                </button>
-                <button class="donateBtn">Donate</button>
-            </div>
-
-        </div>
-        <div class="trendCard">
-            <div class="trendImg"></div>
-            <div class="title"></div>
-            <div class="raisedBy">
-                <span></span>
-                <p class="name"></p>
-            </div>
-            <div class="raisedAmt">
-                <p><span></span></p>
-            </div>
-            <div class="target"></div>
-            <div class="bar">
-                <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-                <div class="timeLeft">
-                    <span class="clock">
-                        <img src=".Images/clock.png" alt="">
-                    </span>
-                    <span class="timeLeft">
-                        <span></span> days left
-                    </span>
+                <div class="cardBtns">
+                    <button class="shareFB">
+                        <span class="FBimg">
+                            <img src="./Images/fbicon.png" alt="FB">
+                        </span>
+                        <span>Share</span>
+                    </button>
+                    <button class="donateBtn">Donate</button>
                 </div>
-                <div class="supports"></div>
-            </div>
-            <div class="cardBtns">
-                <button class="shareFB">
-                    <span class="FBimg">
-                        <img src="./Images/fbicon.png" alt="FB">
-                    </span>
-                    <span>Share</span>
-                </button>
-                <button class="donateBtn">Donate</button>
-            </div>
 
-        </div>
-        <div class="trendCard">
-            <div class="trendImg"></div>
-            <div class="title"></div>
-            <div class="raisedBy">
-                <span></span>
-                <p class="name"></p>
             </div>
-            <div class="raisedAmt">
-                <p><span></span></p>
-            </div>
-            <div class="target"></div>
-            <div class="bar">
-                <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-                <div class="timeLeft">
-                    <span class="clock">
-                        <img src=".Images/clock.png" alt="">
-                    </span>
-                    <span class="timeLeft">
-                        <span></span> days left
-                    </span>
+            <div class="trendCard">
+                <div class="trendImg"></div>
+                <div class="title"></div>
+                <div class="raisedBy">
+                    <span></span>
+                    <p class="name"></p>
                 </div>
-                <div class="supports"></div>
-            </div>
-            <div class="cardBtns">
-                <button class="shareFB">
-                    <span class="FBimg">
-                        <img src="./Images/fbicon.png" alt="FB">
-                    </span>
-                    <span>Share</span>
-                </button>
-                <button class="donateBtn">Donate</button>
-            </div>
-
-        </div>
-        <div class="trendCard">
-            <div class="trendImg"></div>
-            <div class="title"></div>
-            <div class="raisedBy">
-                <span></span>
-                <p class="name"></p>
-            </div>
-            <div class="raisedAmt">
-                <p><span></span></p>
-            </div>
-            <div class="target"></div>
-            <div class="bar">
-                <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-                <div class="timeLeft">
-                    <span class="clock">
-                        <img src=".Images/clock.png" alt="">
-                    </span>
-                    <span class="timeLeft">
-                        <span></span> days left
-                    </span>
+                <div class="raisedAmt">
+                    <p><span></span></p>
                 </div>
-                <div class="supports"></div>
-            </div>
-            <div class="cardBtns">
-                <button class="shareFB">
-                    <span class="FBimg">
-                        <img src="./Images/fbicon.png" alt="FB">
-                    </span>
-                    <span>Share</span>
-                </button>
-                <button class="donateBtn">Donate</button>
-            </div>
-
-        </div>
-        <div class="trendCard">
-            <div class="trendImg"></div>
-            <div class="title"></div>
-            <div class="raisedBy">
-                <span></span>
-                <p class="name"></p>
-            </div>
-            <div class="raisedAmt">
-                <p><span></span></p>
-            </div>
-            <div class="target"></div>
-            <div class="bar">
-                <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-                <div class="timeLeft">
-                    <span class="clock">
-                        <img src=".Images/clock.png" alt="">
-                    </span>
-                    <span class="timeLeft">
-                        <span></span> days left
-                    </span>
+                <div class="target"></div>
+                <div class="bar">
+                    <div class="achieve"></div>
                 </div>
-                <div class="supports"></div>
-            </div>
-            <div class="cardBtns">
-                <button class="shareFB">
-                    <span class="FBimg">
-                        <img src="./Images/fbicon.png" alt="FB">
-                    </span>
-                    <span>Share</span>
-                </button>
-                <button class="donateBtn">Donate</button>
-            </div>
-
-        </div>
-        <div class="trendCard">
-            <div class="trendImg"></div>
-            <div class="title"></div>
-            <div class="raisedBy">
-                <span></span>
-                <p class="name"></p>
-            </div>
-            <div class="raisedAmt">
-                <p><span></span></p>
-            </div>
-            <div class="target"></div>
-            <div class="bar">
-                <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-                <div class="timeLeft">
-                    <span class="clock">
-                        <img src=".Images/clock.png" alt="">
-                    </span>
-                    <span class="timeLeft">
-                        <span></span> days left
-                    </span>
+                <div class="trendDetails">
+                    <div class="timeLeft">
+                        <span class="clock">
+                            <img src=".Images/clock.png" alt="">
+                        </span>
+                        <span class="timeLeft">
+                            <span></span> days left
+                        </span>
+                    </div>
+                    <div class="supports"></div>
                 </div>
-                <div class="supports"></div>
-            </div>
-            <div class="cardBtns">
-                <button class="shareFB">
-                    <span class="FBimg">
-                        <img src="./Images/fbicon.png" alt="FB">
-                    </span>
-                    <span>Share</span>
-                </button>
-                <button class="donateBtn">Donate</button>
-            </div>
+                <div class="cardBtns">
+                    <button class="shareFB">
+                        <span class="FBimg">
+                            <img src="./Images/fbicon.png" alt="FB">
+                        </span>
+                        <span>Share</span>
+                    </button>
+                    <button class="donateBtn">Donate</button>
+                </div>
 
+            </div>
+            <div class="trendCard">
+                <div class="trendImg"></div>
+                <div class="title"></div>
+                <div class="raisedBy">
+                    <span></span>
+                    <p class="name"></p>
+                </div>
+                <div class="raisedAmt">
+                    <p><span></span></p>
+                </div>
+                <div class="target"></div>
+                <div class="bar">
+                    <div class="achieve"></div>
+                </div>
+                <div class="trendDetails">
+                    <div class="timeLeft">
+                        <span class="clock">
+                            <img src=".Images/clock.png" alt="">
+                        </span>
+                        <span class="timeLeft">
+                            <span></span> days left
+                        </span>
+                    </div>
+                    <div class="supports"></div>
+                </div>
+                <div class="cardBtns">
+                    <button class="shareFB">
+                        <span class="FBimg">
+                            <img src="./Images/fbicon.png" alt="FB">
+                        </span>
+                        <span>Share</span>
+                    </button>
+                    <button class="donateBtn">Donate</button>
+                </div>
+
+            </div>
+            <div class="trendCard">
+                <div class="trendImg"></div>
+                <div class="title"></div>
+                <div class="raisedBy">
+                    <span></span>
+                    <p class="name"></p>
+                </div>
+                <div class="raisedAmt">
+                    <p><span></span></p>
+                </div>
+                <div class="target"></div>
+                <div class="bar">
+                    <div class="achieve"></div>
+                </div>
+                <div class="trendDetails">
+                    <div class="timeLeft">
+                        <span class="clock">
+                            <img src=".Images/clock.png" alt="">
+                        </span>
+                        <span class="timeLeft">
+                            <span></span> days left
+                        </span>
+                    </div>
+                    <div class="supports"></div>
+                </div>
+                <div class="cardBtns">
+                    <button class="shareFB">
+                        <span class="FBimg">
+                            <img src="./Images/fbicon.png" alt="FB">
+                        </span>
+                        <span>Share</span>
+                    </button>
+                    <button class="donateBtn">Donate</button>
+                </div>
+
+            </div>
+            <div class="trendCard">
+                <div class="trendImg"></div>
+                <div class="title"></div>
+                <div class="raisedBy">
+                    <span></span>
+                    <p class="name"></p>
+                </div>
+                <div class="raisedAmt">
+                    <p><span></span></p>
+                </div>
+                <div class="target"></div>
+                <div class="bar">
+                    <div class="achieve"></div>
+                </div>
+                <div class="trendDetails">
+                    <div class="timeLeft">
+                        <span class="clock">
+                            <img src=".Images/clock.png" alt="">
+                        </span>
+                        <span class="timeLeft">
+                            <span></span> days left
+                        </span>
+                    </div>
+                    <div class="supports"></div>
+                </div>
+                <div class="cardBtns">
+                    <button class="shareFB">
+                        <span class="FBimg">
+                            <img src="./Images/fbicon.png" alt="FB">
+                        </span>
+                        <span>Share</span>
+                    </button>
+                    <button class="donateBtn">Donate</button>
+                </div>
+
+            </div>
+            <div class="trendCard">
+                <div class="trendImg"></div>
+                <div class="title"></div>
+                <div class="raisedBy">
+                    <span></span>
+                    <p class="name"></p>
+                </div>
+                <div class="raisedAmt">
+                    <p><span></span></p>
+                </div>
+                <div class="target"></div>
+                <div class="bar">
+                    <div class="achieve"></div>
+                </div>
+                <div class="trendDetails">
+                    <div class="timeLeft">
+                        <span class="clock">
+                            <img src=".Images/clock.png" alt="">
+                        </span>
+                        <span class="timeLeft">
+                            <span></span> days left
+                        </span>
+                    </div>
+                    <div class="supports"></div>
+                </div>
+                <div class="cardBtns">
+                    <button class="shareFB">
+                        <span class="FBimg">
+                            <img src="./Images/fbicon.png" alt="FB">
+                        </span>
+                        <span>Share</span>
+                    </button>
+                    <button class="donateBtn">Donate</button>
+                </div>
+
+            </div>
+            <div class="trendCard">
+                <div class="trendImg"></div>
+                <div class="title"></div>
+                <div class="raisedBy">
+                    <span></span>
+                    <p class="name"></p>
+                </div>
+                <div class="raisedAmt">
+                    <p><span></span></p>
+                </div>
+                <div class="target"></div>
+                <div class="bar">
+                    <div class="achieve"></div>
+                </div>
+                <div class="trendDetails">
+                    <div class="timeLeft">
+                        <span class="clock">
+                            <img src=".Images/clock.png" alt="">
+                        </span>
+                        <span class="timeLeft">
+                            <span></span> days left
+                        </span>
+                    </div>
+                    <div class="supports"></div>
+                </div>
+                <div class="cardBtns">
+                    <button class="shareFB">
+                        <span class="FBimg">
+                            <img src="./Images/fbicon.png" alt="FB">
+                        </span>
+                        <span>Share</span>
+                    </button>
+                    <button class="donateBtn">Donate</button>
+                </div>
+
+            </div>
+            <div class="trendCard">
+                <div class="trendImg"></div>
+                <div class="title"></div>
+                <div class="raisedBy">
+                    <span></span>
+                    <p class="name"></p>
+                </div>
+                <div class="raisedAmt">
+                    <p><span></span></p>
+                </div>
+                <div class="target"></div>
+                <div class="bar">
+                    <div class="achieve"></div>
+                </div>
+                <div class="trendDetails">
+                    <div class="timeLeft">
+                        <span class="clock">
+                            <img src=".Images/clock.png" alt="">
+                        </span>
+                        <span class="timeLeft">
+                            <span></span> days left
+                        </span>
+                    </div>
+                    <div class="supports"></div>
+                </div>
+                <div class="cardBtns">
+                    <button class="shareFB">
+                        <span class="FBimg">
+                            <img src="./Images/fbicon.png" alt="FB">
+                        </span>
+                        <span>Share</span>
+                    </button>
+                    <button class="donateBtn">Donate</button>
+                </div>
+
+            </div>
+            <div class="trendCard">
+                <div class="trendImg"></div>
+                <div class="title"></div>
+                <div class="raisedBy">
+                    <span></span>
+                    <p class="name"></p>
+                </div>
+                <div class="raisedAmt">
+                    <p><span></span></p>
+                </div>
+                <div class="target"></div>
+                <div class="bar">
+                    <div class="achieve"></div>
+                </div>
+                <div class="trendDetails">
+                    <div class="timeLeft">
+                        <span class="clock">
+                            <img src=".Images/clock.png" alt="">
+                        </span>
+                        <span class="timeLeft">
+                            <span></span> days left
+                        </span>
+                    </div>
+                    <div class="supports"></div>
+                </div>
+                <div class="cardBtns">
+                    <button class="shareFB">
+                        <span class="FBimg">
+                            <img src="./Images/fbicon.png" alt="FB">
+                        </span>
+                        <span>Share</span>
+                    </button>
+                    <button class="donateBtn">Donate</button>
+                </div>
+
+            </div>
         </div>
-    </div>
 
-</body>
+    </body>
+    <script src="./components/navbar/nav.js"></script>
+
 </html>
 
 <script>
     let trendingData = [
-    {
-        title: "My Little Boy’s Cancer Has Relapsed Twice But I’m Helpless. Please Save Him",
-        image: "https://kettocdn.gumlet.io/media/campaign/212000/212655/image/1f1a33100b0ce11487774ca00c4341f7d0364e69.jpg?w=480&dpr=1.3",
-        by: "Family Friends",
-        amount: "₹ 4,21,29,615 raised",
-        target: "₹ 5,00,00,000",
-        status: "Last donation an hour ago",
-        dayleft: "21  Days Left",
-        support: "22041 Supporters",
-        avatar: "FF"
-    },
-    {
-        title: "Help 7yrs Old Paarnikka Beat Cancer",
-        image: "https://kettocdn.gumlet.io/media/campaign/372000/372126/image/01ce2a07f56735f26b62aac7c317696e57f1c3f9.png?w=480&dpr=1.3",
-        by: "Rm Agarwal",
-        amount: "₹ 1,14,64,591 raised",
-        target: "₹ 3,00,00,000",
-        status: "Last donation less than an hour ago",
-        dayleft: "34  Days Left",
-        support: "6055 Supporters",
-        avatar: "RA"
-    },
-    {
-        title: "Offer A Helping Hand To Support Rubina Rodgers' Treatment",
-        image: "https://kettocdn.gumlet.io/media/campaign/281000/281759/image/60211afcc8a19.png?w=480&dpr=1.3",
-        by: "Sabapathy J",
-        amount: "₹ 77,75,820 raised",
-        target: "₹ 95,00,000",
-        status: "Last donation 3 hour ago",
-        dayleft: "14  Days Left",
-        support: "2778 Supporters",
-        avatar: "SJ"
-    },
-    {
-        title: "My Young 30 Year Old Husband Is In Urgent Need Of Heart Transplant...",
-        image: "https://kettocdn.gumlet.io/media/campaign/686000/686992/image/6315de97732b3.jpg?w=768&dpr=1.5",
-        by: "Sabapathy J",
-        amount: "₹ 77,75,820 raised",
-        target: "₹ 30,00,000",
-        status: "Last donation 3 hour ago",
-        dayleft: "20 Days Left",
-        support: "2778 Supporters",
-        avatar: "SJ"
-    },
-    {
-        title: "My Nephew Is Suffering From Stroke. We Need Your Help To Provide For...",
-        image: "https://kettocdn.gumlet.io/media/campaign/691000/691314/image/631efcd202e88.jpg?w=768&dpr=1.5",
-        by: "Munender Egam",
-        amount: "₹ 4,30,258 raised",
-        target: "₹ 25,00,000",
-        status: "Last donation 3 hour ago",
-        dayleft: "20 Days Left",
-        support: "277 Supporters",
-        avatar: "ME"
-    },
-    {
-        title: "Help End Isolation For Children In Need: Empowering Holistically",
-        image: "https://kettocdn.gumlet.io/media/campaign/601000/601050/image/6236e4b1a747a.jpeg?w=768&dpr=1.5",
-        by: "HEAL Foundation",
-        amount: "₹ 4,29,258 raised",
-        target: "₹ 7,57,000",
-        status: "Last donation 3 hour ago",
-        dayleft: "39 Days Left",
-        support: "169 Supporters",
-        avatar: "HF"
-    },
-    {
-        title: "Help Jungle Crows To Make Champions In Sport And Life!",
-        image: "https://kettocdn.gumlet.io/media/campaign/557000/557837/image/629f1a5fc7ce6.png?w=768&dpr=1.5",
-        by: "Jungle Crows Foundation",
-        amount: "₹ 4,37,108 raised",
-        target: "₹ 5,00,000",
-        status: "Last donation 5 hour ago",
-        dayleft: "28 Days Left",
-        support: "69 Supporters",
-        avatar: "JC"
-    },
-    {
-        title: "Offer A Helping Hand To Support Khursid Alam Sardar's Treatment",
-        image: "https://kettocdn.gumlet.io/media/campaign/669000/6…d470d1a44ba1ba2a2e994a6dc41de62.jpg?w=320&dpr=1.5",
-        by: "by Rajibuddin Pailan ",
-        amount: "₹ 3,21,055 raised",
-        target: "₹ 8,00,000 ",
-        status: "Last donation 2 hour ago",
-        dayleft: "8 Days Left",
-        support: "156 Supporters",
-        avatar: "RP"
-    },
-    {
-        title: "My Baby Battles For His Life And We Need Your Support To Save Him",
-        image: "https://kettocdn.gumlet.io/media/campaign/695000/695798/image/wid63286ab138222.jpg?w=320&dpr=1.5",
-        by: "by Rashmi Ranjan Mishra",
-        amount: "₹ 1,72,055 raised",
-        target: "₹ 41,00,000 ",
-        status: "Last donation 2 hour ago",
-        dayleft: "36 Days Left",
-        support: "146 Supporters",
-        avatar: "RR"
-    }
+        {
+            title: "My Little Boy’s Cancer Has Relapsed Twice But I’m Helpless. Please Save Him",
+            image: "https://kettocdn.gumlet.io/media/campaign/212000/212655/image/1f1a33100b0ce11487774ca00c4341f7d0364e69.jpg?w=480&dpr=1.3",
+            by: "Family Friends",
+            amount: "₹ 4,21,29,615 raised",
+            target: "₹ 5,00,00,000",
+            status: "Last donation an hour ago",
+            dayleft: "21  Days Left",
+            support: "22041 Supporters",
+            avatar: "FF"
+        },
+        {
+            title: "Help 7yrs Old Paarnikka Beat Cancer",
+            image: "https://kettocdn.gumlet.io/media/campaign/372000/372126/image/01ce2a07f56735f26b62aac7c317696e57f1c3f9.png?w=480&dpr=1.3",
+            by: "Rm Agarwal",
+            amount: "₹ 1,14,64,591 raised",
+            target: "₹ 3,00,00,000",
+            status: "Last donation less than an hour ago",
+            dayleft: "34  Days Left",
+            support: "6055 Supporters",
+            avatar: "RA"
+        },
+        {
+            title: "Offer A Helping Hand To Support Rubina Rodgers' Treatment",
+            image: "https://kettocdn.gumlet.io/media/campaign/281000/281759/image/60211afcc8a19.png?w=480&dpr=1.3",
+            by: "Sabapathy J",
+            amount: "₹ 77,75,820 raised",
+            target: "₹ 95,00,000",
+            status: "Last donation 3 hour ago",
+            dayleft: "14  Days Left",
+            support: "2778 Supporters",
+            avatar: "SJ"
+        },
+        {
+            title: "My Young 30 Year Old Husband Is In Urgent Need Of Heart Transplant...",
+            image: "https://kettocdn.gumlet.io/media/campaign/686000/686992/image/6315de97732b3.jpg?w=768&dpr=1.5",
+            by: "Sabapathy J",
+            amount: "₹ 77,75,820 raised",
+            target: "₹ 30,00,000",
+            status: "Last donation 3 hour ago",
+            dayleft: "20 Days Left",
+            support: "2778 Supporters",
+            avatar: "SJ"
+        },
+        {
+            title: "My Nephew Is Suffering From Stroke. We Need Your Help To Provide For...",
+            image: "https://kettocdn.gumlet.io/media/campaign/691000/691314/image/631efcd202e88.jpg?w=768&dpr=1.5",
+            by: "Munender Egam",
+            amount: "₹ 4,30,258 raised",
+            target: "₹ 25,00,000",
+            status: "Last donation 3 hour ago",
+            dayleft: "20 Days Left",
+            support: "277 Supporters",
+            avatar: "ME"
+        },
+        {
+            title: "Help End Isolation For Children In Need: Empowering Holistically",
+            image: "https://kettocdn.gumlet.io/media/campaign/601000/601050/image/6236e4b1a747a.jpeg?w=768&dpr=1.5",
+            by: "HEAL Foundation",
+            amount: "₹ 4,29,258 raised",
+            target: "₹ 7,57,000",
+            status: "Last donation 3 hour ago",
+            dayleft: "39 Days Left",
+            support: "169 Supporters",
+            avatar: "HF"
+        },
+        {
+            title: "Help Jungle Crows To Make Champions In Sport And Life!",
+            image: "https://kettocdn.gumlet.io/media/campaign/557000/557837/image/629f1a5fc7ce6.png?w=768&dpr=1.5",
+            by: "Jungle Crows Foundation",
+            amount: "₹ 4,37,108 raised",
+            target: "₹ 5,00,000",
+            status: "Last donation 5 hour ago",
+            dayleft: "28 Days Left",
+            support: "69 Supporters",
+            avatar: "JC"
+        },
+        {
+            title: "Offer A Helping Hand To Support Khursid Alam Sardar's Treatment",
+            image: "https://kettocdn.gumlet.io/media/campaign/669000/6…d470d1a44ba1ba2a2e994a6dc41de62.jpg?w=320&dpr=1.5",
+            by: "by Rajibuddin Pailan ",
+            amount: "₹ 3,21,055 raised",
+            target: "₹ 8,00,000 ",
+            status: "Last donation 2 hour ago",
+            dayleft: "8 Days Left",
+            support: "156 Supporters",
+            avatar: "RP"
+        },
+        {
+            title: "My Baby Battles For His Life And We Need Your Support To Save Him",
+            image: "https://kettocdn.gumlet.io/media/campaign/695000/695798/image/wid63286ab138222.jpg?w=320&dpr=1.5",
+            by: "by Rashmi Ranjan Mishra",
+            amount: "₹ 1,72,055 raised",
+            target: "₹ 41,00,000 ",
+            status: "Last donation 2 hour ago",
+            dayleft: "36 Days Left",
+            support: "146 Supporters",
+            avatar: "RR"
+        }
     ];
 
-window.onload = appendTrending;
+    window.onload = appendTrending;
 
-let appendTrending = () => {
-    let container = document.getElementById("trendingSection");
-    trendingData.forEach((ele)=>{
-        let card = document.createElement("div");
-        card.setAttribute("class", "trendingCard");
+    let appendTrending = () => {
+        let container = document.getElementById("trendingSection");
+        trendingData.forEach((ele) => {
+            let card = document.createElement("div");
+            card.setAttribute("class", "trendingCard");
 
-        let imgWrap = document.createElement("div");
-        let img = document.createElement("img");
-        img.src = ele.image;
-        imgWrap.append(img);
+            let imgWrap = document.createElement("div");
+            let img = document.createElement("img");
+            img.src = ele.image;
+            imgWrap.append(img);
 
-        let titleWrap = document.createElement("div");
-        let title = document.createElement("h3");
-        title.innerText = ele.title;
-        titleWrap.append(title);
+            let titleWrap = document.createElement("div");
+            let title = document.createElement("h3");
+            title.innerText = ele.title;
+            titleWrap.append(title);
 
-        let byWrap = document.createElement("div");
-        let avatarWrap = document.createElement("div");
-        let avatar = document.createElement("h4");
-        avatar.innerText = ele.avatar;
-        avatarWrap.append(avatar);
-        let byWrp = document.createElement("div");
-        let by = document.createElement("p");
-        by.innerText = ele.by;
-        byWrp.append(by);
-        byWrap.append(avatarWrap,byWrp);
+            let byWrap = document.createElement("div");
+            let avatarWrap = document.createElement("div");
+            let avatar = document.createElement("h4");
+            avatar.innerText = ele.avatar;
+            avatarWrap.append(avatar);
+            let byWrp = document.createElement("div");
+            let by = document.createElement("p");
+            by.innerText = ele.by;
+            byWrp.append(by);
+            byWrap.append(avatarWrap, byWrp);
 
-        let helpers = document.createElement("div");
-        let helped = document.createElement("span");
-        helped.innerText = ele.amount;
-        let raised = document.createElement("p");
+            let helpers = document.createElement("div");
+            let helped = document.createElement("span");
+            helped.innerText = ele.amount;
+            let raised = document.createElement("p");
 
-        
-    })
-}
+
+        })
+    }
 
 </script>
