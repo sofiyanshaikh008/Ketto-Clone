@@ -1,5 +1,9 @@
 /* background-color: rgb(1, 140, 139); */
-
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 header{
     height: 10vh;
@@ -103,7 +107,8 @@ ul{
     margin-top: 2%;
     display: flex;
     justify-content: center;
-    height: 900px;
+    /* height: 900px; */
+    height: 2470px;
     /* height: ; */
 }
 
@@ -213,7 +218,7 @@ line-height: 24px
 }
 
 #main_right>div:nth-child(3){
-    height:     10%;
+    height:  4%;
     display: flex;
     justify-content: end;
     align-items: flex-end;
@@ -254,28 +259,15 @@ line-height: 24px
     background-color: rgb(252, 247, 247);
 }
 
-#appendData, #appendBData{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    row-gap: 10%;
-    column-gap: 10%;
-}
 
 
-.data{
-    /* background-color: rgb(211, 152, 152); */
-    width: 40px;
-    height: 40px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-.data:hover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+
+
 
 .adver{
 display: flex;
 /* border:1px solid black; */
-margin-top: 5%;
+margin-top: 21%;
 justify-content: space-between;
 }
 
@@ -395,3 +387,86 @@ font-weight: 700;
   background-color: #015c7e;
 }
 
+#appendData{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 5%;
+    column-gap: 3%;
+    height: fit-content;
+}
+
+ .data{
+    background-color: black;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+    height: 452px;
+box-shadow: 0 7px 14px rgba(0,0,0,.1);
+border-radius: 10px;
+position: relative;
+background-color: #fff;
+min-width: 260px;
+max-width: 320px;
+cursor: pointer;
+
+display: grid;
+
+}
+.data:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.data img{
+    width: 100%;
+}
+
+h3{
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: rgb(68,68,68);
+    text-align: left;
+    word-spacing: 0px;
+    background-color: white;
+    color: black;
+}
+.raised{
+    padding: 0% 4% 4% 4%;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: rgb(68,68,68);
+    text-align: left;
+    word-spacing: 0px;
+    display: inline;
+    cursor: pointer;
+}
+.last_d{
+    font-size: 17px;
+    text-decoration: rgb(153,153,153);
+    text-align: left;
+    word-spacing: 0px;
+    padding: 0% 4% 4% 4%;
+    cursor: pointer;
+}
+.wid-foot{
+    font-size: 14px;
+    padding: 0% 4% 4% 4%;
+    text-align: left;
+    text-decoration: rgb(68,68,68);
+    display: flex;
+    justify-content: space-between;
+}
+.bbbox{
+    font-size: 14px;
+    text-align: left;
+    text-decoration: rgb(68,68,68);
+    padding: 0% 4% 4% 4%;
+
+}
+
+ul > span {
+    cursor: pointer;
+}
+
+ul > span:hover{
+    text-decoration: underline;
+}
