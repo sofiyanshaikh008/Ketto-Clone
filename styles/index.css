@@ -1,0 +1,316 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+#header {
+  background-image: url(https://kettocdn.gumlet.io/media/banner/0/71/image/626a109be777492340e46d013c3cad0857a5da3a.png?w=1300&dpr=1.5);
+  background-position: 50% 20%;
+  height: 95vh;
+  background-repeat: no-repeat;
+}
+#headings {
+  position: absolute;
+  left: 45%;
+  top: 15%;
+  width: 50%;
+}
+#headings > h1 {
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 45px;
+}
+#statsHolder {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+#statsHolder > div > h3 {
+  font-size: 26px;
+  line-height: 33px;
+  color: #039695;
+}
+#statsHolder > div > span {
+  /* font-size: 17px; */
+  font-weight: bold;
+  color: #555;
+  margin-top: 5px;
+}
+#highlight {
+  font-size: 20px;
+  line-height: 30px;
+  color: #039695;
+  margin: 10px auto;
+}
+#highlight > p > span {
+  font-size: 25px;
+  font-weight: bold;
+}
+#engButton {
+  margin: 30px 0px 40px 0px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+#engButton > a {
+  padding: 20px 25px;
+  background-color: #1ccaca;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+#hindiButton > a {
+  text-decoration: none;
+  color: #039695;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* ======= BANER ====== */
+
+#banner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  position: absolute;
+  top: 82vh;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0 0 0 32px;
+  width: 720px;
+  height: 140px;
+  margin: 0 auto;
+  z-index: 9;
+  background: #ffffff;
+  border: 1px solid #d3d4f2;
+  box-sizing: border-box;
+  box-shadow: 0 30px 60px rgb(0 0 0 / 10%);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#banner > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 25px;
+  width: 172px;
+  height: 54px;
+  background: #204b6b;
+  border-radius: 8px;
+  color: #fff;
+  flex-shrink: 0;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+#bannerText {
+  margin: auto 28px;
+}
+#banner > div > h3 {
+  color: #034396;
+  line-height: 30px;
+}
+
+#banner > div > p {
+  font-size: 14px;
+  color: rgb(114, 114, 114);
+  line-height: 18px;
+}
+
+#banner > img {
+  width: 112px;
+  height: 100%;
+  margin-left: auto;
+  object-fit: cover;
+}
+
+/* ================== HEADING HOLDER ==================== */
+#headingHolder {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 60px;
+}
+#headingHolder > h1 {
+  font-size: 26px;
+  color: #444;
+}
+#headingHolder > p {
+  font-size: 17px;
+  color: #777;
+  margin: 10px;
+}
+
+/* ================== TRENDING ==================== */
+
+#trendingSection {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.trendCard {
+  border: 1px solid red;
+  width: 25%;
+}
+.trendImg {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.tImg {
+  width: 100%;
+}
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #444;
+  overflow: hidden;
+  padding: 0px 20px;
+  margin-bottom: 10px;
+}
+.raisedBy {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 20px;
+  margin-bottom: 10px;
+}
+.raisedBy > span {
+  padding: 7px;
+  background-color: orange;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+}
+.name {
+  font-size: 14px;
+  color: #555;
+}
+
+.raisedAmt {
+  padding: 0px 20px;
+  margin-bottom: 5px;
+}
+.raisedAmt > p > span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+}
+.raisedAmt > p {
+  color: #777;
+  font-size: 14px;
+}
+
+.target {
+  padding: 0px 20px;
+  color: #777;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* ACHEIVEMENT BAR */
+
+.bar {
+  height: 5px;
+  background-color: #92e0df;
+  width: 90%;
+  margin: auto;
+  border-radius: 1rem;
+  margin-bottom: 10px;
+}
+.achieve {
+  height: 5px;
+  background-color: #01bfbd;
+  border-radius: 1rem;
+}
+
+.trendDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+}
+
+.timeLeftWrap,
+.supports {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.clock > img,
+.heart > img {
+  width: 20px;
+}
+
+.timeLeft > span,
+.totalSupport {
+  font-weight: bold;
+  font-size: 18px;
+  color: #444;
+}
+.timeLeftWrap,
+.supports {
+  font-size: 14px;
+  color: #777;
+}
+
+/* ----------- buttons --------- */
+
+.cardBtns {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.FBimg > img {
+  width: 20px;
+}
+.shareFB,
+.donateBtn {
+  display: flex;
+  align-items: center;
+  padding: 8px 35px;
+  background-color: #fff;
+  border: 1px solid #555;
+  border-radius: 5px;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.shareFB {
+  color: #034396;
+}
+
+.donateBtn {
+  color: #fff;
+  background-color: #01bfbd;
+  border: none;
+  padding: 8px 38px;
+}
+
+/* ================== NOTE ==================== */
+
+#note {
+  display: flex;
+  gap: 180px;
+  justify-content: end;
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+#note > a {
+  cursor: pointer;
+  color: #01bfbd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Kachra CSS */
+
