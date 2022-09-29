@@ -34,18 +34,18 @@
                     <ul id="list_P">
                         <h2>CATEGORY</h2>
                         <span class="line"></span>
-                        <span>All Categories</span>
-                        <span>Education</span>
-                        <span>Medical</span>
-                        <span>Women & Girls</span>
-                        <span>Animals</span>
-                        <span>Creative</span>
-                        <span>Food & Hunger</span>
-                        <span>Environment</span>
-                        <span>Children</span>
-                        <span>Memorial</span>
-                        <span>Community Development</span>
-                        <span>Others</span>
+                        <span onclick="category(1)">All Categories</span>
+                        <span onclick="category(2)">Education</span>
+                        <span onclick="category(3)">Medical</span>
+                        <span onclick="category(4)">Women & Girls</span>
+                        <span onclick="category(5)">Animals</span>
+                        <span onclick="category(6)">Creative</span>
+                        <span onclick="category(7)">Food & Hunger</span>
+                        <span onclick="category(8)">Environment</span>
+                        <span onclick="category(9)">Children</span>
+                        <span onclick="category(10)">Memorial</span>
+                        <span onclick="category(11)">Community Development</span>
+                        <span onclick="category(12)">Others</span>
                         <span class="line"></span>
                         <button id="startaFundr_btn" role="button">Start a Fundraiser</button>
                     </ul>
@@ -60,18 +60,18 @@
                 </div>
                 <div>Showing fundraisers for 
                     <select style="width: 20%; height: 30px;">
-                    <option value="">All Categories</option>
-                    <option value="">Education</option>
-                    <option value="">Medical</option>
-                    <option value="">Woman & Girls</option>
-                    <option value="">Animals</option>
-                    <option value="">Creative</option>
-                    <option value="">Food & Hunger</option>
-                    <option value="">Environment</option>
-                    <option value="">Children</option>
-                    <option value="">Memorial</option>
-                    <option value="">Community Development</option>
-                    <option value="">Others</option>
+                    <option value="" onclick='category(1)'>All Categories</option>
+                    <option value="" onclick="category(2)">Education</option>
+                    <option value="" onclick="category(3)">Medical</option>
+                    <option value="" onclick="category(4)">Woman & Girls</option>
+                    <option value="" onclick="category(5)">Animals</option>
+                    <option value="" onclick="category(6)">Creative</option>
+                    <option value="" onclick="category(7)">Food & Hunger</option>
+                    <option value="" onclick="category(8)">Environment</option>
+                    <option value="" onclick="category(9)">Children</option>
+                    <option value="" onclick="category(10)">Memorial</option>
+                    <option value="" onclick="category(11)">Community Development</option>
+                    <option value="" onclick="category(12)">Others</option>
 
 
                 </select> under <select style="width: 14%; height: 30px">
@@ -106,13 +106,26 @@
                     <button id="reset_filter">Reset Filter</button>
                 </div>
                 <div id="appendData">
-                    <div class="data"></div>
-                    <div class="data"></div>
-                    <div class="data"></div>
-                    <div class="data"></div>
-                    <div class="data"></div>
-                    <div class="data"></div>
+                    <div class="data">
+                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
+                    </div>
+                    <div class="data">
+                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
+                    </div>
+                    <div class="data">
+                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
+                    </div>
+                    <div class="data">
+                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
+                    </div>
+                    <div class="data">
+                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
+                    </div>
+                    <div class="data">
+                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
+                    </div>
                 </div>
+
 
                 <div class="adver">
                     <div class="left_adver">
@@ -131,16 +144,7 @@
                         " >Talk to us</button>
                     </div>
                 </div>
-
-                <div id="appendBData">
-                    <div class="data"></div>
-                    <div class="data"></div>
-                    <div class="data"></div>
-                    <div class="data"></div>
-                    <div class="data"></div>
-                    <div class="data"></div>
-                </div>
-                <div class="adver">
+                <!-- <div class="adver">
                     <div class="left_adver">
                         <div class="L_ad">
                             <img src="https://ketto.gumlet.io/assets/images/Sip-banner-people/girls-sip.png?w=160&dpr=1.0" alt="">
@@ -156,7 +160,7 @@
                         <button  class="sgm" style="width: 70%;margin: auto;
                         " >Talk to us</button>
                     </div>
-                </div>
+                </div> -->
                 <div style="border: 1px solid black; margin-top: 8%; text-align: center;";>
                 <button>Load More</button>
             </div>
@@ -176,3 +180,4 @@
 </body>
 
 </html>
+<script src="./scripts/BrowseFundraisers.js"></script>
