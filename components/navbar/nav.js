@@ -16,10 +16,7 @@ function myFunction() {
   
   function mytFunction() {
     document.getElementById("tmyDropdown").classList.toggle("tshow");
-    console.log(
-      'document.getElementById("tmyDropdown").classList:',
-      document.getElementById("tmyDropdown").classList
-    );
+ 
   }
   window.onclick = function (event) {
     if (!event.target.matches(".tdropbtn")) {
