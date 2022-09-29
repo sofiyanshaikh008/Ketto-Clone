@@ -312,5 +312,214 @@
   font-weight: bold;
 }
 
-/* Kachra CSS */
+/* ============== Start a Fund ============= */
 
+#startFundHeading{
+  text-align: center;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+#stepContainer{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  
+}
+#stepsDiv{
+  display: flex;
+  /* border: 1px solid red; */
+  width: 60%;
+}
+#stepsImg{
+  padding-right: 20px;
+  padding-top: 60px;
+}
+#stepsImg>img{
+  height: 510px;
+}
+#stepsDescriptionDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* border: 1px solid blue; */
+  width: 60%;
+  padding-top: 20px;
+}
+.stepContent>h2{
+  color: #01bfbd;
+  font-size: 20px;
+}
+.stepContent>h2+p{
+  font-size: 14.5px;
+  color: #555;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.pleaseNote{
+  font-size: 11px;
+  color: #777;
+}
+
+
+/* ======== START FUND BUTTONS ============= */
+
+#bt{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 70px auto;
+}
+
+#btn-full{
+  width: 280px;
+  background-color: #1ccaca;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 14px;
+}
+#ghost-btn{
+  width: 280px;
+  background-color: #fff;
+  color: #1ccaca;
+  padding: 15px 20px;
+  border: 2px solid #1ccaca;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#btn-full:hover{
+  background-color: #12a5a5;
+  transition: 0.5s;
+}
+
+#ghost-btn:hover{
+  background-color: #1ccaca;
+  color: #fff;
+  transition: 0.5s;
+}
+
+/* ============= social buttons ==========*/
+
+#next-bt {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  margin-top: 35px;
+
+}
+
+#next-bt>p {
+  width: 100%;
+  font-size: 15px;
+  color: grey;
+}
+
+#bn>button {
+  width: 40%;
+  height: 15%;
+  margin-right: 20px;
+  
+
+}
+
+#bn {
+  margin-left: 10%;
+}
+
+#bn>button>img {
+  width: auto;
+  height: 60%;
+  margin-right: 5px;
+  margin-top: -2px;
+}
+
+#bn>button:nth-child(1) {
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 10px;
+  border: none;
+  color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #354f84;
+}
+
+#bn>button:nth-child(1):hover {
+  background-color: #233557;
+}
+
+#bn>button:nth-child(2) {
+  background-color: #13cb6a;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px;
+  align-content: center;
+  gap: 5px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+#bn>button:nth-child(2):hover {
+  background-color: #129b52;
+}
+
+
+/* ============ MANAGE FUNDS ============== */
+
+#manageFundContent{
+  display: flex;
+  gap: 20px;
+  width: 70%;
+  margin: auto;
+  padding: 40px 40px 0px 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  
+}
+
+#manageImg{
+  width: 50%;
+  margin-right: 30px;
+  margin-left: 20px;
+}
+#manageImg>img{
+  width: 100%;
+}
+
+#manageFeat{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 2rem;
+    grid-column-gap: 30px;
+    margin-bottom: 40px;
+}
+
+.featImg>img{
+  width: 80px;
+}
+
+.feat{
+  padding-right: 20px;
+  font-size: 18px;
+}
+
+#appBtns{
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+#appBtns>a>img{
+  width: 120px;
+}
+#manageHead{
+  margin-bottom: 30px;
+}
