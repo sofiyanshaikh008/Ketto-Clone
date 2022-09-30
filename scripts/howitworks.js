@@ -1,15 +1,38 @@
+window.onload  = () =>{
+    let link = document.createElement('link');
+    link.rel = 'stylesheet';
+    // append this link to head of document
+    document.querySelector('head').append(link);
+   
 
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides"); for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        } slideIndex++; if (slideIndex > slides.length) {
-            slideIndex = 1;
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 1000); // Change image every 2 seconds
+ 
+    var index = 0;
+    var slides = document.querySelectorAll(".slides");
+    var dot = document.querySelectorAll(".dot");
+    
+    function changeSlide(){
+    
+      if(index<0){
+        index = slides.length-1;
+      }
+      
+      if(index>slides.length-1){
+        index = 0;
+      }
+      
+      for(let i=0;i<slides.length;i++){
+        slides[i].style.display = "none";
+        dot[i].classList.remove("active");
+      }
+      
+      slides[index].style.display= "block";
+      dot[index].classList.add("active");
+      
+      index++;
+      
+      setTimeout(changeSlide,2000);
+      
     }
-    window.onload=showSlides();
+    
+    changeSlide();
+}
