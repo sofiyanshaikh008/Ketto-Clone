@@ -699,11 +699,11 @@ margin-bottom: 50px;
 width: 100%;
 margin-top: 30px;
 } */
-#safr1 div:nth-child(1){
+/* #safr1 div:nth-child(1){ */
 /* border: 1px solid red; */
 /* height: 74%; */
 
-}
+/* } */
 #safr1 img{
 /* border: 1px red; */
 height: 95%;
@@ -714,17 +714,17 @@ margin-top: 15px;
 color: grey;
 }
 
-#safr1 div:nth-child(2){
+/* #safr1 div:nth-child(2){ */
 /* border: 1px solid blue; */
 /* margin-left: -160px; */
 /* margin-top: 30px; */
 /* height: 70%; */
-}
-#safr1 div:nth-child(3){
+/* } */
+/* #safr1 div:nth-child(3){ */
 /* border: 1px solid red; */
 /* height: 70%; */
 
-}
+
 #safr1  h3{
 color: rgb(6, 191, 191);
 font-size: 22px;
