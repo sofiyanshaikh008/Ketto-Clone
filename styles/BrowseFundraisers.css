@@ -24,20 +24,10 @@ color: #fff;
      background: url(https://www.ketto.org/assets/images/Sip-banner-people/sip-banner-pc.png) no-repeat;
        background-size: auto;
      background-size: cover;
-     /* position: relative; */
-     /* margin-bottom: 20px; */
-     /* display: -ms-flexbox; */
-     /* display: flex; */
-     /* display: block; */
-     /* -ms-flex-align: center; */
-     /* align-items: center; */
-     /* display: flex; */
-     /* justify-content: center; */
-     /* display: grid; */
      display: flex;
      align-items: center;
      cursor: pointer;
-     border:5px solid black
+     border:5px solid black;
 }
 
 #ch_bg{
@@ -108,7 +98,7 @@ ul{
     display: flex;
     justify-content: center;
     /* height: 900px; */
-    height: 2470px;
+    /* height: 2470px; */
     /* height: ; */
 }
 
@@ -259,11 +249,6 @@ line-height: 24px
     background-color: rgb(252, 247, 247);
 }
 
-
-
-
-
-
 .adver{
 display: flex;
 /* border:1px solid black; */
@@ -308,18 +293,12 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 background-color: rgb(245, 239, 239);
 }
 
-
-
-
-
-
-
-
-
 #bottom_faq{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 #bottom_faq>p{
@@ -330,10 +309,8 @@ background-color: rgb(245, 239, 239);
 #bottom_faq>div{
     margin-left: 12px;
     border: 1px solid black;
+    display: flex;
 }
-
-
-
 
 select, .sgm {
   align-items: center;
@@ -469,4 +446,169 @@ ul > span {
 
 ul > span:hover{
     text-decoration: underline;
+}
+
+#lMore{
+    color: skyblue;
+background-color: white;
+border: transparent;
+cursor: pointer;
+font-weight: 900;
+}
+
+#lMore:hover{
+background-color: rgb(236, 226, 226);
+
+}
+
+.sm{
+    white-space: nowrap;
+  align-items: center;
+  border-radius: 42px;
+  border-width: 0;
+  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,rgba(179, 132, 201, 0.4) 0 8px 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  font-family: Quicksand,sans-serif;
+  font-size: 15px;
+  font-weight: 550;
+  justify-content: center;
+  margin: 0;
+  padding: 18px 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .sm {
+    font-size: 21px;
+    padding: 18px 34px;
+  }
+}
+
+.sm>img{
+    margin-right: 8px;
+    width:20px
+}
+
+#fb_btn{
+    background-color: rgb(42, 64, 109) !important;
+    margin-right: 4px;
+}
+#fb_btn:hover{
+    background-color: rgb(8, 37, 94);
+}
+
+#whatsapp_btn{
+   background-color: rgb(12, 134, 70) !important;
+   margin-left: 4px;
+
+}
+#whatsapp_btn:hover{
+   background-color: rgb(11, 119, 63) !important;
+}
+
+@media all and (min-width:480px) and (max-width:1074px) {
+    #bg_upper{
+        margin: auto;
+        height: 80;
+    }
+    #ch_bg{
+        /* border: 2px solid rgb(96, 210, 189); */
+        width: 55%;
+        margin-left: 10%;
+        height: 80%;
+    }
+    #title{
+        font-size: 3vw;
+    }
+    h1{
+        font-size: 3vw;
+    }
+    .bg_btn{
+        margin-top: 10%;
+    }
+}
+
+@media all and (min-width:480px) and (max-width:1350px) {
+    #main > div {
+        border: 1px solid gray;
+        display: flex;
+        width: 80%;
+      }
+      
+    #appendData{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        row-gap: 5%;
+        column-gap: 3%;
+        height: fit-content;
+    }
+
+    .adver{
+        margin-top: 83%;
+    }
+    #main_right > div:nth-child(3) {
+        height: 2%;
+    }
+}
+
+
+@media all and (min-width:480px) and (max-width:824px) {
+    #appendData{
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 1%;
+        margin: auto;
+        height: fit-content;
+    }
+    #main > div {
+        border: 1px solid gray;
+        display: flex;
+        width: 80%;
+        height: fit-content;
+      }
+      .adver{
+        display: none;
+      }
+      #bottom_faq {
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 247px; */
+}
+#lMore{
+display: none;
+}
+#bottom_faq{
+    display: none;
+}
+}
+
+@media all and (min-width:0px) and (max-width:564px) {
+    #leftMain {
+        width: 30%;
+        border: 1px solid rgb(255, 166, 0);
+    }
+    #list_P{
+        font-size: 1.5vh;
+    }
+    #list_P > button {
+        /* width: %; */
+      }
+      #main{
+        border: 1px solid blue;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+      }
+
+      #main > div {
+        width: 99%;
+}
+#main_right{
+    width: 70%;
+}
 }

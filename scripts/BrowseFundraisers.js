@@ -1,4 +1,4 @@
-    let url = 'https://puce-doubtful-ant.cyclic.app/api';
+    let url = 'https://odd-pig-button.cyclic.app/api';
     fetch(`${url}/allCategory`).then((res)=>{
         return (res.json());
     }).then((data)=>{
@@ -12,7 +12,6 @@
        let container =  document.getElementById("appendData");
        container.innerHTML = null;
        let containerB = document.getElementById("appendBData");
-    //    console.log(inu)
        
        data.forEach(({image,title,by,amount,dayleft,status,support},inu) => {
            
@@ -82,3 +81,5 @@
             console.log(err)
         })
     }
+
+    // 
