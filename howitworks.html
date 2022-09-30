@@ -25,7 +25,7 @@
 
             <input type="text" name="" id="Search" placeholder="Search By fundraiser creator,benyficiary or NGOs">
             <span>To view fundraisers you have supported on Ketto <a href="#" id="click">Click here</a></span>
-            <a href="#">Browse Fundraisers</a>
+            <a href="./BrowseFundraisers.html">Browse Fundraisers</a>
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Fondraiser for<i
                         class="fa-sharp fa-solid fa-caret-down"></i></button>
@@ -35,7 +35,7 @@
                     <a href="#" class="app">Other cases</a>
                 </div>
             </div>
-            <a href="#">How its work</a>
+            <a href="./howitworks.html">How its work</a>
             <a href="https://api.whatsapp.com/send?phone=919930088522">Get us On whatsapp</a>
             <a href="#" onclick="signShow()">Sign In</a>
 
@@ -46,7 +46,7 @@
             <div id="logo"><img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=2.0" alt="">
             </div>
             <div id="sec_nav">
-                <a href="#">Browse Fundraisers</a>
+                <a href="./BrowseFundraisers.html">Browse Fundraisers</a>
                 <div class="tdropdown">
                     <button onclick="mytFunction()" class="tdropbtn">Fondraiser for<i
                             class="fa-sharp fa-solid fa-caret-down"></i></button>
@@ -56,7 +56,7 @@
                         <a href="#" class="app">Other cases</a>
                     </div>
                 </div>
-                <a href="#">How its work</a>
+                <a href="./howitworks.html">How its work</a>
                 <span><i class="fa-solid fa-magnifying-glass"></i>
                     Search
                 </span>
@@ -104,10 +104,10 @@
         </div>
 
         <!-- ######################navbar-end################################ -->
-        <div id="head">
+        <div id="head" class="signhidden">
             <h1>Raising Funds was never this easy. Start a fundraiser in 5 minutes!</h1>
         </div>
-        <div id="slide-bar">
+        <div id="slide-bar" class="signhidden">
             <div id="boox">
                 <div id="slider">
                     <div class="slides">
@@ -191,12 +191,12 @@
 
             </div>
         </div>
-        <div id="net">
+        <div id="net" class="signhidden">
             <h1>What is Crowdfunding?</h1>
             <p>In its simplest form, Crowdfunding is a practice of giving monetary funds to overcome specific social,
                 cultural, or economic hurdles individuals face in their daily lives.</p>
         </div>
-        <div id="video-part">
+        <div id="video-part" class="signhidden">
             <div id="vidio">
                 <embed src="https://www.youtube.com/embed/4uu-mKoFR6w">
             </div>
@@ -221,7 +221,7 @@
 
 
         <!-- start a fundraise start  -->
-        <div id="safr1">
+        <div id="safr1" class="signhidden">
             <div>
                 <img src="https://ketto.gumlet.io/assets/images/homepage/sac-separator.png?w=100&dpr=1.5" alt="">
             </div>
@@ -248,7 +248,7 @@
             </div>
         </div>
         <!-- start a fundraise end  -->
-        <div id="bt">
+        <div id="bt" class="signhidden">
             <button>START A FUNDRAISER FOR FREE</button>
             <button>TALK TO US</button>
         </div>
@@ -271,11 +271,25 @@
         <!-- //course is here -->
     </body>
     <script src="./components/navbar/nav.js"></script>
+    <script>
+        let signShow = () => {
+            let x = document.getElementById("signin");
+            let container = document.querySelectorAll(".signhidden");
+            let nav = document.getElementById("nav");
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                nav.style.filter = "brightness(0.3)";
+                container.style.filter = "brightness(0.3)";
+            } else {
+                x.style.display = "none";
+                nav.style.filter = "brightness(1)";
+                container.style.filter = "brightness(1)";
+            }
+        };
+
+    </script>
 
 </html>
 
-<script src="../scripts/howitworks.js">
-
-
-
-</script>
+<script src="../scripts/howitworks.js"></script>

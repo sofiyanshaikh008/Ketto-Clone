@@ -51,6 +51,9 @@ document.getElementById("sidecheck").addEventListener("click", function () {
 document.getElementById("whatsapp").addEventListener("click", function () {
   window.location.href = "https://api.whatsapp.com/send?phone=919930088522";
 });
+document.getElementById("logo").addEventListener("click", function () {
+  window.location.href = "./index.html";
+});
 
 window.onscroll = function (e) {
   // print "false" if direction is down and "true" if up
@@ -64,21 +67,7 @@ window.onscroll = function (e) {
   this.oldScroll = this.scrollY;
 };
 
-let signShow = () => {
-  let x = document.getElementById("signin");
-  let container = document.getElementById("container");
-  let nav = document.getElementById("nav");
 
-  if (x.style.display === "none") {
-    x.style.display = "block";
-    nav.style.filter = "brightness(0.3)";
-    container.style.filter = "brightness(0.3)";
-  } else {
-    x.style.display = "none";
-    nav.style.filter = "brightness(1)";
-    container.style.filter = "brightness(1)";
-  }
-};
 
 let getOTP = () => {
   let number = document.getElementById("mobile").value;

@@ -284,6 +284,24 @@
         <footer></footer>
     </body>
     <script src="./components/navbar/nav.js"></script>
+    <script>
+        let signShow = () => {
+            let x = document.getElementById("signin");
+            let container = document.querySelectorAll(".signhidden");
+            let nav = document.getElementById("nav");
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                nav.style.filter = "brightness(0.3)";
+                container.style.filter = "brightness(0.3)";
+            } else {
+                x.style.display = "none";
+                nav.style.filter = "brightness(1)";
+                container.style.filter = "brightness(1)";
+            }
+        };
+
+    </script>
 
 </html>
 <script src="./scripts/BrowseFundraisers.js"></script>
