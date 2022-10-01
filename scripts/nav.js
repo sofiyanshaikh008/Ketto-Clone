@@ -53,13 +53,10 @@ let whatsapp = () => {
 window.onscroll = function (e) {
   // print "false" if direction is down and "true" if up
   let status = this.oldScroll > this.scrollY;
-  console.log('status:', status)
   if (status) {
-    nav.style.position = "sticky";
-    console.log('nav.style.position:', nav.style.position)
+    console.log("nav.style.position:", nav.style.position);
   } else {
     nav.style.position = "static";
-    console.log('nav.style.position:', nav.style.position)
   }
 
   this.oldScroll = this.scrollY;
@@ -100,19 +97,17 @@ let getOTP = async () => {
       }
     }
 
-    if(flag==true){
+    if (flag == true) {
       let genrate_OTP = Math.floor((Math.random() + 1) * 1000);
       localStorage.setItem("otp", JSON.stringify(genrate_OTP));
-      console.log('Hii')
+      console.log("Hii");
       input_OTP.style.display = "block";
       btn1.style.display = "none";
       btn2.style.display = "flex";
       alert(genrate_OTP);
-    }
-    else{
+    } else {
       alert("You have To Sign In First");
-      window.location.href="./sign.html"
-
+      window.location.href = "./sign.html";
     }
   }
 };
@@ -158,16 +153,16 @@ let signup = () => {
   window.location.href = "./signup/sign.html";
 };
 
-// function main() {
-//   myFunction();
-//   mytFunction();
-//   side();
-//   whatsapp();
-//   signShow();
-//   getOTP();
-//   login();
-//   Pass();
-//   signup();
-// }
+function main() {
+  myFunction();
+  mytFunction();
+  side();
+  whatsapp();
+  signShow();
+  getOTP();
+  login();
+  Pass();
+  signup();
+}
 
-// window.onload = main();
+window.onload = main();
