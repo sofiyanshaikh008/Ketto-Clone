@@ -162,3 +162,35 @@ let appendTrending = () => {
 
 appendTrending();
 
+
+
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides1 = document.getElementsByClassName("mySlides");
+  let dotss = document.getElementsByClassName("dot12");
+  if (n > slides1.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides1.length}
+  for (i = 0; i < slides1.length; i++) {
+    slides1[i].style.display = "none";
+  }
+  for (i = 0; i < dotss.length; i++) {
+    dotss[i].className = dotss[i].className.replace(" active", "");
+  }
+  slides1[slideIndex-1].style.display = "block";
+  dotss[slideIndex-1].className += " active";
+}
