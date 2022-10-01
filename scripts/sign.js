@@ -12,16 +12,19 @@ let submit = async () => {
     password,
     number,
   };
-  let res = await fetch(`${url}`, {
-    method: "POST",
-    body: JSON.stringify(data),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-
-   name = document.getElementById("name").value=null;
-   email = document.getElementById("email").value=null;
-   password = document.getElementById("password").value=null;
-   number = document.getElementById("number").value=null;
+  if (name == "" || email == "" || password == "" || number == "") {
+    alert("Plzz fill The Form Properly");
+  } else {
+    let res = await fetch(`${url}`, {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  }
+  name = document.getElementById("name").value = null;
+  email = document.getElementById("email").value = null;
+  password = document.getElementById("password").value = null;
+  number = document.getElementById("number").value = null;
 };

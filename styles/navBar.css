@@ -73,6 +73,7 @@
   justify-content: space-around;
   font-family: "Source Sans Pro", sans-serif;
   background-color: #fff;
+  z-index: 1000;
 }
 .fa-caret-down {
   margin-left: 8px;
