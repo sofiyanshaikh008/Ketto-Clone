@@ -55,13 +55,6 @@ function navbar(){
     </div>
 
 
-    <div id="container">
-        <div style="height: 500px;background-color: aqua;">
-
-        </div>
-        <div style="height: 500px;background-color: green; "></div>
-        <div style="height: 500px;background-color: red; "></div>
-    </div>
     <div id="signin">
         <div id="s1">
             <h2>Login</h2>
