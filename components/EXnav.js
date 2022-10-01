@@ -79,7 +79,7 @@ function navbar(){
                         Service</a> and <a href="https://www.ketto.org/privacy-policy.php">Privacy Policy</a></p>
                 <h4>Want to start a fundraiser? <a href="#">Click here</a></h4>
 
-                <span id="or">OR</span>
+                <span id="or">OR </span>
                 <span id="nor"></span>
 
             </div>
