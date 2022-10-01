@@ -67,7 +67,7 @@
   font-size: 18px;
 }
 
-/* ======= BANER ====== */
+/* ======================== BANER ======================== */
 
 #banner {
   display: flex;
@@ -132,7 +132,6 @@
 /* ================== HEADING HOLDER ==================== */
 #headingHolder {
   text-align: center;
-  margin-top: 150px;
   margin-bottom: 60px;
 }
 #headingHolder > h1 {
@@ -147,14 +146,15 @@
 
 /* ================== TRENDING ==================== */
 
-#trendingSection {
+/* #trendingSection {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-}
+} */
 .trendCard {
-  border: 1px solid red;
-  width: 25%;
+  /* border: 1px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 90%;
 }
 .trendImg {
   width: 100%;
@@ -162,11 +162,12 @@
 }
 .tImg {
   width: 100%;
+  height: 180px;
 }
 .title {
   font-size: 16px;
   font-weight: bold;
-  line-height: 22px;
+  line-height: 20px;
   color: #444;
   overflow: hidden;
   padding: 0px 20px;
@@ -260,6 +261,55 @@
   color: #777;
 }
 
+.slider-wrap {
+  position: relative;
+  width: 90%;
+  margin: 50px auto;
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+.slider {
+  position: relative;
+  width: 95%;
+  margin: auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  /* text-align: center; */
+}
+ul li>div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+  height: 470px;
+  margin-bottom: 40px;
+  /* background: black; */
+}
+.slider-arrow {
+  position: absolute;
+  top: 180px;
+  width: 80px;
+  height: 80px;
+  /* background: black; */
+  color: rgb(13, 206, 228);
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.sa-left {
+  left: -45px;
+}
+.sa-right {
+  right: -45px;
+}
+
+
 /* ----------- buttons --------- */
 
 .cardBtns {
@@ -302,7 +352,7 @@
   width: 90%;
   margin: auto;
   margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 150px;
 }
 
 #note > a {
@@ -484,7 +534,7 @@
   margin: auto;
   padding: 40px 40px 0px 40px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-  
+  margin-top: 60px;
 }
 
 #manageImg{
@@ -857,3 +907,501 @@ margin-top: 20%;
 }
 
 
+
+/* =============== Floating Form ================ */
+#floatForm{
+  margin-top: 100px;
+  background-color: #d5eeee;
+  padding: 10px;
+  position: sticky;
+  top: 84vh;
+  z-index: 10;
+}
+
+#raiseForm>input, #raiseForm>select{
+  height: 40px;
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
+#raiseForm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#formHeading>h4{
+  color: #039695;
+  text-align: center;
+  margin: 5px;
+}
+
+
+
+
+/* =============== MEDIA QUERIES =============== */
+
+@media all and (min-width: 761px) and (max-width: 990px){
+
+  /* =============== HEADER ====================== */
+  #header {
+    background-image: url(https://kettocdn.gumlet.io/media/banner/0/71/image/626a109be777492340e46d013c3cad0857a5da3a.png?w=1300&dpr=1.5);
+    background-position: 35% 20%;
+    height: 95vh;
+    background-repeat: no-repeat;
+  }
+  #headings {
+    position: absolute;
+    left: 45%;
+    top: 15%;
+    width: 50%;
+    font-size: 16px;
+  }
+  #headings > h1 {
+    color: #444;
+    margin-bottom: 30px;
+    line-height: 35px;
+
+  }
+  #statsHolder {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+  #statsHolder > div > h3 {
+    font-size: 20px;
+    line-height: 33px;
+    color: #039695;
+  }
+
+
+  
+/* ======= BANER ====== */
+
+#banner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  position: absolute;
+  top: 100vh;
+  right: 0;
+  left: 0;
+  padding: 0 0 0 32px;
+  width: 720px;
+  height: 140px;
+  margin: 0 auto;
+  z-index: 9;
+  background: #ffffff;
+  border: 1px solid #d3d4f2;
+  box-sizing: border-box;
+  box-shadow: 0 30px 60px rgb(0 0 0 / 10%);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* ================== NOTE ==================== */
+
+#note {
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 150px;
+}
+#note>p{
+  width: 60%;
+}
+
+
+/* ============== Start a Fund ============= */
+
+
+
+#stepContainer{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  
+}
+
+
+
+/* ======== START FUND BUTTONS ============= */
+
+#bt{
+  display: flex;
+  width: 80%;
+  margin: 70px auto;
+}
+
+
+/* ============= social buttons ==========*/
+
+#next-bt {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  margin-top: 35px;
+  align-items: center;
+}
+
+#next-bt>p {
+  width: 100%;
+  font-size: 15px;
+  color: grey;
+}
+
+#bn>button {
+  width: 180px;
+  height: 50px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#bn {
+  margin-left: 10%;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ============ MANAGE FUNDS ============== */
+
+#manageFundContent{
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+  padding: 40px 40px 0px 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  margin-top: 40px;
+}
+
+#manageContent{
+  width: 60%;
+}
+#manageHead>h1{
+  font-size: 27px;
+}
+
+#manageImg{
+  width: 50%;
+  margin-right: 30px;
+  margin-left: 20px;
+}
+#manageImg>img{
+  width: 100%;
+}
+
+#manageFeat{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 1rem;
+    grid-column-gap: 30px;
+    margin-bottom: 40px;
+}
+
+.featImg>img{
+  width: 70px;
+}
+
+.feat{
+  padding-right: 20px;
+  font-size: 16px;
+}
+
+#appBtns{
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+#appBtns>a>img{
+  width: 140px;
+}
+#manageHead{
+  margin-bottom: 20px;
+}
+
+/* =========== CAUSES SECTION =========== */
+
+#causesHeading{
+  margin-bottom: 40px;
+  text-align: center;
+}
+#causesHeading>h1{
+  color: #444;
+  margin-bottom: 18px;
+  font-size: 27px;
+}
+#causesHeading>p{
+  color: #777;
+  width: 70%;
+  margin: auto;
+}
+#causeImg{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+  width: 90%;
+  margin: auto;
+
+}
+
+
+/* ============= WHY KETTO SECTION ============= */
+
+#whyKettoSection{
+  width: 90%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+#whyKettoHeading{
+  text-align: center;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+#reasonHolder{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: baseline;
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+
+/* =========== SUCCESS STORIES ============= */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 95%;
+  position: relative;
+  margin: auto;
+  margin-bottom: 40px;
+  }
+  
+  /* Hide the images by default */
+  /* .mySlides {
+  display: none;
+  } */
+  
+  /* Next & previous buttons */
+  .prevv, .nextt {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  border-radius: 30px;
+  color: rgb(11, 174, 174);
+  font-weight: bold;
+  font-size: 34px;
+  /* transition: 0.6s ease; */
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .nextt {
+  right: -0;
+  border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prevv:hover, .nextt:hover {
+  background-color: rgba(0,0,0,0.3);
+  }
+  
+  /* Caption text */
+  .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot12 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot12:hover {
+  background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+  }
+  
+  #magicbox12{
+    display: flex;
+    gap: 1px;
+    /* border: 1px solid red; */
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  
+  }
+  #magicbox12  div{
+  
+    /* border: 1px solid blue; */
+    height: 400px;
+    width: 40%;
+    border-radius: 20px;
+  }
+  #magicbox12 img{
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 10px;
+  }
+  #magicbox12 button{
+  cursor: pointer;
+  }
+  #magicbox12 p{
+  font-size: 18px;
+  }
+  #magicbox12 button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(16, 194, 66);
+  }
+    #lbdeco1080{
+        /* border: 1px solid red; */
+        /* height: 200px; */
+        display: flex;
+        margin: auto;
+        width: 150%;
+    }
+    #lbdeco1080 p{
+        margin-top: 30px;
+        margin-left: -25px;
+        font-size: 16px;
+        color: rgb(109, 109, 110);
+    }
+  #lbdeco1080 button{
+    height: 40px;
+    width: 190px;
+    border-radius: 20px;
+    background-color: white;
+    color: rgb(16, 194, 66);
+    font-size: 20px;
+    border: 2px solid rgb(16, 194, 66) ;
+    margin-top: 30px;
+  }
+  
+  #lbdeco1080 button:hover{
+    color: white;
+    background-color: rgb(16, 194, 66);
+  }
+  #div108108{
+    border: 1px solid red;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+  #div108108 > h2{
+    font-size: 18px;
+    color: #444;
+  }
+  #div108108 >h2 + p{
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #666;
+  }
+  #div108108 > h3{
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  /* slide2 end */
+  
+  /* secondlast> */
+  
+  #featlast11{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+    /* border: 1px solid; */
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    }
+    #featlast11 > div{
+    /* border: 1px solid; */
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+    
+    #lpo4545{
+    width: 100%;
+    height: 100%;
+    
+    }
+    #lpo4546{
+    height: 30px;
+    width: 30px;
+    margin-top: 20%;
+    
+    }
+
+    .mySlides{
+      display: flex;
+      gap: 20px;
+    }
+
+
+
+}
+
+
+
+@media all and (min-width: 480px) and (max-width: 761px){
+
+}

@@ -192,5 +192,7 @@ function showSlides(n) {
     dotss[i].className = dotss[i].className.replace(" active", "");
   }
   slides1[slideIndex-1].style.display = "block";
-  dotss[slideIndex-1].className += " active";
+  if(dotss[slideIndex-1]){
+    dotss[slideIndex-1].className += " active"
+  }
 }
