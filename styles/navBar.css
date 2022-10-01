@@ -17,7 +17,7 @@
   transition: transform 250ms ease-in-out;
   background-color: #fff;
   padding-bottom: 100px;
-  z-index: 100;
+  z-index: 20;
 }
 #sidelogo {
   display: flex;
@@ -73,7 +73,6 @@
   justify-content: space-around;
   font-family: "Source Sans Pro", sans-serif;
   background-color: #fff;
-  z-index: 100;
 }
 .fa-caret-down {
   margin-left: 8px;
@@ -254,12 +253,14 @@ summary {
   gap: 12px;
 }
 
-#s21 a {
+#s21 a,
+#logPass {
   text-decoration: none;
   color: #01bfbd;
 }
 #s21 a,
-#s21 p {
+#s21 p,
+#logPass {
   font-size: 10px;
   text-align: center;
   letter-spacing: 0.5px;
@@ -286,9 +287,10 @@ summary {
   border-bottom: 2px solid green;
 }
 
-#s21 > button {
-  border: none;
-  outline: none;
+.s21 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #01bfbd !important;
   font-size: 16px;
   padding: 5px 10px 5px 10px;
@@ -296,9 +298,10 @@ summary {
   margin-top: 8px;
   border-radius: 7px;
 }
-#s21 > button:hover {
-  background-color: #030606;
+#otp {
+  display: none;
 }
+
 #or {
   position: absolute;
   top: 35%;
@@ -347,10 +350,19 @@ summary {
 #s22 > div p {
   font-size: 14px;
 }
-#otpin {
+#button2 {
   display: none;
 }
 #login {
+  display: none;
+}
+.passt {
+  display: none;
+}
+.sidecheck {
+  display: none;
+}
+#button3 {
   display: none;
 }
 

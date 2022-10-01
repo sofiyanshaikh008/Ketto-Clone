@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+#footer {
+  background-color: #08504f;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#mainfoot {
+  display: grid;
+  grid-template-columns: 24% 19% 19% 19% 19%;
+  padding: 10px;
+  margin: auto;
+  width: 85%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#foot1 {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  gap: 10px;
+  padding-right: 30px;
+}
+#footimg img {
+  width: 79px;
+  height: 40px;
+  padding-bottom: 8px;
+}
+#footimg {
+  border-bottom: 1px solid #36817f;
+}
+
+#footlogo {
+  display: flex;
+  gap: 12px;
+  font-size: 30px;
+  padding: 8px 0;
+}
+#footlogo a {
+  color: #fff;
+}
+#follow {
+  margin: 15px 0;
+}
+#Footcontact {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  gap: 8px;
+}
+#foot2,
+#foot3,
+#foot4,
+#foot5 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+  font-size: 17px;
+  padding: 5px;
+}
+#foot2 > div,
+#foot3 > div,
+#foot4 > div,
+#foot5 > div {
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  gap: 8px;
+  font-weight: 500;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#bottomfoot{
+    height: 60px;
+    width: 87%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #36817f;
+
+}
+#bottomfoot img{
+    width: 40%;
+    height: 60%;
+}
+#affooter{
+    display: flex;
+    justify-content: center;
+    background-color: #08504f;
+    color: #fff;
+    height: 60px;
+    font-size: 14px;
+    padding-top:20px ;
+}
+#affooter2{
+    display: flex;
+    justify-content: center;
+    color: #444;
+    height: 60px;
+    font-size: 20px;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+/* ===========================Medium screens======================================= */
+
+@media all and (min-width: 941px) and (max-width: 1200px) {
+  #foot2{
+    display: none;
+  }
+  #mainfoot{
+    width: 90%;
+    gap:100px
+  }
+ 
+}
+
+@media all and (min-width: 550px) and (max-width: 1000px) {
+  #foot3{
+    display: none;
+  }
+  #foot2{
+    display: none;
+  }
+  #mainfoot{
+    width: 90%;
+    gap:100px
+  }
+  #bottomfoot img{
+    display: none;
+  }
+  
+ 
+}
+/* Small screens */
+
+@media all and (min-width: 100px) and (max-width: 550px) {
+  #foot3{
+    display: none;
+  }
+  #foot2{
+    display: none;
+  }
+  #mainfoot{
+    width: 100%;
+  }
+  #foot4{
+    display: none;
+  }
+
+  #foot5{
+    display: none;
+  }
+  #bottomfoot img{
+    display: none;
+  }
+  
+}
+
