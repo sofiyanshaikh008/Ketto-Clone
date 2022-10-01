@@ -4,7 +4,7 @@ Website: https://www.ketto.org/
 
 About: Ketto is an Online Crowdfunding Platform and Website in India for fundraising of Social, Charity, Movies, Music, Personal and Creative causes.
 
-Manager/IA:-gautam verma
+Manager/IA: Gautam Verma
 
 
 Team Lead
