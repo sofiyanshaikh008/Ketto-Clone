@@ -68,9 +68,6 @@
             <label for="sidecheck" id="lab"><i class="fa-solid fa-bars"></i></label></i></button>
     </div>
 
-
-
-
     <div id="signin">
         <div id="s1">
             <h2>Login</h2>
@@ -143,7 +140,7 @@
 
                 <div id="main_right">
                     <div id="search__container">
-                        <input type="text" placeholder="Search for fundraisers" id="search__input">
+                        <input type="text" placeholder="Search for fundraisers by Category" id="search__input" onkeypress="enter(event)">
                         <!-- <span></span> -->
                     </div>
                     <div>Showing fundraisers for
@@ -163,26 +160,26 @@
 
 
                         </select> under <select style="width: 14%; height: 30px">
-                            <option value="">All Types</option>
-                            <option value="">Tax Benefits</option>
-                            <option value="">Trending</option>
-                            <option value="">Urgently Funds Required</option>
+                            <option value="" onclick='category(1)'>All Types</option>
+                            <option value="" onclick="category(4)">Tax Benefits</option>
+                            <option value="" onclick="category(2)">Trending</option>
+                            <option value="" onclick="category(6)">Urgently Funds Required</option>
                             <option value="">Successfully Funded</option>
 
 
                         </select> from <select style="width: 17%; height: 30px">
                             <option value="">All Location</option>
-                            <option value="">Mumbai</option>
+                            <option value="" >Mumbai</option>
                             <option value="">Bengaluru</option>
                             <option value="">New Delhi</option>
                             <option value="">Hyderabad</option>
                             <option value="">Chennai</option>
-                            <option value="">Delhi</option>
+                            <option value="" onclick="category(6)">Delhi</option>
                             <option value="">Pune</option>
                             <option value="">Kolkata</option>
                             <option value="">Ahmedabad</option>
                             <option value="">Jaipur</option>
-                            <option value="">Lucknow</option>
+                            <option value="" onclick="category(5)">Lucknow</option>
                             <option value="">Gurugram</option>
                             <option value="">Chandigarh</option>
                             <option value="">Noida</option>
@@ -194,50 +191,7 @@
                     <div>
                         <button id="reset_filter">Reset Filter</button>
                     </div>
-                    <div id="appendData">
-                        <!-- <div class="data">
-                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
-                    </div>
-                    <div class="data">
-                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
-                    </div>
-                    <div class="data">
-                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
-                    </div>
-                    <div class="data">
-                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
-                    </div>
-                    <div class="data">
-                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
-                    </div>
-                    <div class="data">
-                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
-                    </div> -->
-                    </div>
-
-
-                    <div class="adver">
-                        <div class="left_adver">
-                            <div class="L_ad">
-                                <img src="https://ketto.gumlet.io/assets/images/Sip-banner-people/girls-sip.png?w=160&dpr=1.0"
-                                    alt="">
-                            </div>
-                            <div class="R_ad">
-                                <p>What’s Better Than <span style="font-weight: 700;">Saving One Child?</span></p>
-                                <h2>Saving 12 More!</h2>
-                                <button id="ttu" style="margin-bottom:10%">Start Giving Monthly</button>
-                            </div>
-                        </div>
-                        <div class="right_adver">
-                            <h2>Confused about how to start a Fundraiser?</h2>
-                            <button class="sgm" style="width: 70%;margin: auto;
-                        ">Talk to us</button>
-                        </div>
-                    </div>
-                    <div style="border: 1px solid black; margin-top: 8%; text-align: center;" ;>
-                        <button id="lMore">Load More</button>
-                    </div>
-
+                    <div id="appendData"></div>
                 </div>
             </div>
         </div>
