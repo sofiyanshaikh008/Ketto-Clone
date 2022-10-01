@@ -11,93 +11,11 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/navBar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
 <body>
-    <div id="sidebar">
-        <div id="sidelogo"><img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=2.0" alt="">
-            <button id="menu"> <input type="checkbox" name="" id="sidecheck" style="display: none" />
-                <label for="sidecheck" id="lab"><i class="fa-solid fa-bars"></i></label></button>
-        </div>
-
-        <input type="text" name="" id="Search" placeholder="Search By fundraiser creator,benyficiary or NGOs">
-        <span>To view fundraisers you have supported on Ketto <a href="#" id="click">Click here</a></span>
-        <a href="./BrowseFundraisers.html">Browse Fundraisers</a>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Fondraiser for<i
-                    class="fa-sharp fa-solid fa-caret-down"></i></button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="#" class="app">Medical treatment</a>
-                <a href="#" class="app">Ngo/Charety</a>
-                <a href="#" class="app">Other cases</a>
-            </div>
-        </div>
-        <a href="./howitworks.html">How its work</a>
-        <a href="https://api.whatsapp.com/send?phone=919930088522">Get us On whatsapp</a>
-        <a href="#" onclick="signShow()">Sign In</a>
-
-        <button id="sfund"> Start a Fundraiser</button>
-    </div>
-    <!-- ==================== navbar========================================== -->
-    <div id="nav">
-        <div id="logo"><img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=2.0" alt="">
-        </div>
-        <div id="sec_nav">
-            <a href="./BrowseFundraisers.html">Browse Fundraisers</a>
-            <div class="tdropdown">
-                <button onclick="mytFunction()" class="tdropbtn">Fondraiser for<i
-                        class="fa-sharp fa-solid fa-caret-down"></i></button>
-                <div id="tmyDropdown" class="tdropdown-content">
-                    <a href="#" class="app">Medical treatment</a>
-                    <a href="#" class="app">Ngo/Charety</a>
-                    <a href="#" class="app">Other cases</a>
-                </div>
-            </div>
-            <a href="./howitworks.html">How its work</a>
-            <span><i class="fa-solid fa-magnifying-glass"></i>
-                Search
-            </span>
-        </div>
-        <div id="trd_nav">
-            <button id="whatsapp"> <i class="fa-brands fa-whatsapp"></i> Chat</button>
-            <button id="fund"> Start a Fundraiser</button>
-            <a href="#" onclick="signShow()">Sign In</a>
-
-        </div>
-        <button id="menu"> <input type="checkbox" name="" id="sidecheck" style="display: none" />
-            <label for="sidecheck" id="lab"><i class="fa-solid fa-bars"></i></label></i></button>
-    </div>
-
-    <div id="signin">
-        <div id="s1">
-            <h2>Login</h2>
-            <button id="scross" onclick="signShow()"><i class="fa-sharp fa-solid fa-x"></i></button>
-        </div>
-        <div id="s2">
-            <div id="s21">
-                <input type="text" name="" id="mobile" placeholder="Email/Mobile Number">
-                <input type="text" name="" id="otpin" placeholder="Enter OTP">
-                <button onclick="getOTP()" id="getotp">Get OTP</button>
-                <button onclick="login()" id="login">Login</button>
-                <a href="">Login Via Password</a>
-                <p>By continuing you agree to our <a href="https://www.ketto.org/terms-of-use.php">Terms of
-                        Service</a> and <a href="https://www.ketto.org/privacy-policy.php">Privacy Policy</a></p>
-                <h4>Want to start a fundraiser? <a href="#">Click here</a></h4>
-
-                <span id="or">OR</span>
-                <span id="nor"></span>
-
-            </div>
-            <div id="s22">
-                <div>
-                    <img src="https://ketto.gumlet.io/assets/images/login/google.png?w=240&dpr=1.2" alt="">
-                    <p>Sign in With Google</p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-            <!-- Main Work -->
+    <nav id="navbar"></nav>
     <main>
         <div id="bg_upper">
             <div id="ch_bg">
@@ -203,31 +121,22 @@
                         src="https://i.pinimg.com/474x/38/9b/14/389b14861f4be0c8d84876b3dda9afc0.jpg" alt=""> CHAT WITH
                     US</button>
 
-                <button id="whatsapp_btn" class="sm"><img
+                <button id="whatsapp_btn" class="sm" onclick="whatsapp()"><img
                         src="https://www.freepnglogos.com/uploads/whatsapp-logo-png-hd-2.png" alt=""> CHAT WITH
                     US</button>
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer id="footer"></footer>
 </body>
 
 </html>
 <script src="./scripts/BrowseFundraisers.js"></script>
-<script>
-            let signShow = () => {
-            let x = document.getElementById("signin");
-            let container = document.querySelectorAll(".signhidden");
-            let nav = document.getElementById("nav");
+<script type="module">
+    import navbar from './components/EXnav.js';
+    document.getElementById("navbar").innerHTML = navbar();
 
-            if (x.style.display === "none") {
-                x.style.display = "block";
-                nav.style.filter = "brightness(0.3)";
-                container.style.filter = "brightness(0.3)";
-            } else {
-                x.style.display = "none";
-                nav.style.filter = "brightness(1)";
-                container.style.filter = "brightness(1)";
-            }
-        };
+    import footer from './components/EXfooter.js';
+    document.getElementById("footer").innerHTML = footer();
 </script>
+<script src="./scripts/nav.js"></script>

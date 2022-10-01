@@ -190,7 +190,7 @@ ul {
 }
 
 #main_right>div:nth-child(2) {
-    margin-top: 8px;
+    margin-top: 3%;
     text-align: left;
     font-size: 15px;
     font-family: "Source Sans Pro", sans-serif;
@@ -664,9 +664,8 @@ ul>span:hover {
     #leftMain {
         display: none;
     }
-
-    #rightMain {}
 }
+
 
 @media all and (min-width:0px) and (max-width:564px) {
     #list_P {
