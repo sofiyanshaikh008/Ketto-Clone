@@ -5,11 +5,6 @@ window.onload  = () =>{
   link.href = './styles/nav.css';
   // append this link to head of document
   document.querySelector('head').append(link);
-  document.getElementById('navbar').innerHTML = navbar();
-
- document.getElementById('footerOne').innerHTML = footer();
-
-appendPopLogin();
 document.getElementById('signin').addEventListener('click', toggleLogin)
 }
 
