@@ -1,0 +1,859 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+#header {
+  background-image: url(https://kettocdn.gumlet.io/media/banner/0/71/image/626a109be777492340e46d013c3cad0857a5da3a.png?w=1300&dpr=1.5);
+  background-position: 50% 20%;
+  height: 95vh;
+  background-repeat: no-repeat;
+}
+#headings {
+  position: absolute;
+  left: 45%;
+  top: 15%;
+  width: 50%;
+}
+#headings > h1 {
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 45px;
+}
+#statsHolder {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+#statsHolder > div > h3 {
+  font-size: 26px;
+  line-height: 33px;
+  color: #039695;
+}
+#statsHolder > div > span {
+  /* font-size: 17px; */
+  font-weight: bold;
+  color: #555;
+  margin-top: 5px;
+}
+#highlight {
+  font-size: 20px;
+  line-height: 30px;
+  color: #039695;
+  margin: 10px auto;
+}
+#highlight > p > span {
+  font-size: 25px;
+  font-weight: bold;
+}
+#engButton {
+  margin: 30px 0px 40px 0px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+#engButton > a {
+  padding: 20px 25px;
+  background-color: #1ccaca;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+#hindiButton > a {
+  text-decoration: none;
+  color: #039695;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* ======= BANER ====== */
+
+#banner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  position: absolute;
+  top: 82vh;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0 0 0 32px;
+  width: 720px;
+  height: 140px;
+  margin: 0 auto;
+  z-index: 9;
+  background: #ffffff;
+  border: 1px solid #d3d4f2;
+  box-sizing: border-box;
+  box-shadow: 0 30px 60px rgb(0 0 0 / 10%);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#banner > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 25px;
+  width: 172px;
+  height: 54px;
+  background: #204b6b;
+  border-radius: 8px;
+  color: #fff;
+  flex-shrink: 0;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+#bannerText {
+  margin: auto 28px;
+}
+#banner > div > h3 {
+  color: #034396;
+  line-height: 30px;
+}
+
+#banner > div > p {
+  font-size: 14px;
+  color: rgb(114, 114, 114);
+  line-height: 18px;
+}
+
+#banner > img {
+  width: 112px;
+  height: 100%;
+  margin-left: auto;
+  object-fit: cover;
+}
+
+/* ================== HEADING HOLDER ==================== */
+#headingHolder {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 60px;
+}
+#headingHolder > h1 {
+  font-size: 26px;
+  color: #444;
+}
+#headingHolder > p {
+  font-size: 17px;
+  color: #777;
+  margin: 10px;
+}
+
+/* ================== TRENDING ==================== */
+
+#trendingSection {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.trendCard {
+  border: 1px solid red;
+  width: 25%;
+}
+.trendImg {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.tImg {
+  width: 100%;
+}
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #444;
+  overflow: hidden;
+  padding: 0px 20px;
+  margin-bottom: 10px;
+}
+.raisedBy {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 20px;
+  margin-bottom: 10px;
+}
+.raisedBy > span {
+  padding: 7px;
+  background-color: orange;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+}
+.name {
+  font-size: 14px;
+  color: #555;
+}
+
+.raisedAmt {
+  padding: 0px 20px;
+  margin-bottom: 5px;
+}
+.raisedAmt > p > span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+}
+.raisedAmt > p {
+  color: #777;
+  font-size: 14px;
+}
+
+.target {
+  padding: 0px 20px;
+  color: #777;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* ACHEIVEMENT BAR */
+
+.bar {
+  height: 5px;
+  background-color: #92e0df;
+  width: 90%;
+  margin: auto;
+  border-radius: 1rem;
+  margin-bottom: 10px;
+}
+.achieve {
+  height: 5px;
+  background-color: #01bfbd;
+  border-radius: 1rem;
+}
+
+.trendDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+}
+
+.timeLeftWrap,
+.supports {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.clock > img,
+.heart > img {
+  width: 20px;
+}
+
+.timeLeft > span,
+.totalSupport {
+  font-weight: bold;
+  font-size: 18px;
+  color: #444;
+}
+.timeLeftWrap,
+.supports {
+  font-size: 14px;
+  color: #777;
+}
+
+/* ----------- buttons --------- */
+
+.cardBtns {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.FBimg > img {
+  width: 20px;
+}
+.shareFB,
+.donateBtn {
+  display: flex;
+  align-items: center;
+  padding: 8px 35px;
+  background-color: #fff;
+  border: 1px solid #555;
+  border-radius: 5px;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.shareFB {
+  color: #034396;
+}
+
+.donateBtn {
+  color: #fff;
+  background-color: #01bfbd;
+  border: none;
+  padding: 8px 38px;
+}
+
+/* ================== NOTE ==================== */
+
+#note {
+  display: flex;
+  gap: 180px;
+  justify-content: end;
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+#note > a {
+  cursor: pointer;
+  color: #01bfbd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ============== Start a Fund ============= */
+
+#startFundHeading{
+  text-align: center;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+#stepContainer{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  
+}
+#stepsDiv{
+  display: flex;
+  /* border: 1px solid red; */
+  width: 60%;
+}
+#stepsImg{
+  padding-right: 20px;
+  padding-top: 60px;
+}
+#stepsImg>img{
+  height: 510px;
+}
+#stepsDescriptionDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* border: 1px solid blue; */
+  width: 60%;
+  padding-top: 20px;
+}
+.stepContent>h2{
+  color: #01bfbd;
+  font-size: 20px;
+}
+.stepContent>h2+p{
+  font-size: 14.5px;
+  color: #555;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.pleaseNote{
+  font-size: 11px;
+  color: #777;
+}
+
+
+/* ======== START FUND BUTTONS ============= */
+
+#bt{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 70px auto;
+}
+
+#btn-full{
+  width: 280px;
+  background-color: #1ccaca;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 14px;
+}
+#ghost-btn{
+  width: 280px;
+  background-color: #fff;
+  color: #1ccaca;
+  padding: 15px 20px;
+  border: 2px solid #1ccaca;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#btn-full:hover{
+  background-color: #12a5a5;
+  transition: 0.5s;
+}
+
+#ghost-btn:hover{
+  background-color: #1ccaca;
+  color: #fff;
+  transition: 0.5s;
+}
+
+/* ============= social buttons ==========*/
+
+#next-bt {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  margin-top: 35px;
+}
+
+#next-bt>p {
+  width: 100%;
+  font-size: 15px;
+  color: grey;
+}
+
+#bn>button {
+  width: 180px;
+  height: 50px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#bn {
+  margin-left: 10%;
+  height: 140px;
+  display: flex;
+}
+
+#bn>button>img {
+  width: auto;
+  height: 20px;
+  margin-right: 5px;
+  margin-top: -2px;
+  padding-left: 10px;
+}
+
+#bn>button:nth-child(1) {
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 10px;
+  border: none;
+  color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #354f84;
+}
+
+#bn>button:nth-child(1):hover {
+  background-color: #233557;
+}
+
+#bn>button:nth-child(2) {
+  background-color: #13cb6a;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px;
+  align-content: center;
+  gap: 5px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+#bn>button:nth-child(2):hover {
+  background-color: #129b52;
+}
+
+
+/* ============ MANAGE FUNDS ============== */
+
+#manageFundContent{
+  display: flex;
+  gap: 20px;
+  width: 70%;
+  margin: auto;
+  padding: 40px 40px 0px 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  
+}
+
+#manageImg{
+  width: 50%;
+  margin-right: 30px;
+  margin-left: 20px;
+}
+#manageImg>img{
+  width: 100%;
+}
+
+#manageFeat{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 2rem;
+    grid-column-gap: 30px;
+    margin-bottom: 40px;
+}
+
+.featImg>img{
+  width: 80px;
+}
+
+.feat{
+  padding-right: 20px;
+  font-size: 18px;
+}
+
+#appBtns{
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+#appBtns>a>img{
+  width: 120px;
+}
+#manageHead{
+  margin-bottom: 30px;
+}
+
+
+/* =========== CAUSES SECTION =========== */
+
+#causesSection{
+  margin-top: 170px;
+  margin-bottom: 100px;
+}
+#causesHeading{
+  margin-bottom: 50px;
+  text-align: center;
+}
+#causesHeading>h1{
+  color: #444;
+  margin-bottom: 20px;
+}
+#causesHeading>p{
+  color: #777;
+  width: 50%;
+  margin: auto;
+}
+#causeImg{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  width: 80%;
+  margin: auto;
+
+}
+.causeImgHolder>img{
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.causeImgHolder{
+  background-color: #000;
+}
+
+.causeImgHolder>img:hover{
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+
+/* ============= WHY KETTO SECTION ============= */
+
+#whyKettoSection{
+  width: 90%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+#whyKettoHeading{
+  text-align: center;
+  color: #444;
+  margin-bottom: 80px;
+}
+
+#reasonHolder{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: baseline;
+  gap: 30px;
+  width: 90%;
+  margin: auto;
+}
+.reasonWrap{
+  text-align: center;
+  padding: 10px;
+}
+.reasonWrap>div>img{
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+
+
+/* =========== SUCCESS STORIES ============= */
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+margin-bottom: 40px;
+}
+
+/* Hide the images by default */
+/* .mySlides {
+display: none;
+} */
+
+/* Next & previous buttons */
+.prevv, .nextt {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+border-radius: 30px;
+color: rgb(11, 174, 174);
+font-weight: bold;
+font-size: 34px;
+/* transition: 0.6s ease; */
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextt {
+right: -0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevv:hover, .nextt:hover {
+background-color: rgba(0,0,0,0.3);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot12 {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot12:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+#magicbox12{
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+#magicbox12  div{
+
+  /* border: 1px solid blue; */
+  height: 450px;
+  width: 90%;
+  border-radius: 20px;
+}
+#magicbox12 img{
+width: 100%;
+height: 100%;
+border: 1px solid rgb(77, 77, 77);
+border-radius: 20px;
+}
+#magicbox12 button{
+cursor: pointer;
+}
+#magicbox12 p{
+font-size: 18px;
+}
+#magicbox12 button:hover{
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(16, 194, 66);
+}
+  #lbdeco1080{
+      /* border: 1px solid red; */
+      /* height: 200px; */
+      display: flex;
+      margin: auto;
+      width: 150%;
+  }
+  #lbdeco1080 p{
+      margin-top: 30px;
+      margin-left: -25px;
+      font-size: 16px;
+      color: rgb(109, 109, 110);
+  }
+#lbdeco1080 button{
+  height: 40px;
+  width: 190px;
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(16, 194, 66);
+  font-size: 20px;
+  border: 2px solid rgb(16, 194, 66) ;
+  margin-top: 30px;
+}
+
+#lbdeco1080 button:hover{
+  color: white;
+  background-color: rgb(16, 194, 66);
+}
+#div108108{
+ 
+  margin: auto;
+  /* border: 1px solid; */
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+#div108108 > h2{
+  font-size: 18px;
+  color: #444;
+}
+#div108108 >h2 + p{
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #666;
+}
+#div108108 > h3{
+  font-size: 18px;
+  margin-top: 10px;
+}
+/* slide2 end */
+
+/* secondlast> */
+
+#featlast11{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+  /* border: 1px solid; */
+  /* margin-left: 10px;
+  margin-right: 10px; */
+  }
+  #featlast11 > div{
+  /* border: 1px solid; */
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  }
+  
+  #lpo4545{
+  width: 100%;
+  height: 100%;
+  
+  }
+  #lpo4546{
+  height: 30px;
+  width: 30px;
+  margin-top: 20%;
+  
+  }
+
+
+/* ============ FEATURED sECTION ============== */
+
+#featuredHeading{
+  text-align: center;
+  margin: 50px;
+  margin-top: 150px;
+}
+
+
+#featlast11{
+display: flex;
+width: 90%;
+margin: auto;
+margin-bottom: 50px;
+/* border: 1px solid; */
+/* margin-left: 10px;
+margin-right: 10px; */
+}
+#featlast11 > div{
+/* border: 1px solid; */
+box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+width: 100%;
+height: 80px;
+justify-content: space-between;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+
+#lpo4545{
+width: 100%;
+height: 100%;
+
+}
+#lpo4546{
+height: 30px;
+width: 30px;
+margin-top: 20%;
+
+}
+
+

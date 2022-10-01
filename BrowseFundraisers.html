@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundraising – Best Online Fundraising Site In India - Ketto</title>
+    <link rel="stylesheet" href="./styles/BrowseFundraisers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/navBar.css">
+</head>
+
+<body>
+    <div id="sidebar">
+        <div id="sidelogo"><img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=2.0" alt="">
+            <button id="menu"> <input type="checkbox" name="" id="sidecheck" style="display: none" />
+                <label for="sidecheck" id="lab"><i class="fa-solid fa-bars"></i></label></button>
+        </div>
+
+        <input type="text" name="" id="Search" placeholder="Search By fundraiser creator,benyficiary or NGOs">
+        <span>To view fundraisers you have supported on Ketto <a href="#" id="click">Click here</a></span>
+        <a href="./BrowseFundraisers.html">Browse Fundraisers</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Fondraiser for<i
+                    class="fa-sharp fa-solid fa-caret-down"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#" class="app">Medical treatment</a>
+                <a href="#" class="app">Ngo/Charety</a>
+                <a href="#" class="app">Other cases</a>
+            </div>
+        </div>
+        <a href="./howitworks.html">How its work</a>
+        <a href="https://api.whatsapp.com/send?phone=919930088522">Get us On whatsapp</a>
+        <a href="#" onclick="signShow()">Sign In</a>
+
+        <button id="sfund"> Start a Fundraiser</button>
+    </div>
+    <!-- ==================== navbar========================================== -->
+    <div id="nav">
+        <div id="logo"><img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=2.0" alt="">
+        </div>
+        <div id="sec_nav">
+            <a href="./BrowseFundraisers.html">Browse Fundraisers</a>
+            <div class="tdropdown">
+                <button onclick="mytFunction()" class="tdropbtn">Fondraiser for<i
+                        class="fa-sharp fa-solid fa-caret-down"></i></button>
+                <div id="tmyDropdown" class="tdropdown-content">
+                    <a href="#" class="app">Medical treatment</a>
+                    <a href="#" class="app">Ngo/Charety</a>
+                    <a href="#" class="app">Other cases</a>
+                </div>
+            </div>
+            <a href="./howitworks.html">How its work</a>
+            <span><i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </span>
+        </div>
+        <div id="trd_nav">
+            <button id="whatsapp"> <i class="fa-brands fa-whatsapp"></i> Chat</button>
+            <button id="fund"> Start a Fundraiser</button>
+            <a href="#" onclick="signShow()">Sign In</a>
+
+        </div>
+        <button id="menu"> <input type="checkbox" name="" id="sidecheck" style="display: none" />
+            <label for="sidecheck" id="lab"><i class="fa-solid fa-bars"></i></label></i></button>
+    </div>
+
+
+
+
+    <div id="signin">
+        <div id="s1">
+            <h2>Login</h2>
+            <button id="scross" onclick="signShow()"><i class="fa-sharp fa-solid fa-x"></i></button>
+        </div>
+        <div id="s2">
+            <div id="s21">
+                <input type="text" name="" id="mobile" placeholder="Email/Mobile Number">
+                <input type="text" name="" id="otpin" placeholder="Enter OTP">
+                <button onclick="getOTP()" id="getotp">Get OTP</button>
+                <button onclick="login()" id="login">Login</button>
+                <a href="">Login Via Password</a>
+                <p>By continuing you agree to our <a href="https://www.ketto.org/terms-of-use.php">Terms of
+                        Service</a> and <a href="https://www.ketto.org/privacy-policy.php">Privacy Policy</a></p>
+                <h4>Want to start a fundraiser? <a href="#">Click here</a></h4>
+
+                <span id="or">OR</span>
+                <span id="nor"></span>
+
+            </div>
+            <div id="s22">
+                <div>
+                    <img src="https://ketto.gumlet.io/assets/images/login/google.png?w=240&dpr=1.2" alt="">
+                    <p>Sign in With Google</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+            <!-- Main Work -->
+    <main>
+        <div id="bg_upper">
+            <div id="ch_bg">
+                <div id="title"> save a child every month
+                </div>
+                <div id="subtitle">
+                    <h1>Join monthly donors with Social Impact Plan and start saving needy children every month </h1
+                        </div>
+                    <div id="btn_SGM">
+                        <button class="bg_btn" role="button">Start Giving Monthly</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div>
+                <div id="leftMain">
+                    <div>
+                        <ul id="list_P">
+                            <h2>CATEGORY</h2>
+                            <span class="line"></span>
+                            <span onclick="category(1)">All Categories</span>
+                            <span onclick="category(2)">Education</span>
+                            <span onclick="category(3)">Medical</span>
+                            <span onclick="category(4)">Women & Girls</span>
+                            <span onclick="category(5)">Animals</span>
+                            <span onclick="category(6)">Creative</span>
+                            <span onclick="category(7)">Food & Hunger</span>
+                            <span onclick="category(8)">Environment</span>
+                            <span onclick="category(9)">Children</span>
+                            <span onclick="category(10)">Memorial</span>
+                            <span onclick="category(11)">Community Development</span>
+                            <span onclick="category(12)">Others</span>
+                            <span class="line"></span>
+                            <button id="startaFundr_btn" role="button">Start a Fundraiser</button>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div id="main_right">
+                    <div id="search__container">
+                        <input type="text" placeholder="Search for fundraisers" id="search__input">
+                        <!-- <span></span> -->
+                    </div>
+                    <div>Showing fundraisers for
+                        <select style="width: 20%; height: 30px;">
+                            <option value="" onclick='category(1)'>All Categories</option>
+                            <option value="" onclick="category(2)">Education</option>
+                            <option value="" onclick="category(3)">Medical</option>
+                            <option value="" onclick="category(4)">Woman & Girls</option>
+                            <option value="" onclick="category(5)">Animals</option>
+                            <option value="" onclick="category(6)">Creative</option>
+                            <option value="" onclick="category(7)">Food & Hunger</option>
+                            <option value="" onclick="category(8)">Environment</option>
+                            <option value="" onclick="category(9)">Children</option>
+                            <option value="" onclick="category(10)">Memorial</option>
+                            <option value="" onclick="category(11)">Community Development</option>
+                            <option value="" onclick="category(12)">Others</option>
+
+
+                        </select> under <select style="width: 14%; height: 30px">
+                            <option value="">All Types</option>
+                            <option value="">Tax Benefits</option>
+                            <option value="">Trending</option>
+                            <option value="">Urgently Funds Required</option>
+                            <option value="">Successfully Funded</option>
+
+
+                        </select> from <select style="width: 17%; height: 30px">
+                            <option value="">All Location</option>
+                            <option value="">Mumbai</option>
+                            <option value="">Bengaluru</option>
+                            <option value="">New Delhi</option>
+                            <option value="">Hyderabad</option>
+                            <option value="">Chennai</option>
+                            <option value="">Delhi</option>
+                            <option value="">Pune</option>
+                            <option value="">Kolkata</option>
+                            <option value="">Ahmedabad</option>
+                            <option value="">Jaipur</option>
+                            <option value="">Lucknow</option>
+                            <option value="">Gurugram</option>
+                            <option value="">Chandigarh</option>
+                            <option value="">Noida</option>
+                            <option value="">Kochi</option>
+                            <option value="">Others</option>
+
+                        </select>
+                    </div>
+                    <div>
+                        <button id="reset_filter">Reset Filter</button>
+                    </div>
+                    <div id="appendData">
+                        <!-- <div class="data">
+                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
+                    </div>
+                    <div class="data">
+                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
+                    </div>
+                    <div class="data">
+                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
+                    </div>
+                    <div class="data">
+                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
+                    </div>
+                    <div class="data">
+                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
+                    </div>
+                    <div class="data">
+                        <img src="https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.0" alt="">
+                    </div> -->
+                    </div>
+
+
+                    <div class="adver">
+                        <div class="left_adver">
+                            <div class="L_ad">
+                                <img src="https://ketto.gumlet.io/assets/images/Sip-banner-people/girls-sip.png?w=160&dpr=1.0"
+                                    alt="">
+                            </div>
+                            <div class="R_ad">
+                                <p>What’s Better Than <span style="font-weight: 700;">Saving One Child?</span></p>
+                                <h2>Saving 12 More!</h2>
+                                <button id="ttu" style="margin-bottom:10%">Start Giving Monthly</button>
+                            </div>
+                        </div>
+                        <div class="right_adver">
+                            <h2>Confused about how to start a Fundraiser?</h2>
+                            <button class="sgm" style="width: 70%;margin: auto;
+                        ">Talk to us</button>
+                        </div>
+                    </div>
+                    <div style="border: 1px solid black; margin-top: 8%; text-align: center;" ;>
+                        <button id="lMore">Load More</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="bottom_faq">
+            <p>Have a question? Check out our <a href="" style="text-decoration:none ;">FAQs</a> page or chat with us on
+                Facebook or WhatsApp.</p>
+            <div>
+                <button id="fb_btn" class="sm"><img
+                        src="https://i.pinimg.com/474x/38/9b/14/389b14861f4be0c8d84876b3dda9afc0.jpg" alt=""> CHAT WITH
+                    US</button>
+
+                <button id="whatsapp_btn" class="sm"><img
+                        src="https://www.freepnglogos.com/uploads/whatsapp-logo-png-hd-2.png" alt=""> CHAT WITH
+                    US</button>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
+<script src="./scripts/BrowseFundraisers.js"></script>
+<script>
+            let signShow = () => {
+            let x = document.getElementById("signin");
+            let container = document.querySelectorAll(".signhidden");
+            let nav = document.getElementById("nav");
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                nav.style.filter = "brightness(0.3)";
+                container.style.filter = "brightness(0.3)";
+            } else {
+                x.style.display = "none";
+                nav.style.filter = "brightness(1)";
+                container.style.filter = "brightness(1)";
+            }
+        };
+</script>
