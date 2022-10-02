@@ -1,8 +1,12 @@
+// import navbar from ../components/EXnav.js;
+// document.getElementById("navbar")=navbar();
+
 
 window.onload  = () =>{
   let link = document.createElement('link');
   link.rel = 'stylesheet';
-  link.href = './styles/nav.css';
+  link.href = './styles/navBar.css';
+  link.href = './styles/footer.css';
   // append this link to head of document
   document.querySelector('head').append(link);
 document.getElementById('signin').addEventListener('click', toggleLogin)
