@@ -150,19 +150,8 @@ let Pass = () => {
   }
 };
 let signup = () => {
-  window.location.href = "./signup/sign.html";
+  window.location.href = "./sign.html";
 };
-
-function main() {
-  myFunction();
-  mytFunction();
-  side();
-  whatsapp();
-  signShow();
-  getOTP();
-  login();
-  Pass();
-  signup();
-}
-
-window.onload = main();
+let home = () => {
+  window.location.href = "./index.html";
+};

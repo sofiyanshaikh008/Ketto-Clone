@@ -26,7 +26,7 @@ function navbar(){
     </div>
     <!-- ==================== navbar========================================== -->
     <div id="nav">
-        <div id="logo"><img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=2.0" alt="">
+        <div id="logo" onclick="home()"><img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=2.0" alt="">
         </div>
         <div id="sec_nav">
             <a href="./BrowseFundraisers.html">Browse Fundraisers</a>
@@ -54,36 +54,6 @@ function navbar(){
             <label for="sidecheck" id="lab" onclick="side()"><i class="fa-solid fa-bars"></i></label></i></button>
     </div>
 
-
-    <div id="signin">
-        <div id="s1">
-            <h2>Login</h2>
-            <button id="scross" onclick="signShow()"><i class="fa-sharp fa-solid fa-x"></i></button>
-        </div>
-        <div id="s2">
-            <div id="s21" class="s21">
-                <input type="text" name="" id="mobile" placeholder="Email/Mobile Number">
-                <input type="text" name="" id="otp" placeholder="Enter OTP">
-                <div id="button1" onclick="getOTP()">Get OTP</div>
-                <div id="button2" onclick="login()">Login</div>
-                <div id="button3" onclick="emaillog()">Sign in</div>
-                <span id="logPass" onclick="Pass()">Login Via Password</span>
-                <p>By continuing you agree to our <a href="https://www.ketto.org/terms-of-use.php">Terms of
-                        Service</a> and <a href="https://www.ketto.org/privacy-policy.php">Privacy Policy</a></p>
-                <h4>Want to start a fundraiser? <a href="#">Click here</a></h4>
-
-                <span id="or">OR </span>
-                <span id="nor"></span>
-
-            </div>
-            <div id="s22">
-                <div>
-                    <img src="https://ketto.gumlet.io/assets/images/login/google.png?w=240&dpr=1.2" alt="">
-                    <p>Sign in With Google</p>
-                </div>
-
-            </div>
-        </div>
-    </div>`
+`
 }
 export default navbar; 
