@@ -1,3 +1,4 @@
+let url = "https://newjs211app.herokuapp.com/api/user";
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -16,10 +17,6 @@ window.onclick = function (event) {
 
 function mytFunction() {
   document.getElementById("tmyDropdown").classList.toggle("tshow");
-  console.log(
-    'document.getElementById("tmyDropdown").classList:',
-    document.getElementById("tmyDropdown").classList
-  );
 }
 window.onclick = function (event) {
   if (!event.target.matches(".tdropbtn")) {
@@ -57,7 +54,7 @@ window.onscroll = function (e) {
   // print "false" if direction is down and "true" if up
   let status = this.oldScroll > this.scrollY;
   if (status) {
-    nav.style.position = "sticky";
+    console.log("nav.style.position:", nav.style.position);
   } else {
     nav.style.position = "static";
   }
@@ -81,22 +78,37 @@ let signShow = () => {
   }
 };
 
-let getOTP = () => {
+let getOTP = async () => {
   let mobile = document.getElementById("mobile").value;
 
   let input_OTP = document.getElementById("otp");
   let btn1 = document.querySelector("#s21 > #button1");
   let btn2 = document.getElementById("button2");
+  let res = await fetch(`${url}`);
+  res = await res.json();
 
   if (mobile == "") {
     alert("Fill The Filed Properly");
   } else {
-    let genrate_OTP = Math.floor((Math.random() + 1) * 1000);
-    alert(genrate_OTP);
-    localStorage.setItem("otp", JSON.stringify(genrate_OTP));
-    input_OTP.style.display = "block";
-    btn1.style.display = "none";
-    btn2.style.display = "flex";
+    let flag = false;
+    for (let i = 0; i < res.length; i++) {
+      if (res[i].number == mobile) {
+        flag = true;
+      }
+    }
+
+    if (flag == true) {
+      let genrate_OTP = Math.floor((Math.random() + 1) * 1000);
+      localStorage.setItem("otp", JSON.stringify(genrate_OTP));
+      console.log("Hii");
+      input_OTP.style.display = "block";
+      btn1.style.display = "none";
+      btn2.style.display = "flex";
+      alert(genrate_OTP);
+    } else {
+      alert("You have To Sign In First");
+      window.location.href = "./sign.html";
+    }
   }
 };
 
@@ -135,8 +147,6 @@ let Pass = () => {
     logPass.innerText = "Login Via Password";
     btn2.style.display = "none";
     btn1.style.display = "flex";
-
-
   }
 };
 let signup = () => {
