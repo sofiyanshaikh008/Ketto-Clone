@@ -10,6 +10,11 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="./styles/navBar.css">
+    <!-- <link rel="stylesheet" href="./scripts/footer.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 
 
     <title>
@@ -17,6 +22,38 @@
     </title>
   </head>
   <body>
+
+    <!-- ==================== navbar========================================== -->
+    <div id="nav">
+      <div id="logo"><img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=2.0" alt="">
+      </div>
+      <div id="sec_nav">
+          <a href="./BrowseFundraisers.html">Browse Fundraisers</a>
+          <div class="tdropdown">
+              <button onclick="mytFunction()" class="tdropbtn">Fondraiser for<i
+                      class="fa-sharp fa-solid fa-caret-down"></i></button>
+              <div id="tmyDropdown" class="tdropdown-content">
+                  <a href="#" class="app">Medical treatment</a>
+                  <a href="#" class="app">Ngo/Charety</a>
+                  <a href="#" class="app">Other cases</a>
+              </div>
+          </div>
+          <a href="./howitworks.html">How its work</a>
+          <span><i class="fa-solid fa-magnifying-glass"></i>
+              Search
+          </span>
+      </div>
+      <div id="trd_nav">
+          <button onclick="whatsapp()" id="whatsapp"> <i class="fa-brands fa-whatsapp"></i> Chat</button>
+          <button id="fund" onclick="signup()"> Start a Fundraiser</button>
+          <a href="#" onclick="signShow()" class="signbtn">Sign In</a>
+
+      </div>
+      <button id="menu"> 
+          <label for="sidecheck" id="lab" onclick="side()"><i class="fa-solid fa-bars"></i></label></i></button>
+  </div>
+
+
     <div id="header">
       <div>
         <div id="headings">
@@ -99,774 +136,397 @@
       <h1>Trending Fundraisers</h1>
       <p>View the fundraisers that are most active right now</p>
     </div>
-    <!-- <div id="trendingSection">
-      <div class="trendCard">
-        <div class="trendImg">
-          <img class="tImg" />
+     <div id="trendingSection">
+      <div class="slider-wrap">
+        <div class="slider">
+          <ul>
+            <li><div class="trendCard">
+              <div class="trendImg">
+                <img class="tImg" />
+              </div>
+              <div class="title"></div>
+              <div class="raisedBy">
+                <span>FF</span>
+                <p class="name"></p>
+              </div>
+              <div class="raisedAmt"></div>
+              <div class="target"></div>
+              <div class="bar">
+                <div class="achieve"></div>
+              </div>
+              <div class="trendDetails">
+                <div class="timeLeftWrap">
+                  <span class="clock">
+                    <img src="./Imgaes/clockicon.png" alt="" />
+                  </span>
+                  <span class="timeLeft"> </span>
+                  days left
+                </div>
+                <div class="supports">
+                  <span class="heart">
+                    <img src="./Imgaes/hearticon.png" alt="" />
+                  </span>
+                  <span class="totalSupport"></span>
+                  Supporters
+                </div>
+              </div>
+              <div class="cardBtns">
+                <button class="shareFB">
+                  <span class="FBimg">
+                    <img src="./Imgaes/fbicon.png" alt="FB" />
+                  </span>
+                  <span>Share</span>
+                </button>
+                <button class="donateBtn">Donate</button>
+              </div>
+            </div></li>
+            <li><div class="trendCard">
+              <div class="trendImg">
+                <img class="tImg" />
+              </div>
+              <div class="title"></div>
+              <div class="raisedBy">
+                <span>RA</span>
+                <p class="name"></p>
+              </div>
+              <div class="raisedAmt">
+                <p><span></span></p>
+              </div>
+              <div class="target"></div>
+              <div class="bar">
+                <div class="achieve"></div>
+              </div>
+              <div class="trendDetails">
+                <div class="timeLeftWrap">
+                  <span class="clock">
+                    <img src="./Imgaes/clockicon.png" alt="" />
+                  </span>
+                  <span class="timeLeft"> </span>
+                  days left
+                </div>
+                <div class="supports">
+                  <span class="heart">
+                    <img src="./Imgaes/hearticon.png" alt="" />
+                  </span>
+                  <span class="totalSupport"></span>
+                  Supporters
+                </div>
+              </div>
+              <div class="cardBtns">
+                <button class="shareFB">
+                  <span class="FBimg">
+                    <img src="./Imgaes/fbicon.png" alt="FB" />
+                  </span>
+                  <span>Share</span>
+                </button>
+                <button class="donateBtn">Donate</button>
+              </div>
+            </div></li>
+            <li><div class="trendCard">
+              <div class="trendImg">
+                <img class="tImg" />
+              </div>
+              <div class="title"></div>
+              <div class="raisedBy">
+                <span>SJ</span>
+                <p class="name"></p>
+              </div>
+              <div class="raisedAmt">
+                <p><span></span></p>
+              </div>
+              <div class="target"></div>
+              <div class="bar">
+                <div class="achieve"></div>
+              </div>
+              <div class="trendDetails">
+                <div class="timeLeftWrap">
+                  <span class="clock">
+                    <img src="./Imgaes/clockicon.png" alt="" />
+                  </span>
+                  <span class="timeLeft"> </span>
+                  days left
+                </div>
+                <div class="supports">
+                  <span class="heart">
+                    <img src="./Imgaes/hearticon.png" alt="" />
+                  </span>
+                  <span class="totalSupport"></span>
+                  Supporters
+                </div>
+              </div>
+              <div class="cardBtns">
+                <button class="shareFB">
+                  <span class="FBimg">
+                    <img src="./Imgaes/fbicon.png" alt="FB" />
+                  </span>
+                  <span>Share</span>
+                </button>
+                <button class="donateBtn">Donate</button>
+              </div>
+            </div></li>
+            <li><div class="trendCard">
+              <div class="trendImg">
+                <img class="tImg" />
+              </div>
+              <div class="title"></div>
+              <div class="raisedBy">
+                <span>SJ</span>
+                <p class="name"></p>
+              </div>
+              <div class="raisedAmt">
+                <p><span></span></p>
+              </div>
+              <div class="target"></div>
+              <div class="bar">
+                <div class="achieve"></div>
+              </div>
+              <div class="trendDetails">
+                <div class="timeLeftWrap">
+                  <span class="clock">
+                    <img src="./Imgaes/clockicon.png" alt="" />
+                  </span>
+                  <span class="timeLeft"> </span>
+                  days left
+                </div>
+                <div class="supports">
+                  <span class="heart">
+                    <img src="./Imgaes/hearticon.png" alt="" />
+                  </span>
+                  <span class="totalSupport"></span>
+                  Supporters
+                </div>
+              </div>
+              <div class="cardBtns">
+                <button class="shareFB">
+                  <span class="FBimg">
+                    <img src="./Imgaes/fbicon.png" alt="FB" />
+                  </span>
+                  <span>Share</span>
+                </button>
+                <button class="donateBtn">Donate</button>
+              </div>
+            </div></li>
+            <li><div class="trendCard">
+              <div class="trendImg">
+                <img class="tImg" />
+              </div>
+              <div class="title"></div>
+              <div class="raisedBy">
+                <span>ME</span>
+                <p class="name"></p>
+              </div>
+              <div class="raisedAmt">
+                <p><span></span></p>
+              </div>
+              <div class="target"></div>
+              <div class="bar">
+                <div class="achieve"></div>
+              </div>
+              <div class="trendDetails">
+                <div class="timeLeftWrap">
+                  <span class="clock">
+                    <img src="./Imgaes/clockicon.png" alt="" />
+                  </span>
+                  <span class="timeLeft"> </span>
+                  days left
+                </div>
+                <div class="supports">
+                  <span class="heart">
+                    <img src="./Imgaes/hearticon.png" alt="" />
+                  </span>
+                  <span class="totalSupport"></span>
+                  Supporters
+                </div>
+              </div>
+              <div class="cardBtns">
+                <button class="shareFB">
+                  <span class="FBimg">
+                    <img src="./Imgaes/fbicon.png" alt="FB" />
+                  </span>
+                  <span>Share</span>
+                </button>
+                <button class="donateBtn">Donate</button>
+              </div>
+            </div></li>
+            <li><div class="trendCard">
+              <div class="trendImg">
+                <img class="tImg" />
+              </div>
+              <div class="title"></div>
+              <div class="raisedBy">
+                <span>HF</span>
+                <p class="name"></p>
+              </div>
+              <div class="raisedAmt">
+                <p><span></span></p>
+              </div>
+              <div class="target"></div>
+              <div class="bar">
+                <div class="achieve"></div>
+              </div>
+              <div class="trendDetails">
+                <div class="timeLeftWrap">
+                  <span class="clock">
+                    <img src="./Imgaes/clockicon.png" alt="" />
+                  </span>
+                  <span class="timeLeft"> </span>
+                  days left
+                </div>
+      
+                <div class="supports">
+                  <span class="heart">
+                    <img src="./Imgaes/hearticon.png" alt="" />
+                  </span>
+                  <span class="totalSupport"></span>
+                  Supporters
+                </div>
+              </div>
+              <div class="cardBtns">
+                <button class="shareFB">
+                  <span class="FBimg">
+                    <img src="./Imgaes/fbicon.png" alt="FB" />
+                  </span>
+                  <span>Share</span>
+                </button>
+                <button class="donateBtn">Donate</button>
+              </div>
+            </div></li>
+            <li><div class="trendCard">
+              <div class="trendImg">
+                <img class="tImg" />
+              </div>
+              <div class="title"></div>
+              <div class="raisedBy">
+                <span>JC</span>
+                <p class="name"></p>
+              </div>
+              <div class="raisedAmt">
+                <p><span></span></p>
+              </div>
+              <div class="target"></div>
+              <div class="bar">
+                <div class="achieve"></div>
+              </div>
+              <div class="trendDetails">
+                <div class="timeLeftWrap">
+                  <span class="clock">
+                    <img src="./Imgaes/clockicon.png" alt="" />
+                  </span>
+                  <span class="timeLeft"> </span>
+                  days left
+                </div>
+                <div class="supports">
+                  <span class="heart">
+                    <img src="./Imgaes/hearticon.png" alt="" />
+                  </span>
+                  <span class="totalSupport"></span>
+                  Supporters
+                </div>
+              </div>
+              <div class="cardBtns">
+                <button class="shareFB">
+                  <span class="FBimg">
+                    <img src="./Imgaes/fbicon.png" alt="FB" />
+                  </span>
+                  <span>Share</span>
+                </button>
+                <button class="donateBtn">Donate</button>
+              </div>
+            </div></li>
+            <li><div class="trendCard">
+              <div class="trendImg">
+                <img class="tImg" />
+              </div>
+              <div class="title"></div>
+              <div class="raisedBy">
+                <span>RP</span>
+                <p class="name"></p>
+              </div>
+              <div class="raisedAmt">
+                <p><span></span></p>
+              </div>
+              <div class="target"></div>
+              <div class="bar">
+                <div class="achieve"></div>
+              </div>
+              <div class="trendDetails">
+                <div class="timeLeftWrap">
+                  <span class="clock">
+                    <img src="./Imgaes/clockicon.png" alt="" />
+                  </span>
+                  <span class="timeLeft"> </span>
+                  days left
+                </div>
+                <div class="supports">
+                  <span class="heart">
+                    <img src="./Imgaes/hearticon.png" alt="" />
+                  </span>
+                  <span class="totalSupport"></span>
+                  Supporters
+                </div>
+              </div>
+              <div class="cardBtns">
+                <button class="shareFB">
+                  <span class="FBimg">
+                    <img src="./Imgaes/fbicon.png" alt="FB" />
+                  </span>
+                  <span>Share</span>
+                </button>
+                <button class="donateBtn">Donate</button>
+              </div>
+            </div></li>
+            <li><div class="trendCard">
+              <div class="trendImg">
+                <img class="tImg" />
+              </div>
+              <div class="title"></div>
+              <div class="raisedBy">
+                <span>RR</span>
+                <p class="name"></p>
+              </div>
+              <div class="raisedAmt">
+                <p><span></span></p>
+              </div>
+              <div class="target"></div>
+              <div class="bar">
+                <div class="achieve"></div>
+              </div>
+              <div class="trendDetails">
+                <div class="timeLeftWrap">
+                  <span class="clock">
+                    <img src="./Imgaes/clockicon.png" alt="" />
+                  </span>
+                  <span class="timeLeft"> </span>
+                  days left
+                </div>
+      
+                <div class="supports">
+                  <span class="heart">
+                    <img src="./Imgaes/hearticon.png" alt="" />
+                  </span>
+                  <span class="totalSupport"></span>
+                  Supporters
+                </div>
+              </div>
+              <div class="cardBtns">
+                <button class="shareFB">
+                  <span class="FBimg">
+                    <img src="./Imgaes/fbicon.png" alt="FB" />
+                  </span>
+                  <span>Share</span>
+                </button>
+                <button class="donateBtn">Donate</button>
+              </div>
+            </div></li>
+          </ul>
         </div>
-        <div class="title"></div>
-        <div class="raisedBy">
-          <span>FF</span>
-          <p class="name"></p>
-        </div>
-        <div class="raisedAmt"></div>
-        <div class="target"></div>
-        <div class="bar">
-          <div class="achieve"></div>
-        </div>
-        <div class="trendDetails">
-          <div class="timeLeftWrap">
-            <span class="clock">
-              <img src="./Imgaes/clockicon.png" alt="" />
-            </span>
-            <span class="timeLeft"> </span>
-            days left
-          </div>
-          <div class="supports">
-            <span class="heart">
-              <img src="./Imgaes/hearticon.png" alt="" />
-            </span>
-            <span class="totalSupport"></span>
-            Supporters
-          </div>
-        </div>
-        <div class="cardBtns">
-          <button class="shareFB">
-            <span class="FBimg">
-              <img src="./Imgaes/fbicon.png" alt="FB" />
-            </span>
-            <span>Share</span>
-          </button>
-          <button class="donateBtn">Donate</button>
-        </div>
+        <a href="#" class="slider-arrow sa-left">&lt;</a>
+        <a href="#" class="slider-arrow sa-right">&gt;</a>
       </div>
-      <div class="trendCard">
-        <div class="trendImg">
-          <img class="tImg" />
-        </div>
-        <div class="title"></div>
-        <div class="raisedBy">
-          <span>RA</span>
-          <p class="name"></p>
-        </div>
-        <div class="raisedAmt">
-          <p><span></span></p>
-        </div>
-        <div class="target"></div>
-        <div class="bar">
-          <div class="achieve"></div>
-        </div>
-        <div class="trendDetails">
-          <div class="timeLeftWrap">
-            <span class="clock">
-              <img src="./Imgaes/clockicon.png" alt="" />
-            </span>
-            <span class="timeLeft"> </span>
-            days left
-          </div>
-          <div class="supports">
-            <span class="heart">
-              <img src="./Imgaes/hearticon.png" alt="" />
-            </span>
-            <span class="totalSupport"></span>
-            Supporters
-          </div>
-        </div>
-        <div class="cardBtns">
-          <button class="shareFB">
-            <span class="FBimg">
-              <img src="./Imgaes/fbicon.png" alt="FB" />
-            </span>
-            <span>Share</span>
-          </button>
-          <button class="donateBtn">Donate</button>
-        </div>
-      </div>
-      <div class="trendCard">
-        <div class="trendImg">
-          <img class="tImg" />
-        </div>
-        <div class="title"></div>
-        <div class="raisedBy">
-          <span>SJ</span>
-          <p class="name"></p>
-        </div>
-        <div class="raisedAmt">
-          <p><span></span></p>
-        </div>
-        <div class="target"></div>
-        <div class="bar">
-          <div class="achieve"></div>
-        </div>
-        <div class="trendDetails">
-          <div class="timeLeftWrap">
-            <span class="clock">
-              <img src="./Imgaes/clockicon.png" alt="" />
-            </span>
-            <span class="timeLeft"> </span>
-            days left
-          </div>
-          <div class="supports">
-            <span class="heart">
-              <img src="./Imgaes/hearticon.png" alt="" />
-            </span>
-            <span class="totalSupport"></span>
-            Supporters
-          </div>
-        </div>
-        <div class="cardBtns">
-          <button class="shareFB">
-            <span class="FBimg">
-              <img src="./Imgaes/fbicon.png" alt="FB" />
-            </span>
-            <span>Share</span>
-          </button>
-          <button class="donateBtn">Donate</button>
-        </div>
-      </div>
-      <div class="trendCard">
-        <div class="trendImg">
-          <img class="tImg" />
-        </div>
-        <div class="title"></div>
-        <div class="raisedBy">
-          <span>SJ</span>
-          <p class="name"></p>
-        </div>
-        <div class="raisedAmt">
-          <p><span></span></p>
-        </div>
-        <div class="target"></div>
-        <div class="bar">
-          <div class="achieve"></div>
-        </div>
-        <div class="trendDetails">
-          <div class="timeLeftWrap">
-            <span class="clock">
-              <img src="./Imgaes/clockicon.png" alt="" />
-            </span>
-            <span class="timeLeft"> </span>
-            days left
-          </div>
-          <div class="supports">
-            <span class="heart">
-              <img src="./Imgaes/hearticon.png" alt="" />
-            </span>
-            <span class="totalSupport"></span>
-            Supporters
-          </div>
-        </div>
-        <div class="cardBtns">
-          <button class="shareFB">
-            <span class="FBimg">
-              <img src="./Imgaes/fbicon.png" alt="FB" />
-            </span>
-            <span>Share</span>
-          </button>
-          <button class="donateBtn">Donate</button>
-        </div>
-      </div>
-      <div class="trendCard">
-        <div class="trendImg">
-          <img class="tImg" />
-        </div>
-        <div class="title"></div>
-        <div class="raisedBy">
-          <span>ME</span>
-          <p class="name"></p>
-        </div>
-        <div class="raisedAmt">
-          <p><span></span></p>
-        </div>
-        <div class="target"></div>
-        <div class="bar">
-          <div class="achieve"></div>
-        </div>
-        <div class="trendDetails">
-          <div class="timeLeftWrap">
-            <span class="clock">
-              <img src="./Imgaes/clockicon.png" alt="" />
-            </span>
-            <span class="timeLeft"> </span>
-            days left
-          </div>
-          <div class="supports">
-            <span class="heart">
-              <img src="./Imgaes/hearticon.png" alt="" />
-            </span>
-            <span class="totalSupport"></span>
-            Supporters
-          </div>
-        </div>
-        <div class="cardBtns">
-          <button class="shareFB">
-            <span class="FBimg">
-              <img src="./Imgaes/fbicon.png" alt="FB" />
-            </span>
-            <span>Share</span>
-          </button>
-          <button class="donateBtn">Donate</button>
-        </div>
-      </div>
-      <div class="trendCard">
-        <div class="trendImg">
-          <img class="tImg" />
-        </div>
-        <div class="title"></div>
-        <div class="raisedBy">
-          <span>HF</span>
-          <p class="name"></p>
-        </div>
-        <div class="raisedAmt">
-          <p><span></span></p>
-        </div>
-        <div class="target"></div>
-        <div class="bar">
-          <div class="achieve"></div>
-        </div>
-        <div class="trendDetails">
-          <div class="timeLeftWrap">
-            <span class="clock">
-              <img src="./Imgaes/clockicon.png" alt="" />
-            </span>
-            <span class="timeLeft"> </span>
-            days left
-          </div>
-
-          <div class="supports">
-            <span class="heart">
-              <img src="./Imgaes/hearticon.png" alt="" />
-            </span>
-            <span class="totalSupport"></span>
-            Supporters
-          </div>
-        </div>
-        <div class="cardBtns">
-          <button class="shareFB">
-            <span class="FBimg">
-              <img src="./Imgaes/fbicon.png" alt="FB" />
-            </span>
-            <span>Share</span>
-          </button>
-          <button class="donateBtn">Donate</button>
-        </div>
-      </div>
-      <div class="trendCard">
-        <div class="trendImg">
-          <img class="tImg" />
-        </div>
-        <div class="title"></div>
-        <div class="raisedBy">
-          <span>JC</span>
-          <p class="name"></p>
-        </div>
-        <div class="raisedAmt">
-          <p><span></span></p>
-        </div>
-        <div class="target"></div>
-        <div class="bar">
-          <div class="achieve"></div>
-        </div>
-        <div class="trendDetails">
-          <div class="timeLeftWrap">
-            <span class="clock">
-              <img src="./Imgaes/clockicon.png" alt="" />
-            </span>
-            <span class="timeLeft"> </span>
-            days left
-          </div>
-          <div class="supports">
-            <span class="heart">
-              <img src="./Imgaes/hearticon.png" alt="" />
-            </span>
-            <span class="totalSupport"></span>
-            Supporters
-          </div>
-        </div>
-        <div class="cardBtns">
-          <button class="shareFB">
-            <span class="FBimg">
-              <img src="./Imgaes/fbicon.png" alt="FB" />
-            </span>
-            <span>Share</span>
-          </button>
-          <button class="donateBtn">Donate</button>
-        </div>
-      </div>
-      <div class="trendCard">
-        <div class="trendImg">
-          <img class="tImg" />
-        </div>
-        <div class="title"></div>
-        <div class="raisedBy">
-          <span>RP</span>
-          <p class="name"></p>
-        </div>
-        <div class="raisedAmt">
-          <p><span></span></p>
-        </div>
-        <div class="target"></div>
-        <div class="bar">
-          <div class="achieve"></div>
-        </div>
-        <div class="trendDetails">
-          <div class="timeLeftWrap">
-            <span class="clock">
-              <img src="./Imgaes/clockicon.png" alt="" />
-            </span>
-            <span class="timeLeft"> </span>
-            days left
-          </div>
-          <div class="supports">
-            <span class="heart">
-              <img src="./Imgaes/hearticon.png" alt="" />
-            </span>
-            <span class="totalSupport"></span>
-            Supporters
-          </div>
-        </div>
-        <div class="cardBtns">
-          <button class="shareFB">
-            <span class="FBimg">
-              <img src="./Imgaes/fbicon.png" alt="FB" />
-            </span>
-            <span>Share</span>
-          </button>
-          <button class="donateBtn">Donate</button>
-        </div>
-      </div>
-      <div class="trendCard">
-        <div class="trendImg">
-          <img class="tImg" />
-        </div>
-        <div class="title"></div>
-        <div class="raisedBy">
-          <span>RR</span>
-          <p class="name"></p>
-        </div>
-        <div class="raisedAmt">
-          <p><span></span></p>
-        </div>
-        <div class="target"></div>
-        <div class="bar">
-          <div class="achieve"></div>
-        </div>
-        <div class="trendDetails">
-          <div class="timeLeftWrap">
-            <span class="clock">
-              <img src="./Imgaes/clockicon.png" alt="" />
-            </span>
-            <span class="timeLeft"> </span>
-            days left
-          </div>
-
-          <div class="supports">
-            <span class="heart">
-              <img src="./Imgaes/hearticon.png" alt="" />
-            </span>
-            <span class="totalSupport"></span>
-            Supporters
-          </div>
-        </div>
-        <div class="cardBtns">
-          <button class="shareFB">
-            <span class="FBimg">
-              <img src="./Imgaes/fbicon.png" alt="FB" />
-            </span>
-            <span>Share</span>
-          </button>
-          <button class="donateBtn">Donate</button>
-        </div>
-      </div>
-    </div> -->
+    </div> 
 
     <!-- Kachra Code -->
-    <div class="slider-wrap">
-      <div class="slider">
-        <ul>
-          <li><div class="trendCard">
-            <div class="trendImg">
-              <img class="tImg" />
-            </div>
-            <div class="title"></div>
-            <div class="raisedBy">
-              <span>FF</span>
-              <p class="name"></p>
-            </div>
-            <div class="raisedAmt"></div>
-            <div class="target"></div>
-            <div class="bar">
-              <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-              <div class="timeLeftWrap">
-                <span class="clock">
-                  <img src="./Imgaes/clockicon.png" alt="" />
-                </span>
-                <span class="timeLeft"> </span>
-                days left
-              </div>
-              <div class="supports">
-                <span class="heart">
-                  <img src="./Imgaes/hearticon.png" alt="" />
-                </span>
-                <span class="totalSupport"></span>
-                Supporters
-              </div>
-            </div>
-            <div class="cardBtns">
-              <button class="shareFB">
-                <span class="FBimg">
-                  <img src="./Imgaes/fbicon.png" alt="FB" />
-                </span>
-                <span>Share</span>
-              </button>
-              <button class="donateBtn">Donate</button>
-            </div>
-          </div></li>
-          <li><div class="trendCard">
-            <div class="trendImg">
-              <img class="tImg" />
-            </div>
-            <div class="title"></div>
-            <div class="raisedBy">
-              <span>RA</span>
-              <p class="name"></p>
-            </div>
-            <div class="raisedAmt">
-              <p><span></span></p>
-            </div>
-            <div class="target"></div>
-            <div class="bar">
-              <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-              <div class="timeLeftWrap">
-                <span class="clock">
-                  <img src="./Imgaes/clockicon.png" alt="" />
-                </span>
-                <span class="timeLeft"> </span>
-                days left
-              </div>
-              <div class="supports">
-                <span class="heart">
-                  <img src="./Imgaes/hearticon.png" alt="" />
-                </span>
-                <span class="totalSupport"></span>
-                Supporters
-              </div>
-            </div>
-            <div class="cardBtns">
-              <button class="shareFB">
-                <span class="FBimg">
-                  <img src="./Imgaes/fbicon.png" alt="FB" />
-                </span>
-                <span>Share</span>
-              </button>
-              <button class="donateBtn">Donate</button>
-            </div>
-          </div></li>
-          <li><div class="trendCard">
-            <div class="trendImg">
-              <img class="tImg" />
-            </div>
-            <div class="title"></div>
-            <div class="raisedBy">
-              <span>SJ</span>
-              <p class="name"></p>
-            </div>
-            <div class="raisedAmt">
-              <p><span></span></p>
-            </div>
-            <div class="target"></div>
-            <div class="bar">
-              <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-              <div class="timeLeftWrap">
-                <span class="clock">
-                  <img src="./Imgaes/clockicon.png" alt="" />
-                </span>
-                <span class="timeLeft"> </span>
-                days left
-              </div>
-              <div class="supports">
-                <span class="heart">
-                  <img src="./Imgaes/hearticon.png" alt="" />
-                </span>
-                <span class="totalSupport"></span>
-                Supporters
-              </div>
-            </div>
-            <div class="cardBtns">
-              <button class="shareFB">
-                <span class="FBimg">
-                  <img src="./Imgaes/fbicon.png" alt="FB" />
-                </span>
-                <span>Share</span>
-              </button>
-              <button class="donateBtn">Donate</button>
-            </div>
-          </div></li>
-          <li><div class="trendCard">
-            <div class="trendImg">
-              <img class="tImg" />
-            </div>
-            <div class="title"></div>
-            <div class="raisedBy">
-              <span>SJ</span>
-              <p class="name"></p>
-            </div>
-            <div class="raisedAmt">
-              <p><span></span></p>
-            </div>
-            <div class="target"></div>
-            <div class="bar">
-              <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-              <div class="timeLeftWrap">
-                <span class="clock">
-                  <img src="./Imgaes/clockicon.png" alt="" />
-                </span>
-                <span class="timeLeft"> </span>
-                days left
-              </div>
-              <div class="supports">
-                <span class="heart">
-                  <img src="./Imgaes/hearticon.png" alt="" />
-                </span>
-                <span class="totalSupport"></span>
-                Supporters
-              </div>
-            </div>
-            <div class="cardBtns">
-              <button class="shareFB">
-                <span class="FBimg">
-                  <img src="./Imgaes/fbicon.png" alt="FB" />
-                </span>
-                <span>Share</span>
-              </button>
-              <button class="donateBtn">Donate</button>
-            </div>
-          </div></li>
-          <li><div class="trendCard">
-            <div class="trendImg">
-              <img class="tImg" />
-            </div>
-            <div class="title"></div>
-            <div class="raisedBy">
-              <span>ME</span>
-              <p class="name"></p>
-            </div>
-            <div class="raisedAmt">
-              <p><span></span></p>
-            </div>
-            <div class="target"></div>
-            <div class="bar">
-              <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-              <div class="timeLeftWrap">
-                <span class="clock">
-                  <img src="./Imgaes/clockicon.png" alt="" />
-                </span>
-                <span class="timeLeft"> </span>
-                days left
-              </div>
-              <div class="supports">
-                <span class="heart">
-                  <img src="./Imgaes/hearticon.png" alt="" />
-                </span>
-                <span class="totalSupport"></span>
-                Supporters
-              </div>
-            </div>
-            <div class="cardBtns">
-              <button class="shareFB">
-                <span class="FBimg">
-                  <img src="./Imgaes/fbicon.png" alt="FB" />
-                </span>
-                <span>Share</span>
-              </button>
-              <button class="donateBtn">Donate</button>
-            </div>
-          </div></li>
-          <li><div class="trendCard">
-            <div class="trendImg">
-              <img class="tImg" />
-            </div>
-            <div class="title"></div>
-            <div class="raisedBy">
-              <span>HF</span>
-              <p class="name"></p>
-            </div>
-            <div class="raisedAmt">
-              <p><span></span></p>
-            </div>
-            <div class="target"></div>
-            <div class="bar">
-              <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-              <div class="timeLeftWrap">
-                <span class="clock">
-                  <img src="./Imgaes/clockicon.png" alt="" />
-                </span>
-                <span class="timeLeft"> </span>
-                days left
-              </div>
     
-              <div class="supports">
-                <span class="heart">
-                  <img src="./Imgaes/hearticon.png" alt="" />
-                </span>
-                <span class="totalSupport"></span>
-                Supporters
-              </div>
-            </div>
-            <div class="cardBtns">
-              <button class="shareFB">
-                <span class="FBimg">
-                  <img src="./Imgaes/fbicon.png" alt="FB" />
-                </span>
-                <span>Share</span>
-              </button>
-              <button class="donateBtn">Donate</button>
-            </div>
-          </div></li>
-          <li><div class="trendCard">
-            <div class="trendImg">
-              <img class="tImg" />
-            </div>
-            <div class="title"></div>
-            <div class="raisedBy">
-              <span>JC</span>
-              <p class="name"></p>
-            </div>
-            <div class="raisedAmt">
-              <p><span></span></p>
-            </div>
-            <div class="target"></div>
-            <div class="bar">
-              <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-              <div class="timeLeftWrap">
-                <span class="clock">
-                  <img src="./Imgaes/clockicon.png" alt="" />
-                </span>
-                <span class="timeLeft"> </span>
-                days left
-              </div>
-              <div class="supports">
-                <span class="heart">
-                  <img src="./Imgaes/hearticon.png" alt="" />
-                </span>
-                <span class="totalSupport"></span>
-                Supporters
-              </div>
-            </div>
-            <div class="cardBtns">
-              <button class="shareFB">
-                <span class="FBimg">
-                  <img src="./Imgaes/fbicon.png" alt="FB" />
-                </span>
-                <span>Share</span>
-              </button>
-              <button class="donateBtn">Donate</button>
-            </div>
-          </div></li>
-          <li><div class="trendCard">
-            <div class="trendImg">
-              <img class="tImg" />
-            </div>
-            <div class="title"></div>
-            <div class="raisedBy">
-              <span>RP</span>
-              <p class="name"></p>
-            </div>
-            <div class="raisedAmt">
-              <p><span></span></p>
-            </div>
-            <div class="target"></div>
-            <div class="bar">
-              <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-              <div class="timeLeftWrap">
-                <span class="clock">
-                  <img src="./Imgaes/clockicon.png" alt="" />
-                </span>
-                <span class="timeLeft"> </span>
-                days left
-              </div>
-              <div class="supports">
-                <span class="heart">
-                  <img src="./Imgaes/hearticon.png" alt="" />
-                </span>
-                <span class="totalSupport"></span>
-                Supporters
-              </div>
-            </div>
-            <div class="cardBtns">
-              <button class="shareFB">
-                <span class="FBimg">
-                  <img src="./Imgaes/fbicon.png" alt="FB" />
-                </span>
-                <span>Share</span>
-              </button>
-              <button class="donateBtn">Donate</button>
-            </div>
-          </div></li>
-          <li><div class="trendCard">
-            <div class="trendImg">
-              <img class="tImg" />
-            </div>
-            <div class="title"></div>
-            <div class="raisedBy">
-              <span>RR</span>
-              <p class="name"></p>
-            </div>
-            <div class="raisedAmt">
-              <p><span></span></p>
-            </div>
-            <div class="target"></div>
-            <div class="bar">
-              <div class="achieve"></div>
-            </div>
-            <div class="trendDetails">
-              <div class="timeLeftWrap">
-                <span class="clock">
-                  <img src="./Imgaes/clockicon.png" alt="" />
-                </span>
-                <span class="timeLeft"> </span>
-                days left
-              </div>
-    
-              <div class="supports">
-                <span class="heart">
-                  <img src="./Imgaes/hearticon.png" alt="" />
-                </span>
-                <span class="totalSupport"></span>
-                Supporters
-              </div>
-            </div>
-            <div class="cardBtns">
-              <button class="shareFB">
-                <span class="FBimg">
-                  <img src="./Imgaes/fbicon.png" alt="FB" />
-                </span>
-                <span>Share</span>
-              </button>
-              <button class="donateBtn">Donate</button>
-            </div>
-          </div></li>
-        </ul>
-      </div>
-      <a href="#" class="slider-arrow sa-left">&lt;</a>
-      <a href="#" class="slider-arrow sa-right">&gt;</a>
-    </div>
     <!-- Kachra Code Ends -->
 
     <div id="note">
@@ -1101,106 +761,108 @@
       </div>
     </div>
 
-    <!-- ======== success stories ============ -->
 
-    <h1 id="featuredHeading">Success Stories</h1>
+ <!-- ======== success stories ============ -->
 
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
-        <div id="magicbox12">
-          <div>
-            <img
-              src="https://kettocdn.gumlet.io/media/banner/0/79/image/d0ab9b0b9bcc30ced6574c54d6b216ab895f90d5.jpg?w=auto&dpr=1.5"
-            />
-          </div>
-          <div id="div108108">
-            <h2>Amit and the world’s toughest cycling expedition</h2>
-            <p>
-              At 38, Dr. Amit Samarth is the first Asian to qualify, contest and
-              complete the Trans-Siberian Extreme Endurance Race. It is the
-              world's longest and the toughest cycling race - starting from
-              Moscow, traversing 9100 kms through Russia, to finally end in
-              Vladivostok. Amit was one of the only six people who finished the
-              race. He successfully raised the amount needed for this once in a
-              lifetime adventure on Ketto, where
-            </p>
-            <h3 style="color: rgb(19, 185, 187)">Read more</h3>
-            <br />
-            <div id="lbdeco1080">
-              <p>Subscribe to read such inspiring stories</p>
+ <h1 id="featuredHeading">Success Stories</h1>
 
-              <button>Subscribe</button>
-            </div>
-          </div>
-        </div>
-      </div>
+ <!-- Slideshow container -->
+ <div class="slideshow-container">
+   <!-- Full-width images with number and caption text -->
+   <div class="fade">
+     <div id="magicbox12">
+       <div>
+         <img
+           src="https://kettocdn.gumlet.io/media/banner/0/79/image/d0ab9b0b9bcc30ced6574c54d6b216ab895f90d5.jpg?w=auto&dpr=1.5"
+         />
+       </div>
+       <div id="div108108">
+         <h2>Amit and the world’s toughest cycling expedition</h2>
+         <p>
+           At 38, Dr. Amit Samarth is the first Asian to qualify, contest and
+           complete the Trans-Siberian Extreme Endurance Race. It is the
+           world's longest and the toughest cycling race - starting from
+           Moscow, traversing 9100 kms through Russia, to finally end in
+           Vladivostok. Amit was one of the only six people who finished the
+           race. He successfully raised the amount needed for this once in a
+           lifetime adventure on Ketto, where
+         </p>
+         <h3 style="color: rgb(19, 185, 187)">Read more</h3>
+         <br />
+         <div id="lbdeco1080">
+           <p>Subscribe to read such inspiring stories</p>
 
-      <div class="mySlides fade">
-        <div id="magicbox12">
-          <div>
-            <img
-              src="https://kettocdn.gumlet.io/media/banner/0/97/image/50e08ce31ef3bfa184cadd9ec164b8ecee8bb0f0.jpg?w=auto&dpr=1.5"
-            />
-          </div>
-          <div id="div108108">
-            <br /><br />
-            <h2>You are the reason Suraj gets to live his dream</h2>
-            <p>
-              “Our son’s cancer had relapsed after 2.5 years of chemotherapy &
-              we knew we couldn’t afford his life-saving treatment. But thanks
-              to your donations & prayers, he underwent successful treatment &
-              is recovering well. May God bless you all for saving his life!”
-              -Dhanasar (Father)
-            </p>
-            <h3 style="color: rgb(17, 167, 127)">Read more</h3>
-            <br />
-            <div id="lbdeco1080">
-              <p>Subscribe to read such inspiring stories</p>
+           <button>Subscribe</button>
+         </div>
+       </div>
+     </div>
+   </div>
 
-              <button>Subscribe</button>
-            </div>
-          </div>
-        </div>
-      </div>
+   <div class="fade">
+     <div id="magicbox12">
+       <div>
+         <img
+           src="https://kettocdn.gumlet.io/media/banner/0/97/image/50e08ce31ef3bfa184cadd9ec164b8ecee8bb0f0.jpg?w=auto&dpr=1.5"
+         />
+       </div>
+       <div id="div108108">
+         <br /><br />
+         <h2>You are the reason Suraj gets to live his dream</h2>
+         <p>
+           “Our son’s cancer had relapsed after 2.5 years of chemotherapy &
+           we knew we couldn’t afford his life-saving treatment. But thanks
+           to your donations & prayers, he underwent successful treatment &
+           is recovering well. May God bless you all for saving his life!”
+           -Dhanasar (Father)
+         </p>
+         <h3 style="color: rgb(17, 167, 127)">Read more</h3>
+         <br />
+         <div id="lbdeco1080">
+           <p>Subscribe to read such inspiring stories</p>
 
-      <div class="mySlides fade">
-        <div id="magicbox12">
-          <div>
-            <img
-              src="https://kettocdn.gumlet.io/media/banner/0/95/image/bc5ae443b8da492ff0c97082e2981ada078e385d.jpg?w=auto&dpr=1.5"
-            />
-          </div>
-          <div id="div108108">
-            <h2>My daughter finally gets to enjoy her childhood</h2>
-            <p>
-              "My daughter was suffering from Budd Chiari syndrome with a
-              recurrent gastrointestinal bleed and needed an urgent liver
-              transplant to survive, but sadly we couldn't afford it. However,
-              your donations gave her a new lease on life! She underwent a
-              successful liver transplant and is now enjoying her childhood.
-              Words cannot express how grateful I am to you angels!" - Prajakta
-              (Mother)
-            </p>
-            <h3 style="color: rgb(17, 167, 127)">Read more</h3>
-            <br />
-            <div id="lbdeco1080">
-              <p>Subscribe to read such inspiring stories</p>
+           <button>Subscribe</button>
+         </div>
+       </div>
+     </div>
+   </div>
 
-              <button>Subscribe</button>
-            </div>
-          </div>
-        </div>
-      </div>
+   <div class="fade">
+     <div id="magicbox12">
+       <div>
+         <img
+           src="https://kettocdn.gumlet.io/media/banner/0/95/image/bc5ae443b8da492ff0c97082e2981ada078e385d.jpg?w=auto&dpr=1.5"
+         />
+       </div>
+       <div id="div108108">
+         <h2>My daughter finally gets to enjoy her childhood</h2>
+         <p>
+           "My daughter was suffering from Budd Chiari syndrome with a
+           recurrent gastrointestinal bleed and needed an urgent liver
+           transplant to survive, but sadly we couldn't afford it. However,
+           your donations gave her a new lease on life! She underwent a
+           successful liver transplant and is now enjoying her childhood.
+           Words cannot express how grateful I am to you angels!" - Prajakta
+           (Mother)
+         </p>
+         <h3 style="color: rgb(17, 167, 127)">Read more</h3>
+         <br />
+         <div id="lbdeco1080">
+           <p>Subscribe to read such inspiring stories</p>
 
-      <!-- Next and previous buttons -->
-      <a class="prevv" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="nextt" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br />
-    <br />
-    <!-- slide2 end -->
+           <button>Subscribe</button>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <!-- Next and previous buttons -->
+   <a class="prevv" onclick="currentSlide(-1)">&#10094;</a>
+   <a class="nextt" onclick="plusSlides(1)">&#10095;</a>
+ </div>
+ <br />
+ <br />
+ <!-- slide2 end -->
+
 
 
     <div id="bt" style="margin-top:30px">
@@ -1281,6 +943,12 @@
         </button>
       </div>
     </div>
+
+    <!-- =======Footer========= -->
+
+    <div id="foot"></div>
+
+
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="./scripts/jquery.lbslider.js"></script>
     <script>
@@ -1292,7 +960,14 @@
         // autoPlayDelay: 5,
       });
       </script>
+
+      <script type="module">
+        import footer from "./components/EXfooter.js"
+        let foot = document.getElementById("foot");
+        foot.innerHTML = footer();
+      </script>
       <script src="./scripts/index.js"></script>
+      <script src="./scripts/nav.js"></script>
   </body>
 
 </html>
