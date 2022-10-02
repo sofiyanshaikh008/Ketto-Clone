@@ -2,7 +2,6 @@ let url = 'https://odd-pig-button.cyclic.app/api';
 fetch(`${url}/allCategory`).then((res)=>{
     return (res.json());
 }).then((data)=>{
-    console.log(data);
     display(data)
 }).catch(function(err){
     console.log(err)
@@ -73,9 +72,15 @@ let main = (q) => {
     fetch(`${url}/${q}`).then((res)=>{
         return (res.json());
     }).then((data)=>{
-        console.log(data);
         display(data)
     }).catch(function(err){
         console.log(err)
     })
 }
+
+let enter = (e) => {
+    if (e.key === "Enter") {
+      let q = document.getElementById('search__input').value;
+    main(q);
+    }
+} 
