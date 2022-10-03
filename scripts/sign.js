@@ -22,9 +22,14 @@ let submit = async () => {
         "Content-Type": "application/json",
       },
     });
+    alert("Signup Succesfully",window.location="./signin.html")
   }
   name = document.getElementById("name").value = null;
   email = document.getElementById("email").value = null;
   password = document.getElementById("password").value = null;
   number = document.getElementById("number").value = null;
+};
+
+document.getElementById("login").onclick = () => {
+  window.location.href = "./signin.html";
 };

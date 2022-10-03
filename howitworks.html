@@ -1,693 +1,741 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How it Works</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>How it Works</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
         <link rel="stylesheet" href="./styles/howitworks.css">
         <link rel="stylesheet" href="./styles/navBar.css">
         <link rel="stylesheet" href="./styles/footer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    
-</head>
 
-<body>
-    <div id="navbar">
-        <div id="sidebar">
-            <div id="sidelogo"><img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=2.0" alt="">
-                <button id="menu"> 
-                    <label for="sidecheck" id="lab" onclick="side()"><i class="fa-solid fa-bars"></i></label></button>
-            </div>
-    
-            <input type="text" name="" id="Search" placeholder="Search By fundraiser creator,benyficiary or NGOs">
-            <span>To view fundraisers you have supported on Ketto <a href="#" id="click">Click here</a></span>
-            <a href="./BrowseFundraisers.html">Browse Fundraisers</a>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Fondraiser for<i
-                        class="fa-sharp fa-solid fa-caret-down"></i></button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#" class="app">Medical treatment</a>
-                    <a href="#" class="app">Ngo/Charety</a>
-                    <a href="#" class="app">Other cases</a>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    </head>
+
+    <body>
+        <div id="navbar">
+            <div id="sidebar">
+                <div id="sidelogo"><img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=2.0"
+                        alt="">
+                    <button id="menu">
+                        <label for="sidecheck" id="lab" onclick="side()"><i
+                                class="fa-solid fa-bars"></i></label></button>
                 </div>
-            </div>
-            <a href="./howitworks.html">How its work</a>
-            <a href="https://api.whatsapp.com/send?phone=919930088522">Get us On whatsapp</a>
-            <a href="./signin.html" class="signbtn">Sign In</a>
-    
-            <button id="sfund"> Start a Fundraiser</button>
-        </div>
-        <!-- ==================== navbar========================================== -->
-        <div id="nav">
-            <div id="logo" onclick="home()"><img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=2.0" alt="">
-            </div>
-            <div id="sec_nav">
+
+                <input type="text" name="" id="Search" placeholder="Search By fundraiser creator,benyficiary or NGOs">
+                <span>To view fundraisers you have supported on Ketto <a href="#" id="click">Click here</a></span>
                 <a href="./BrowseFundraisers.html">Browse Fundraisers</a>
-                <div class="tdropdown">
-                    <button onclick="mytFunction()" class="tdropbtn">Fondraiser for<i
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Fondraiser for<i
                             class="fa-sharp fa-solid fa-caret-down"></i></button>
-                    <div id="tmyDropdown" class="tdropdown-content">
+                    <div id="myDropdown" class="dropdown-content">
                         <a href="#" class="app">Medical treatment</a>
                         <a href="#" class="app">Ngo/Charety</a>
                         <a href="#" class="app">Other cases</a>
                     </div>
                 </div>
                 <a href="./howitworks.html">How its work</a>
-                <span><i class="fa-solid fa-magnifying-glass"></i>
-                    Search
-                </span>
+                <a href="https://api.whatsapp.com/send?phone=919930088522">Get us On whatsapp</a>
+                <a href="./signin.html" class="signbtn">Sign In</a>
+
+                <button id="sfund"> Start a Fundraiser</button>
             </div>
-            <div id="trd_nav">
-                <button onclick="whatsapp()" id="whatsapp"> <i class="fa-brands fa-whatsapp"></i> Chat</button>
-                <button id="fund" onclick="signup()"> Start a Fundraiser</button>
-                <a href="./signin.html"  class="signbtn">Sign In</a>
-    
-            </div>
-            <button id="menu"> 
-                <label for="sidecheck" id="lab" onclick="side()"><i class="fa-solid fa-bars"></i></label></i></button>
-        </div>
-    
-    
-        
-                   
-    
-    </div>
-     
-    <div id="head">
-        <h1>Raising Funds was never this easy. Start a fundraiser in 5 minutes!</h1>
-    </div>
-    <div id="slide-bar">
-        <div id="boox">
-            <div id="slider">  
-                <div class="slides">  
-                  <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image1.jpg?w=768&dpr=1.0" width="100%" />
-               
-                 </div>
-                  
-                  <div class="slides">  
-                  <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image2.jpg?w=768&dpr=1.0" width="100%" />
+            <!-- ==================== navbar========================================== -->
+            <div id="nav">
+                <div id="logo" onclick="home()"><img
+                        src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=2.0" alt="">
                 </div>
-                  
-                  <div class="slides">  
-                  <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image3.png?w=768&dpr=1.0" width="100%" />
-                </div> 
-                  
-                   <div class="slides">  
-                  <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image4.png?w=768&dpr=1.0" width="100%" />
-                </div> 
-                  
-                <div class="slides">  
-                  <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image5.jpg?w=768&dpr=1.0" width="100%" />
-                </div>  
-                  
-                  <div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-                 </div>
-        <div id="some">
+                <div id="sec_nav">
+                    <a href="./BrowseFundraisers.html">Browse Fundraisers</a>
+                    <div class="tdropdown">
+                        <button onclick="mytFunction()" class="tdropbtn">Fondraiser for<i
+                                class="fa-sharp fa-solid fa-caret-down"></i></button>
+                        <div id="tmyDropdown" class="tdropdown-content">
+                            <a href="#" class="app">Medical treatment</a>
+                            <a href="#" class="app">Ngo/Charety</a>
+                            <a href="#" class="app">Other cases</a>
+                        </div>
+                    </div>
+                    <a href="./howitworks.html">How its work</a>
+                    <span><i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </span>
+                </div>
+                <div id="trd_nav">
+                    <button onclick="whatsapp()" id="whatsapp"> <i class="fa-brands fa-whatsapp"></i> Chat</button>
+                    <button id="fund" onclick="signup()"> Start a Fundraiser</button>
+                    <a href="./signin.html" class="signbtn">Sign In</a>
+
+                </div>
+                <button id="menu">
+                    <label for="sidecheck" id="lab" onclick="side()"><i
+                            class="fa-solid fa-bars"></i></label></i></button>
+            </div>
+
+
+
+
+
+        </div>
+
+        <div id="head">
+            <h1>Raising Funds was never this easy. Start a fundraiser in 5 minutes!</h1>
+        </div>
+        <div id="slide-bar">
+            <div id="boox">
+                <div id="slider">
+                    <div class="slides">
+                        <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image1.jpg?w=768&dpr=1.0"
+                            width="100%" />
+
+                    </div>
+
+                    <div class="slides">
+                        <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image2.jpg?w=768&dpr=1.0"
+                            width="100%" />
+                    </div>
+
+                    <div class="slides">
+                        <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image3.png?w=768&dpr=1.0"
+                            width="100%" />
+                    </div>
+
+                    <div class="slides">
+                        <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image4.png?w=768&dpr=1.0"
+                            width="100%" />
+                    </div>
+
+                    <div class="slides">
+                        <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image5.jpg?w=768&dpr=1.0"
+                            width="100%" />
+                    </div>
+
+                    <div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span
+                            class="dot"></span><span class="dot"></span></div>
+                </div>
+                <div id="some">
+                    <div>
+                        <h2>55 Lakh+</h2>
+                        <p>DONORS
+                        <p>
+
+                    </div>
+
+                    <div>
+                        <h2>2 Lakh+</h2>
+                        <p>FUNDRAISERS
+                        <p>
+
+                    </div>
+
+                    <div>
+                        <h2>0%</h2>
+                        <p>PLATFORM FEE
+                        <p>
+                    </div>
+
+                </div>
+            </div>
+            <div id="form1">
+
+                <img src="https://ketto.gumlet.io/assets/images/how-it-works/ketto-logo.svg?w=480&dpr=1.0" alt="error">
+                <h3>We know you are in urgent need of funds.</h3>
+                <p>Our personal fundraiser expert is waiting to get you started!</p>
+
+
+                <input type="text" placeholder="Name">
+                <input type="number" placeholder="Your Mobile Number">
+                <select>
+                    <option> What will be the funds used for?</option>
+                    <Option>Cancer treatment</Option>
+                    <Option>accident treatment</Option>
+                    <Option>Liver/Kidney transplant</Option>
+                    <Option>Heart operation</Option>
+                    <Option>Pre-mature baby care (NICU)</Option>
+                    <Option>Medicines(Ongoing transplant)</Option>
+                    <Option>Memorial (Patient expired)</Option>
+                    <Option>Others</Option>
+                </select>
+                <p>102 People started a fundraiser in last 2 days</p>
+                <div id="butto">
+                    <button>GET A CALL</button>
+                    <button>CONNET ON WHATSAPP</button>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="net">
+            <h1>What is Crowdfunding?</h1>
+            <p>In its simplest form, Crowdfunding is a practice of giving monetary funds to overcome specific social,
+                cultural, or economic hurdles individuals face in their daily lives.</p>
+        </div>
+        <div id="video-part">
+            <div id="vidio">
+                <embed src="https://www.youtube.com/embed/4uu-mKoFR6w">
+            </div>
+            <div id="para">
+                <h2>So how does Crowdfunding work On Ketto?</h2>
+                <p>Let us assume an individual, unfortunately, meets with an accident on the road. His medical expenses
+                    and
+                    hospital bills start piling up. Now he needs ₹5 Lakh to pay his expensive medical bills.
+                    Fortunately,
+                    his best friend signed up on Ketto’s crowdfunding platform, completed the process of submitting
+                    valid
+                    documents needed for verification. In a few minutes, he created a crowdfunding campaign to raise
+                    funds
+                    for his friend’s medical expenses. Now, this campaign can be shared with all his near and dear ones
+                    through WhatsApp, Instagram, Twitter, Facebook and E-mail. In a matter of few minutes, funds start
+                    coming in to support the financial needs of the injured friend.</p>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- start a fundraise start  -->
+        <div id="safr1">
             <div>
-                <h2>55 Lakh+</h2>
-                <p>DONORS<p>
-                    
+                <img src="https://ketto.gumlet.io/assets/images/homepage/sac-separator.png?w=100&dpr=1.5" alt="">
             </div>
-            
+
             <div>
-                <h2>2 Lakh+</h2>
-                <p>FUNDRAISERS<p>
-                   
+                <h3>Start your fundraiser</h3>
+                <p>It’ll take only 2 minutes. Just tell us a few details about you and the ones you are raising funds
+                    for.</p>
+                <br><br><br><br>
+                <h3>Share your fundraiser</h3>
+                <p>All you need to do is share the fundraiser with your friends and family. In no time, support will
+                    start pouring in.</p>
+                <p id="smlp122">Share your fundraiser directly from dashboard on social media.</p>
+                <br><br><br> <br>
+                <h3>Withdraw Funds</h3>
+                <p>The funds raised can be withdrawn without any hassle directly to your bank account.</p>
+                <p id="smlp122">It takes only 5 minutes to withdraw funds on ketto.</p>
             </div>
-            
+
+            <!-- ontrols autoplay loop -->
             <div>
-                <h2>0%</h2>
-                <p>PLATFORM FEE<p>
+                <video width="440px" loop="true" autoplay="autoplay" controls muted
+                    src="https://www.ketto.org/assets/videos/screen_recording.webm"></video>
             </div>
-            
         </div>
+        <!-- start a fundraise end  -->
+        <div id="bt">
+            <button>START A FUNDRAISER FOR FREE</button>
+            <button>TALK TO US</button>
         </div>
-        <div id="form1">
-
-            <img src="https://ketto.gumlet.io/assets/images/how-it-works/ketto-logo.svg?w=480&dpr=1.0" alt="error">
-            <h3>We know you are in urgent need of funds.</h3>
-            <p>Our personal fundraiser expert is waiting to get you started!</p>
-
-
-            <input type="text" placeholder="Name">
-            <input type="number" placeholder="Your Mobile Number">
-            <select>
-                <option> What will be the funds used for?</option>
-                <Option>Cancer treatment</Option>
-                <Option>accident treatment</Option>
-                <Option>Liver/Kidney transplant</Option>
-                <Option>Heart operation</Option>
-                <Option>Pre-mature baby care (NICU)</Option>
-                <Option>Medicines(Ongoing transplant)</Option>
-                <Option>Memorial (Patient expired)</Option>
-                <Option>Others</Option>
-            </select>
-            <p>102 People started a fundraiser in last 2 days</p>
-            <div id="butto">
-                <button>GET A CALL</button>
-                <button>CONNET ON WHATSAPP</button>
+        <div id="next-bt">
+            <p>Have any questions for us? Chat with our team on Facebook or WhatsApp now.</p>
+            <div id="bn">
+                <button>
+                    <img src="https://icon-library.com/images/android-facebook-icon/android-facebook-icon-11.jpg"
+                        alt="error">
+                    CHAT WITH US
+                </button>
+                <button>
+                    <img src="https://seeklogo.com/images/W/whatsapp-icon-logo-BDC0A8063B-seeklogo.com.png" alt="error">
+                    CHAT WITH US
+                </button>
             </div>
-          
 
         </div>
-    </div>
-    <div id="net">
-        <h1>What is Crowdfunding?</h1>
-        <p>In its simplest form, Crowdfunding is a practice of giving monetary funds to overcome specific social,
-            cultural, or economic hurdles individuals face in their daily lives.</p>
-    </div>
-    <div id="video-part">
-        <div id="vidio">
-            <embed src="https://www.youtube.com/embed/4uu-mKoFR6w">
+        <div id="newh">
+            <h1>We provide everything you need</h1>
         </div>
-        <div id="para">
-            <h2>So how does Crowdfunding work On Ketto?</h2>
-            <p>Let us assume an individual, unfortunately, meets with an accident on the road. His medical expenses and
-                hospital bills start piling up. Now he needs ₹5 Lakh to pay his expensive medical bills. Fortunately,
-                his best friend signed up on Ketto’s crowdfunding platform, completed the process of submitting valid
-                documents needed for verification. In a few minutes, he created a crowdfunding campaign to raise funds
-                for his friend’s medical expenses. Now, this campaign can be shared with all his near and dear ones
-                through WhatsApp, Instagram, Twitter, Facebook and E-mail. In a matter of few minutes, funds start
-                coming in to support the financial needs of the injured friend.</p>
-        </div>
-    </div>
-
-
-
-
-
-     <!-- start a fundraise start  -->
-    <div id="safr1">
-        <div>
-            <img src="https://ketto.gumlet.io/assets/images/homepage/sac-separator.png?w=100&dpr=1.5" alt="">
-        </div>
-
-        <div><h3>Start your fundraiser</h3>
-            <p>It’ll take only 2 minutes. Just tell us a few details about you and the ones you are raising funds for.</p>
-            <br><br><br><br>
-            <h3>Share your fundraiser</h3>
-            <p>All you need to do is share the fundraiser with your friends and family. In no time, support will start pouring in.</p>
-            <p id="smlp122">Share your fundraiser directly from dashboard on social media.</p>
-            <br><br><br> <br>
-            <h3>Withdraw Funds</h3>
-            <p>The funds raised can be withdrawn without any hassle directly to your bank account.</p>
-            <p id="smlp122">It takes only 5 minutes to withdraw funds on ketto.</p>
-        </div>
-      
-        <!-- ontrols autoplay loop -->
-        <div>
-            <video  width="440px" loop="true" autoplay="autoplay" controls muted src="https://www.ketto.org/assets/videos/screen_recording.webm"></video>
-        </div>
-    </div>
-    <!-- start a fundraise end  -->
-    <div id="bt">
-        <button>START A FUNDRAISER FOR FREE</button>
-        <button>TALK TO US</button>
-    </div>
-    <div id="next-bt">
-        <p>Have any questions for us? Chat with our team on Facebook or WhatsApp now.</p>
-        <div id="bn">
-            <button>
-                <img src="https://icon-library.com/images/android-facebook-icon/android-facebook-icon-11.jpg"
-                    alt="error">
-                CHAT WITH US
-            </button>
-            <button>
-                <img src="https://seeklogo.com/images/W/whatsapp-icon-logo-BDC0A8063B-seeklogo.com.png" alt="error">
-                CHAT WITH US
-            </button>
-        </div>
-
-    </div>
-    <div id="newh">
-        <h1>We provide everything you need</h1>
-    </div>
-    <div id="grf">
-        <div>
+        <div id="grf">
             <div>
-                <h4>Payout</h4>
-                <p></p>
+                <div>
+                    <h4>Payout</h4>
+                    <p></p>
 
-                <p>
-                    This is your money, you can withdraw it at any point during the course of your fundraiser
-                </p>
+                    <p>
+                        This is your money, you can withdraw it at any point during the course of your fundraiser
+                    </p>
+                </div>
+
             </div>
-
-        </div>
-        <div>
             <div>
-                <h4>International payment support</h4>
-                <p></p>
-                <p>
-                    We accept donations in multiple currencies from anywhere in the world
-                </p>
-            </div>
+                <div>
+                    <h4>International payment support</h4>
+                    <p></p>
+                    <p>
+                        We accept donations in multiple currencies from anywhere in the world
+                    </p>
+                </div>
 
-        </div>
-        <div>
+            </div>
             <div>
-                <h4>Multiple people - Same Fundraiser</h4>
-                <p></p>
-                <p>
-                    Multiple people manage and fundraise for your cause
-                </p>
-            </div>
+                <div>
+                    <h4>Multiple people - Same Fundraiser</h4>
+                    <p></p>
+                    <p>
+                        Multiple people manage and fundraise for your cause
+                    </p>
+                </div>
 
-        </div>
-        <div>
+            </div>
             <div>
-                <h4>Personalized Web App</h4>
-                <p></p>
-                <p>
-                    Get instant updates on your fundraiser's progress via instant alerts, email and track everything
-                    realtime on Ketto's web app
+                <div>
+                    <h4>Personalized Web App</h4>
+                    <p></p>
+                    <p>
+                        Get instant updates on your fundraiser's progress via instant alerts, email and track everything
+                        realtime on Ketto's web app
 
-                </p>
+                    </p>
+                </div>
+
             </div>
-
-        </div>
-        <div>
             <div>
-                <h4>Dedicated Fundraiser expert</h4>
-                <p></p>
-                <p>
-                    A dedicated fundraiser expert guides you through your fundraising
-                </p>
-            </div>
+                <div>
+                    <h4>Dedicated Fundraiser expert</h4>
+                    <p></p>
+                    <p>
+                        A dedicated fundraiser expert guides you through your fundraising
+                    </p>
+                </div>
 
-        </div>
-        <div>
+            </div>
             <div>
-                <h4>
-                    Keep the raised amount</h4>
-                <p></p>
-                <p>
-                    You will receive all the raised amount after the transactional, processing fee.
-                </p>
-            </div>
+                <div>
+                    <h4>
+                        Keep the raised amount</h4>
+                    <p></p>
+                    <p>
+                        You will receive all the raised amount after the transactional, processing fee.
+                    </p>
+                </div>
 
-        </div>
-        <div>
+            </div>
             <div>
-                <h4>
-                    24/7 support</h4>
-                <p></p>
-                <p>
-                    We offer you 24*7 assistance via call, WhatsApp, Email, SMS and our Instant Chatting Interface
+                <div>
+                    <h4>
+                        24/7 support</h4>
+                    <p></p>
+                    <p>
+                        We offer you 24*7 assistance via call, WhatsApp, Email, SMS and our Instant Chatting Interface
 
-                </p>
+                    </p>
+                </div>
+
             </div>
-
-        </div>
-        <div>
             <div>
-                <h4>Advertising support</h4>
-                <p></p>
-                <p>
-                    We provide marketing and promotional support for your fundraiser
-                </p>
-            </div>
+                <div>
+                    <h4>Advertising support</h4>
+                    <p></p>
+                    <p>
+                        We provide marketing and promotional support for your fundraiser
+                    </p>
+                </div>
 
-        </div>
-        <div>
+            </div>
             <div>
-                <h4>Fundraising Marketing tool</h4>
-                <p></p>
-                <p>
-                    A highly intelligent marketing tool, which provides all insights on your fundraiser
+                <div>
+                    <h4>Fundraising Marketing tool</h4>
+                    <p></p>
+                    <p>
+                        A highly intelligent marketing tool, which provides all insights on your fundraiser
 
-                </p>
+                    </p>
+                </div>
+
             </div>
 
         </div>
+        <div id="seco">
+            <button>START A FOUNDRAISER</button>
+            <button>BROWSE FUNDRAISER</button>
+        </div>
+        <!-- //course is here -->
 
-    </div>
-    <div id="seco">
-        <button>START A FOUNDRAISER</button>
-        <button>BROWSE FUNDRAISER</button>
-    </div>
-    <!-- //course is here -->
+        <div id="maine">
+            <h1 id="maineh1">Most Promising Platform To Raise Funds</h1>
+            <p>Millions of people succesfully raised funds on Ketto for their cause. Hear what some of our successful
+                campaigners have to say.</p>
 
-    <div id="maine">
-        <h1 id="maineh1">Most Promising Platform To Raise Funds</h1>
-        <p>Millions of people succesfully raised funds on Ketto for their cause. Hear what some of our successful
-            campaigners have to say.</p>
+            <div class="owl-carousel owl-theme">
 
-        <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div id="carousel">
+                        <img src="https://cdn.amomama.com/62595664a8722accbaa4c80d12589cc7.jpg?width=650&height=340"
+                            alt="">
 
-            <div class="item">
-                <div id="carousel">
-                    <img src="https://cdn.amomama.com/62595664a8722accbaa4c80d12589cc7.jpg?width=650&height=340" alt="">
+                        <div id="Parag">
+                            <h2>Constable Deepak</h2>
+                            <p>Campaigner</p>
+                            <h3>Raised <span class="col">Rs.9,57,401</span> for Constable medical treatment</h3>
 
-                    <div id="Parag">
-                        <h2>Constable Deepak</h2>
-                        <p>Campaigner</p>
-                        <h3>Raised <span class="col" >Rs.9,57,401</span> for Constable medical treatment</h3>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div id="part-2">
+                        <h4>Testimonial:</h4>
+                        <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only
+                            because
+                            I
+                            knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who
+                            gave
+                            me moey.
+                            I wouldn't be alive without you.</p>
+                    </div>
+                    <div class="hy">
+                        <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <div id="carousel">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe3cqXFmKUZX544mKKkI0n4Zglrh1pR5K6DQ&usqp=CAU"
+                            alt="">
+
+                        <div id="Parag">
+                            <h2>Saurabh Bodas</h2>
+                            <p>Campaigner</p>
+                            <h3>Raised <span class="col">Rs.5,08,675</span> for Constable medical treatment</h3>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div id="part-2">
+                        <h4>Testimonial:</h4>
+                        <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only
+                            because
+                            I
+                            knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who
+                            gave
+                            me moey.
+                            I wouldn't be alive without you.</p>
+                    </div>
+                    <div class="hy">
+                        <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <div id="carousel">
+                        <img src="https://starhospitals.in/img/internationalpatients/internationa-patient-300x150.png"
+                            alt="">
+
+                        <div id="Parag">
+                            <h2>Manish Vyas</h2>
+                            <p>Campaigner</p>
+                            <h3>Raised <span class="col">Rs.5,66,598</span> for Constable medical treatment</h3>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div id="part-2">
+                        <h4>Testimonial:</h4>
+                        <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only
+                            because
+                            I
+                            knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who
+                            gave
+                            me moey.
+                            I wouldn't be alive without you.</p>
+                    </div>
+                    <div class="hy">
+                        <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <div id="carousel">
+                        <img src="https://media.istockphoto.com/photos/female-nurse-comfort-support-old-male-patient-picture-id1330045921?b=1&k=20&m=1330045921&s=170667a&w=0&h=4jNyJeLhpDN2AVFIB0TZWFJS5iOU58StZcgZhW-LDPs="
+                            alt="">
+
+                        <div id="Parag">
+                            <h2>Dhruv Pandey</h2>
+                            <p>Campaigner</p>
+                            <h3>Raised <span class="col">Rs.6,53,336</span> for Constable medical treatment</h3>
+
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div id="part-2">
+                        <h4>Testimonial:</h4>
+                        <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only
+                            because
+                            I
+                            knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who
+                            gave
+                            me moey.
+                            I wouldn't be alive without you.</p>
+                    </div>
+                    <div class="hy">
+                        <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <div id="carousel">
+                        <img src="https://starhospitals.in/img/internationalpatients/Preparing%20for%20discharge.jpg"
+                            alt="">
+
+                        <div id="Parag">
+                            <h2>Nitya</h2>
+                            <p>Campaigner</p>
+                            <h3>Raised <span class="col">Rs.25,85,870</span> for Constable medical treatment</h3>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div id="part-2">
+                        <h4>Testimonial:</h4>
+                        <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only
+                            because
+                            I
+                            knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who
+                            gave
+                            me moey.
+                            I wouldn't be alive without you.</p>
+                    </div>
+                    <div class="hy">
+                        <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <div id="carousel">
+                        <img src="https://media.istockphoto.com/photos/young-doctor-on-a-house-call-picture-id1297475344?k=20&m=1297475344&s=612x612&w=0&h=SPm-aAZgzgj0Twc4k6JNtx7R2fgzsFUiGa2IEnxYtW8="
+                            alt="">
+
+                        <div id="Parag">
+                            <h2>Saurabh</h2>
+                            <p>Campaigner</p>
+                            <h3>Raised <span class="col">Rs.9,57,401</span> for Constable medical treatment</h3>
+                        </div>
+                    </div>
+
+                    <hr id="hr3030">
+                    <div id="part-2">
+                        <h4>Testimonial:</h4>
+                        <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only
+                            because
+                            I
+                            knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who
+                            gave
+                            me moey.
+                            I wouldn't be alive without you.</p>
+                    </div>
+                    <div class="hy">
+                        <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="fa">
+            <h3>FAQs</h3>
+            <hr>
+        </div>
+        <div class="layout">
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>How do I raise funds?</p>
+
+                </div>
+                <div class="accordion__answer">
+                    <p>To Start a Fundraiser, follow the three steps:</p>
+                    <p>1. Sign up on Ketto</p>
+                    <p>2. Fill up the form</p>
+                    <p>3. Hit Submit</p>
+
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>Can I raise funds for a friend as well?</p>
+
+                </div>
+                <div class="accordion__answer">
+                    <p>
+                        Yes, you can also raise funds for a friend, a loved one or anyone in need during life's crucial
+                        moments
+                    </p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>Does the raised amount reach the individual directly?</p>
+
+                </div>
+                <div class="accordion__answer">
+                    <p>
+                        With Ketto, the money you collect goes directly to the bank account associated with your
+                        fundraising
+                        page. Raising money for yourself or anyone has never been easier.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>Is it safe?</p>
+
+                </div>
+                <div class="accordion__answer">
+                    <p>
+                        Your Ketto fundraiser features the very best in secure payment encryption technology. Not only
+                        are
+                        your donors online payments safe, your money is stored securely until you're ready to request a
+                        withdrawal via electronic bank transfer.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>What if I don't reach my goal?</p>
+
+                </div>
+                <div class="accordion__answer">
+                    <p>
+                        No problem. You will still receive the raised amount after the transactional processing fee.
+                        To know more about transactional processing fee, visit: www.ketto.org/support/plans-and-pricing
+                    </p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>I have more questions, who do I write to?</p>
+
+                </div>
+                <div class="accordion__answer">
+                    <p>
+                        You can write to info@ketto.org Know someone who needs funds for medical treatment urgently?
+                        Help
+                        them out by sharing this information with them.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <footer>
+                <div id="footer">
+                    <div id="mainfoot">
+                        <div id="foot1">
+                            <div id="footimg">
+                                <img src="https://kettocdn.gumlet.io/images/logo-dark-bg.svg?w=80&dpr=2.0" alt="">
+                            </div>
+                            <div id="footlogo">
+                                <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+                                <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+                                <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
+
+
+                            </div>
+
+                            <div id="follow">
+                                <h1> 1.5M +</h1>
+                                <p>Followers</p>
+                            </div>
+
+                            <div id="Footcontact">
+                                <p>For any queries</p>
+                                <p>Email: info@ketto.org</p>
+                                <p> Contact No: +91 9930088522</p>
+
+                            </div>
+                        </div>
+                        <div id="foot2">
+                            <h2>Cause</h2>
+                            <div>
+                                <p>Medical crowdfunding</p>
+                                <p>Cancer Crowdfunding</p>
+                                <p>Education</p>
+                                <p>Crowdfunding</p>
+                                <p>Creative Fundraising</p>
+                                <p>Child Welfare</p>
+                                <p>Animal Fundraisers</p>
+                                <p>COVID-19 Relief Fund</p>
+
+                            </div>
+                        </div>
+                        <div id="foot3">
+                            <h2>How it works?</h2>
+                            <div>
+                                <p>Fundraising for NGOs</p>
+                                <p>Sponsor A Child</p>
+                                <p>Fundraising Tips</p>
+                                <p>What is Crowdfunding?</p>
+                                <p>Corporates</p>
+                                <p>Withdraw Funds</p>
+                                <p>Browse Fundraiser</p>
+
+
+                            </div>
+                        </div>
+                        <div id="foot4">
+                            <h2>About Us</h2>
+                            <div>
+                                <p>Team Ketto</p>
+                                <p>In The News</p>
+                                <p>Our Partners</p>
+                                <p>Careers</p>
+                                <p>Ketto Blog</p>
+                                <p>Success Stories</p>
+
+
+
+                            </div>
+                        </div>
+                        <div id="foot5">
+                            <h2>Support</h2>
+                            <div>
+                                <p>Medical Finance</p>
+                                <p>FAQs & Help Center</p>
+                                <p>Are Ketto Campaigns</p>
+                                <p>Genuine?</p>
+                                <p>Fundraiser Video</p>
+                                <p>Trust & Safety</p>
+                                <p>Plans & Pricing</p>
+                                <p>Contact Us</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="bottomfoot">
+
+                        <img src="	https://ketto.gumlet.io/assets/images/homepage/footer-secured-card.png?w=457&dpr=2.0"
+                            alt="">
+
 
                     </div>
                 </div>
 
-                <hr>
-                <div id="part-2">
-                    <h4>Testimonial:</h4>
-                    <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only because
-                        I
-                        knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who gave
-                        me moey.
-                        I wouldn't be alive without you.</p>
-                </div>
-                <div class="hy">
-                    <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
-                </div>
-            </div>
-            <div class="item">
-                <div id="carousel">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe3cqXFmKUZX544mKKkI0n4Zglrh1pR5K6DQ&usqp=CAU" alt="">
-
-                    <div id="Parag">
-                        <h2>Saurabh Bodas</h2>
-                        <p>Campaigner</p>
-                        <h3>Raised <span class="col" >Rs.5,08,675</span> for Constable medical treatment</h3>
-                    </div>
+                <div id="affooter">
+                    <p>Copyright © 2022 Ketto Online Ventures Pvt Ltd. All Rights Reserved.
+                        Terms of Use |
+                        Privacy Policy |
+                        AML Policy |
+                        Use of cookies </p>
                 </div>
 
-                <hr>
-                <div id="part-2">
-                    <h4>Testimonial:</h4>
-                    <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only because
-                        I
-                        knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who gave
-                        me moey.
-                        I wouldn't be alive without you.</p>
-                </div>
-                <div class="hy">
-                    <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
-                </div>
-            </div>
-            <div class="item">
-                <div id="carousel">
-                    <img src="https://starhospitals.in/img/internationalpatients/internationa-patient-300x150.png" alt="">
-
-                    <div id="Parag">
-                        <h2>Manish Vyas</h2>
-                        <p>Campaigner</p>
-                        <h3>Raised <span class="col" >Rs.5,66,598</span> for Constable medical treatment</h3>
-                    </div>
+                <div id="affooter2">
+                    <p>Know more about Ketto Crowdfunding Platform</p>
                 </div>
 
-                <hr>
-                <div id="part-2">
-                    <h4>Testimonial:</h4>
-                    <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only because
-                        I
-                        knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who gave
-                        me moey.
-                        I wouldn't be alive without you.</p>
-                </div>
-                <div class="hy">
-                    <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
-                </div>
-            </div>
-            <div class="item">
-                <div id="carousel">
-                    <img src="https://media.istockphoto.com/photos/female-nurse-comfort-support-old-male-patient-picture-id1330045921?b=1&k=20&m=1330045921&s=170667a&w=0&h=4jNyJeLhpDN2AVFIB0TZWFJS5iOU58StZcgZhW-LDPs=" alt="">
 
-                    <div id="Parag">
-                        <h2>Dhruv Pandey</h2>
-                        <p>Campaigner</p>
-                        <h3>Raised <span class="col" >Rs.6,53,336</span> for Constable medical treatment</h3>
-
-                    </div>
-                </div>
-
-                <hr>
-                <div id="part-2">
-                    <h4>Testimonial:</h4>
-                    <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only because
-                        I
-                        knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who gave
-                        me moey.
-                        I wouldn't be alive without you.</p>
-                </div>
-                <div class="hy">
-                    <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
-                </div>
-            </div>
-            <div class="item">
-                <div id="carousel">
-                    <img src="https://starhospitals.in/img/internationalpatients/Preparing%20for%20discharge.jpg" alt="">
-
-                    <div id="Parag">
-                        <h2>Nitya</h2>
-                        <p>Campaigner</p>
-                        <h3>Raised <span class="col" >Rs.25,85,870</span> for Constable medical treatment</h3>
-                    </div>
-                </div>
-
-                <hr>
-                <div id="part-2">
-                    <h4>Testimonial:</h4>
-                    <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only because
-                        I
-                        knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who gave
-                        me moey.
-                        I wouldn't be alive without you.</p>
-                </div>
-                <div class="hy">
-                    <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
-                </div>
-            </div>
-            <div class="item">
-                <div id="carousel">
-                    <img src="https://media.istockphoto.com/photos/young-doctor-on-a-house-call-picture-id1297475344?k=20&m=1297475344&s=612x612&w=0&h=SPm-aAZgzgj0Twc4k6JNtx7R2fgzsFUiGa2IEnxYtW8=" alt="">
-
-                    <div id="Parag">
-                        <h2>Saurabh</h2>
-                        <p>Campaigner</p>
-                        <h3>Raised <span class="col" >Rs.9,57,401</span> for Constable medical treatment</h3>
-                    </div>
-                </div>
-
-                <hr id="hr3030">
-                <div id="part-2">
-                    <h4>Testimonial:</h4>
-                    <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only because
-                        I
-                        knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who gave
-                        me moey.
-                        I wouldn't be alive without you.</p>
-                </div>
-                <div class="hy">
-                    <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <div id="fa">
-        <h3>FAQs</h3>
-        <hr>
-    </div>
-    <div class="layout">
-        <div class="accordion">
-            <div class="accordion__question">
-                <p>How do I raise funds?</p>
-
-            </div>
-            <div class="accordion__answer">
-                <p>To Start a Fundraiser, follow the three steps:</p>
-                <p>1. Sign up on Ketto</p>
-                <p>2. Fill up the form</p>
-                <p>3. Hit Submit</p>
-
-            </div>
-        </div>
-        <div class="accordion">
-            <div class="accordion__question">
-                <p>Can I raise funds for a friend as well?</p>
-
-            </div>
-            <div class="accordion__answer">
-                <p>
-                    Yes, you can also raise funds for a friend, a loved one or anyone in need during life's crucial
-                    moments
-                </p>
-            </div>
-        </div>
-        <div class="accordion">
-            <div class="accordion__question">
-                <p>Does the raised amount reach the individual directly?</p>
-
-            </div>
-            <div class="accordion__answer">
-                <p>
-                    With Ketto, the money you collect goes directly to the bank account associated with your fundraising
-                    page. Raising money for yourself or anyone has never been easier.
-                </p>
-            </div>
-        </div>
-        <div class="accordion">
-            <div class="accordion__question">
-                <p>Is it safe?</p>
-
-            </div>
-            <div class="accordion__answer">
-                <p>
-                    Your Ketto fundraiser features the very best in secure payment encryption technology. Not only are
-                    your donors online payments safe, your money is stored securely until you're ready to request a
-                    withdrawal via electronic bank transfer.
-                </p>
-            </div>
-        </div>
-        <div class="accordion">
-            <div class="accordion__question">
-                <p>What if I don't reach my goal?</p>
-
-            </div>
-            <div class="accordion__answer">
-                <p>
-                    No problem. You will still receive the raised amount after the transactional processing fee.
-                    To know more about transactional processing fee, visit: www.ketto.org/support/plans-and-pricing
-                </p>
-            </div>
-        </div>
-        <div class="accordion">
-            <div class="accordion__question">
-                <p>I have more questions, who do I write to?</p>
-
-            </div>
-            <div class="accordion__answer">
-                <p>
-                    You can write to info@ketto.org Know someone who needs funds for medical treatment urgently? Help
-                    them out by sharing this information with them.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div id="footer">
-        <footer>
-            <div id="footer">
-              <div id="mainfoot">
-                <div id="foot1">
-                  <div id="footimg">
-                    <img src="https://kettocdn.gumlet.io/images/logo-dark-bg.svg?w=80&dpr=2.0" alt="">
-                  </div>
-                  <div id="footlogo">
-                    <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"> <i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"> <i class="fa-brands fa-youtube"></i></a>
-                    <a href="#"> <i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
-          
-          
-                  </div>
-          
-                  <div id="follow">
-                    <h1> 1.5M +</h1>
-                    <p>Followers</p>
-                  </div>
-          
-                  <div id="Footcontact">
-                    <p>For any queries</p>
-                    <p>Email: info@ketto.org</p>
-                    <p> Contact No: +91 9930088522</p>
-          
-                  </div>
-                </div>
-                <div id="foot2">
-                  <h2>Cause</h2>
-                  <div>
-                    <p>Medical crowdfunding</p>
-                    <p>Cancer Crowdfunding</p>
-                    <p>Education</p>
-                    <p>Crowdfunding</p>
-                    <p>Creative Fundraising</p>
-                    <p>Child Welfare</p>
-                    <p>Animal Fundraisers</p>
-                    <p>COVID-19 Relief Fund</p>
-          
-                  </div>
-                </div>
-                <div id="foot3">
-                  <h2>How it works?</h2>
-                  <div>
-                    <p>Fundraising for NGOs</p>
-                    <p>Sponsor A Child</p>
-                    <p>Fundraising Tips</p>
-                    <p>What is Crowdfunding?</p>
-                    <p>Corporates</p>
-                    <p>Withdraw Funds</p>
-                    <p>Browse Fundraiser</p>
-          
-          
-                  </div>
-                </div>
-                <div id="foot4">
-                  <h2>About Us</h2>
-                  <div>
-                    <p>Team Ketto</p>
-                    <p>In The News</p>
-                    <p>Our Partners</p>
-                    <p>Careers</p>
-                    <p>Ketto Blog</p>
-                    <p>Success Stories</p>
-          
-          
-          
-                  </div>
-                </div>
-                <div id="foot5">
-                  <h2>Support</h2>
-                  <div>
-                    <p>Medical Finance</p>
-                    <p>FAQs & Help Center</p>
-                    <p>Are Ketto Campaigns</p>
-                    <p>Genuine?</p>
-                    <p>Fundraiser Video</p>
-                    <p>Trust & Safety</p>
-                    <p>Plans & Pricing</p>
-                    <p>Contact Us</p>
-          
-                  </div>
-                </div>
-                
-              </div>
-              
-              <div id="bottomfoot">
-              
-                  <img src="	https://ketto.gumlet.io/assets/images/homepage/footer-secured-card.png?w=457&dpr=2.0" alt="">
-               
-          
-              </div>
-              </div>
-          
-              <div id="affooter">
-                <p>Copyright © 2022 Ketto Online Ventures Pvt Ltd. All Rights Reserved.
-                  Terms of Use |
-                  Privacy Policy |
-                  AML Policy |
-                  Use of cookies </p>
-              </div>
-          
-              <div id="affooter2">
-                <p>Know more about Ketto Crowdfunding Platform</p>
-              </div>
-          
-          
             </footer>
-    </div>
+        </div>
 
-    <!-- <div id="next">
+        <!-- <div id="next">
         <p>Have any questions for us? Chat with our team on Facebook or WhatsApp now.</p>
         <div id="bn">
             <button>
@@ -705,8 +753,8 @@
 
 
 
-    
-</body>
+
+    </body>
 
 
 </html>
